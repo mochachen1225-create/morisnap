@@ -546,4 +546,73 @@ footer {
   .tag-row { justify-content: center; }
 }
 
+/* ===== Contact Picker Modal (Gmail Web + Mail App + Copy) ===== */
+.mailmodal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 34, 26, .45);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+.mailmodal-backdrop.open { display: flex; }
+.mailmodal-box {
+  width: min(430px, 100%);
+  background: var(--card);
+  border: 1.5px solid var(--wish-line);
+  border-radius: 22px;
+  padding: 22px 22px 20px;
+  box-shadow: 0 18px 46px rgba(45, 34, 26, .25);
+}
+.mailmodal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.mailmodal-top strong { font-size: 17px; color: var(--ink); }
+.mailmodal-info {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 13px;
+  font-size: 13.5px;
+  color: #4f4138;
+  margin-bottom: 14px;
+  word-break: break-all;
+}
+.mailmodal-info div { margin: 2px 0; }
+.mailmodal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.mailmodal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 11px 16px;
+  border-radius: 13px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, transform .1s;
+}
+.mailmodal-btn:hover { border-color: var(--accent); background: var(--wish-bg); transform: translateY(-1px); }
+.mailmodal-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.mailmodal-btn.primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
+.mailmodal-btn.copy-btn { background: #e6f0e6; border-color: #b8cfb9; color: #35563a; }
+.mailmodal-btn.copy-btn:hover { background: #d7e8d8; }
+
+
 

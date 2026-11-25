@@ -693,7 +693,125 @@
     return { resetForLang: resetForLang };
   }
 
+  function setupMailModal() {
+    var UI = {
+      zh: {
+        title: '✉️ 選擇寫信方式給摩卡',
+        toLbl: '收件信箱：',
+        subLbl: '預設主旨：',
+        gmail: '📮 用 Gmail 網頁版開信（推薦）',
+        native: '📱 用系統郵件 App 開啟（iPhone / Mac）',
+        copy: '📋 複製信箱與主旨',
+        copied: '✅ 已複製信箱與主旨！直接貼進常用信箱即可'
+      },
+      en: {
+        title: '✉️ Choose how to email Mocha',
+        toLbl: 'To: ',
+        subLbl: 'Subject: ',
+        gmail: '📮 Open in Gmail Web (Recommended)',
+        native: '📱 Open Default Mail App',
+        copy: '📋 Copy Email & Subject',
+        copied: '✅ Copied! Paste into any mail app you like'
+      },
+      ja: {
+        title: '✉️ モカへのメール送信方法',
+        toLbl: '宛先：',
+        subLbl: '件名：',
+        gmail: '📮 Gmail ウェブ版で開く（おすすめ）',
+        native: '📱 標準メールアプリで開く',
+        copy: '📋 アドレスと件名をコピー',
+        copied: '✅ コピーしました！お使いのメールに貼り付けてね'
+      },
+      ko: {
+        title: '✉️ 모카에게 메일 보내기',
+        toLbl: '받는 사람: ',
+        subLbl: '제목: ',
+        gmail: '📮 Gmail 웹에서 열기 (추천)',
+        native: '📱 기본 메일 앱으로 열기',
+        copy: '📋 이메일과 제목 복사하기',
+        copied: '✅ 복사 완료! 편한 메일 앱에 붙여넣어 주세요'
+      }
+    };
+
+    var backdrop = document.createElement('div');
+    backdrop.className = 'mailmodal-backdrop';
+    backdrop.innerHTML =
+      '<div class="mailmodal-box" role="dialog" aria-modal="true">' +
+        '<div class="mailmodal-top">' +
+          '<strong class="mm-title"></strong>' +
+          '<button type="button" class="foxbot-close mm-close" aria-label="Close">×</button>' +
+        '</div>' +
+        '<div class="mailmodal-info">' +
+          '<div class="mm-to"></div>' +
+          '<div class="mm-sub"></div>' +
+        '</div>' +
+        '<div class="mailmodal-actions">' +
+          '<a class="mailmodal-btn primary mm-gmail" target="_blank" rel="noopener"></a>' +
+          '<a class="mailmodal-btn mm-native"></a>' +
+          '<button type="button" class="mailmodal-btn copy-btn mm-copy"></button>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(backdrop);
+
+    var titleEl = backdrop.querySelector('.mm-title');
+    var toEl = backdrop.querySelector('.mm-to');
+    var subEl = backdrop.querySelector('.mm-sub');
+    var gmailBtn = backdrop.querySelector('.mm-gmail');
+    var nativeBtn = backdrop.querySelector('.mm-native');
+    var copyBtn = backdrop.querySelector('.mm-copy');
+    var closeBtn = backdrop.querySelector('.mm-close');
+    var currentCopyText = MAIL;
+    var currentLang = 'zh';
+
+    function close() { backdrop.classList.remove('open'); }
+    closeBtn.addEventListener('click', close);
+    backdrop.addEventListener('click', function (e) { if (e.target === backdrop) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+
+    copyBtn.addEventListener('click', function () {
+      var u = UI[currentLang] || UI.zh;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(currentCopyText).then(function () {
+          copyBtn.textContent = u.copied;
+        }).catch(function () {
+          window.prompt('', currentCopyText);
+        });
+      } else {
+        window.prompt('', currentCopyText);
+      }
+    });
+
+    function openForHref(href) {
+      currentLang = getLang();
+      var u = UI[currentLang] || UI.zh;
+      var withoutScheme = href.replace(/^mailto:/i, '');
+      var parts = withoutScheme.split('?');
+      var to = decodeURIComponent(parts[0] || MAIL);
+      var params = new URLSearchParams(parts[1] || '');
+      var su = params.get('subject') || '[MoriSnap]';
+      var body = params.get('body') || '';
+      titleEl.textContent = u.title;
+      toEl.textContent = u.toLbl + to;
+      subEl.textContent = u.subLbl + su;
+      gmailBtn.textContent = u.gmail;
+      gmailBtn.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + encodeURIComponent(su) + (body ? '&body=' + encodeURIComponent(body) : '');
+      nativeBtn.textContent = u.native;
+      nativeBtn.href = href;
+      copyBtn.textContent = u.copy;
+      currentCopyText = to + '\n' + su + (body ? '\n\n' + body : '');
+      backdrop.classList.add('open');
+    }
+
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"]') : null;
+      if (!a || a.classList.contains('mm-native')) return;
+      e.preventDefault();
+      openForHref(a.getAttribute('href'));
+    });
+  }
+
   function init() {
+    setupMailModal();
     var instances = [];
     var inlineMount = document.getElementById('foxbot-inline');
     if (inlineMount) {
