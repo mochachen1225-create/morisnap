@@ -55,9 +55,14 @@
               a: '輕按快門是拍照、長按快門就是錄 3 秒有聲微短片！編輯時「搖一搖手機」會換一組貼紙；點貼紙選取後，可以直接拖右下角的 🔄 小圓鈕，一根手指就能同時旋轉＋縮放超方便！'
             },
             {
-              q: '可以一秒去背或手寫塗鴉嗎？',
-              kw: ['去背', '合拍', '手寫', '塗鴉', 'pencil', '字'],
-              a: '可以！編輯頁點「我的去背」就能在本機一秒把相簿照片變貼紙，也能用「合拍」疊進即時鏡頭一起合照；點 ✏️ 就能打字或直接手寫塗鴉（iPad 支援 Apple Pencil），還能加白邊！'
+              q: '有韓系／日系四格、追星合拍、防盜浮水印嗎？',
+              kw: ['四格', '韓系', '日系', '人生四格', '追星', '本命', '盜圖', '防盜', '印章', 'logo', '去背', '合拍'],
+              a: '通通有！！內建韓系 1×4 ＆ 日系 2×2 人生四格；「一秒去背合拍」可以把本命偶像、動漫角色或毛孩直接疊進鏡頭合照（本機完成絕不上傳）；還支援自訂 @帳號防盜浮水印跟匯入個人 Logo 圖片印章，保護你的美照不被盜！'
+            },
+            {
+              q: '可以手寫塗鴉或做一秒去背貼紙嗎？',
+              kw: ['手寫', '塗鴉', 'pencil', '字', '貼紙'],
+              a: '可以！編輯頁點「我的去背」就能在本機一秒把相簿照片變貼紙；點 ✏️ 就能打字或直接手寫塗鴉（iPad 支援 Apple Pencil），還能加上純白貼紙邊框！'
             },
             {
               q: '小電影怎麼做？浮水印能關嗎？',
@@ -170,9 +175,14 @@
               a: 'Tap the shutter for a photo, or press & hold for a 3-second clip with audio. Shake your phone in the editor to shuffle stickers! Tap a sticker and drag the bottom-right 🔄 handle with one finger to rotate & resize at once.'
             },
             {
+              q: 'Do you have Korean/Japanese 4-Cut, idol Co-Snap & custom watermarks?',
+              kw: ['4-cut', '4cut', 'korean', 'japanese', 'booth', 'idol', 'bias', 'oshi', 'cosnap', 'stamp', 'logo', 'anti-theft', 'steal'],
+              a: 'YES to all three!! Shoot Korean 1×4 strips and Japanese 2×2 grids at home; use on-device 1-tap Cutout Co-Snap to pose live with your bias, anime character, or pet (never uploaded); and stamp your own @handle or custom logo image watermark to protect your photos!'
+            },
+            {
               q: 'Can I make photo cutouts or handwrite?',
-              kw: ['cutout', 'lift', 'cosnap', 'handwrite', 'pencil', 'draw'],
-              a: 'Yes! Tap "My Cutouts" to lift a subject from your photo on-device in one tap (or bring it into the live camera with Co-Snap). Tap ✏️ to type or doodle with Apple Pencil and add a crisp white border!'
+              kw: ['cutout', 'lift', 'handwrite', 'pencil', 'draw'],
+              a: 'Yes! Tap "My Cutouts" to lift a subject from your photo on-device in one tap. Tap ✏️ to type or doodle with Apple Pencil and add a crisp white border!'
             },
             {
               q: 'How do weekly movies & watermarks work?',
@@ -285,9 +295,14 @@
               a: 'シャッターを軽く押すと写真、長押しで音付き3秒動画が撮れます！編集画面でスマホを振るとステッカーをシャッフル。ステッカーをタップして右下の 🔄 ハンドルを1本指で動かせば回転とサイズ変更が同時にできるよ！'
             },
             {
+              q: '韓国・日本風 4 カットや推し合写、転載防止透かしはある？',
+              kw: ['4カット', '韓国', '日本', '推し', '合写', '転載', 'スタンプ', 'ロゴ', '透かし'],
+              a: 'ぜんぶ入ってるよ！！韓国風 1×4 と日本風 2×2 の 4 カット、端末内 1 秒切り抜きで推しやペットと撮れる合写、さらに @ID や自作ロゴ画像を入れられる無断転載防止スタンプまで対応してるよ！'
+            },
+            {
               q: '写真の切り抜きや手書きはできる？',
               kw: ['切り抜き', '手書き', 'ペン', 'pencil'],
-              a: 'できるよ！編集画面の「マイ切り抜き」で端末内ですぐ切り抜きステッカーが作れて、撮影時に重ねることも可能。✏️ ボタンで文字や手書き（Apple Pencil 対応）も貼れます！'
+              a: 'できるよ！編集画面の「マイ切り抜き」で端末内ですぐ切り抜きステッカーが作れて、✏️ ボタンで文字や手書き（Apple Pencil 対応）も白いフチ付きで貼れます！'
             },
             {
               q: 'ムービーの作り方と透かしの消し方は？',
@@ -400,9 +415,14 @@
               a: '셔터를 짧게 누르면 사진, 길게 누르면 소리 담긴 3초 영상! 편집할 때 폰을 흔들면 스티커 조합이 바뀌어요. 스티커를 눌러 오른쪽 아래 🔄 동그란 핸들을 한 손가락으로 끌면 회전과 크기 조절이 한 번에 돼요!'
             },
             {
+              q: '한국·일본식 네컷, 최애 합사진, 도용 방지 워터마크도 되나요?',
+              kw: ['네컷', '인생네컷', '한국', '일본', '최애', '덕질', '합사진', '도용', '스탬프', '로고', '워터마크'],
+              a: '전부 다 돼요!! 한국식 1×4·일본식 2×2 인생네컷, 기기 내 1초 누끼로 최애나 반려동물과 함께 찍는 합사진(서버 전송 0), 그리고 @아이디나 내 로고 이미지를 넣는 도용 방지 워터마크 스탬프까지 모두 지원해요!'
+            },
+            {
               q: '내 사진 누끼 스티커나 손글씨도 되나요?',
               kw: ['누끼', '손글씨', '낙서', '펜슬', 'pencil'],
-              a: '네! 편집 화면의 \'내 누끼\'로 기기 안에서 바로 1초 누끼 스티커를 만들고 라이브 카메라 합사진도 찍을 수 있어요. ✏️ 버튼으로 글씨나 손글씨(iPad Apple Pencil 지원)도 흰 테두리와 함께 붙여요!'
+              a: '네! 편집 화면의 \'내 누끼\'로 기기 안에서 바로 1초 누끼 스티커를 만들고, ✏️ 버튼으로 글씨나 손글씨(iPad Apple Pencil 지원)도 흰 테두리와 함께 붙여요!'
             },
             {
               q: '주간 영상 만들기와 워터마크 끄기는요?',

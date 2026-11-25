@@ -497,3 +497,48 @@ footer {
 }
 .foxbot-drawer.open { display: block; }
 
+/* ===== Feature Showcase Spotlights ===== */
+.spotlight {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px 24px;
+  margin: 18px 0;
+  box-shadow: 0 5px 18px rgba(120, 92, 66, .05);
+}
+.spotlight.alt { flex-direction: row-reverse; background: #fffcf7; }
+.spotlight-art {
+  width: 126px;
+  height: 126px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 6px 12px rgba(59,47,40,.13));
+}
+.spotlight-body { flex: 1; min-width: 0; }
+.spotlight-body h2 { margin: 2px 0 8px; font-size: 20px; }
+.spotlight-body p { margin: 0 0 8px; color: #4f4138; font-size: 15px; line-height: 1.75; }
+.spotlight-body p:last-child { margin-bottom: 0; }
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.pill-tag {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+@media (max-width: 600px) {
+  .spotlight, .spotlight.alt { flex-direction: column; text-align: center; padding: 20px 18px; }
+  .spotlight-art { width: 104px; height: 104px; }
+  .tag-row { justify-content: center; }
+}
+
+
