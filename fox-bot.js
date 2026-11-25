@@ -483,6 +483,23 @@
     }
   };
 
+  function mailHref(lang) {
+    var subjects = {
+      zh: "[MoriSnap] 問題回報與意見回饋",
+      en: "[MoriSnap] Support & Feedback",
+      ja: "[MoriSnap] お問い合わせ・ご要望",
+      ko: "[MoriSnap] 문의 및 의견"
+    };
+    var bodies = {
+      zh: "裝置型號（例：iPhone 16 / iPad Air）：\niOS 版本：\n想詢問或許願的內容：\n",
+      en: "Device model (e.g. iPhone 16 / iPad Air):\niOS version:\nHow can we help or what is your wish:\n",
+      ja: "機種（例：iPhone 16 / iPad Air）：\niOS バージョン：\nお問い合わせ・リクエスト内容：\n",
+      ko: "기기 모델(예: iPhone 16 / iPad Air):\niOS 버전:\n문의 또는 소원 내용:\n"
+    };
+    var l = subjects[lang] ? lang : "zh";
+    return "mailto:" + MAIL + "?subject=" + encodeURIComponent(subjects[l]) + "&body=" + encodeURIComponent(bodies[l]);
+  }
+
   function getLang() {
     var active = document.querySelector('.lang-panel.active');
     if (active) return active.getAttribute('data-lang') || 'zh';
@@ -569,7 +586,7 @@
       });
       var mail = document.createElement('a');
       mail.className = 'foxbot-chip mail-chip';
-      mail.href = 'mailto:' + MAIL;
+      mail.href = mailHref(currentLang);
       mail.textContent = d.mailBtn;
       chipsEl.appendChild(mail);
     }
@@ -625,7 +642,7 @@
       chipsEl.appendChild(back);
       var mail = document.createElement('a');
       mail.className = 'foxbot-chip mail-chip';
-      mail.href = 'mailto:' + MAIL;
+      mail.href = mailHref(currentLang);
       mail.textContent = d.mailBtn;
       chipsEl.appendChild(mail);
     }
