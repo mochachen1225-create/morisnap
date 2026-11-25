@@ -422,8 +422,13 @@ footer {
   transform: translateY(-1px);
 }
 .foxbot-chip.back-chip {
-  color: var(--soft);
-  border-color: var(--line);
+  background: #e6f0e6;
+  border-color: #b8cfb9;
+  color: #35563a;
+}
+.foxbot-chip.back-chip:hover {
+  background: #d7e8d8;
+  border-color: #8cb28f;
 }
 .foxbot-chip.mail-chip {
   background: var(--wish-bg);
