@@ -3,23 +3,322 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MoriSnap</title>
+<title>MoriSnap — 懶得修也沒關係，隨手一拍就好</title>
+<link rel="icon" type="image/png" href="assets/fox_happy.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
 <header>
-  <p class="brand">🦊 MoriSnap</p>
-  <h1>懶得修也沒關係，隨手一拍就好。</h1>
-  <p class="meta">Too lazy to edit? That's okay. Just snap.</p>
+  <div class="topbar">
+    <a class="brand" href="index.html">
+      <img src="assets/fox_happy.png" alt="MoriSnap">
+      <span>MoriSnap</span>
+    </a>
+    <div class="lang-bar" role="tablist" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="zh">繁體中文</button>
+      <button type="button" class="lang-btn" data-lang="en">English</button>
+      <button type="button" class="lang-btn" data-lang="ja">日本語</button>
+      <button type="button" class="lang-btn" data-lang="ko">한국어</button>
+    </div>
+  </div>
 </header>
-<p>MoriSnap 是給「很想記錄、又很懶」的人的拍照手帳：按一下快門就是一張好看的手帳照，週末自動剪成一支小電影。</p>
-<p>A cozy photo diary for lazy days: one tap makes a finished page, and every week becomes a little movie.</p>
-<ul>
-  <li><a href="support.html">技術支援 · Support</a></li>
-  <li><a href="privacy.html">隱私權政策 · Privacy Policy</a></li>
-</ul>
-<footer>© 2026 MoriSnap · Mocha</footer>
+
+<!-- ==================== 繁體中文 ==================== -->
+<section class="lang-panel" data-lang="zh" data-title="MoriSnap — 懶得修也沒關係，隨手一拍就好" id="zh" lang="zh-Hant">
+  <div class="hero">
+    <div class="hero-text">
+      <span class="badge">🌲 森林裡的小狐狸手帳相機</span>
+      <h1>懶得修也沒關係，隨手一拍就好。</h1>
+      <p class="lead">MoriSnap 是給「很想記錄、又很懶」的人的拍照手帳：按一下快門就自動完成溫暖濾鏡、插畫貼紙與日期，週末還能自動剪成一支小電影。</p>
+      <div class="cta-row">
+        <a class="cta-link primary" href="support.html#zh">常見問題與支援</a>
+        <a class="cta-link" href="privacy.html#zh">隱私權政策</a>
+      </div>
+    </div>
+    <img class="hero-fox" src="assets/fox_camera.png" alt="拿相機的 Mori 小狐狸">
+  </div>
+
+  <div class="manifesto">
+    <img class="mini-fox" src="assets/fox_journal.png" alt="寫手帳的 Mori 小狐狸">
+    <div>
+      <p>大部分的日子都很普通。早餐、回家路上的天空、在陽光下打盹的貓。當下覺得沒什麼，回頭看才發現都很可愛。</p>
+      <p>MoriSnap 想幫你留下這些日子——不用修圖、不用想構圖。自己收藏、只給最親近的朋友看、或是發到社群，都由你決定。</p>
+      <p>懶得修也沒關係，隨手一拍就好。🦊</p>
+    </div>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <strong>📸 按一下就完成</strong>
+      <p>暖色底片濾鏡、手撕紙邊框、日期與季節插畫貼紙一次配好，不滿意就搖一搖換一組。</p>
+    </div>
+    <div class="feature-card">
+      <strong>🎬 每週自動小電影</strong>
+      <p>不用剪輯，選一種風格就把一週或一個月的日常變成帶音樂的小短片。</p>
+    </div>
+    <div class="feature-card">
+      <strong>💌 和好朋友一起寫手帳</strong>
+      <p>免費建立 iCloud 共享手帳，邀請最在乎的人把照片存進同一本相簿。</p>
+    </div>
+    <div class="feature-card">
+      <strong>🦊 1,000+ 原創插畫貼紙</strong>
+      <p>森林小狐狸吉祥物、美食、毛孩、復古童年與四季限定插畫貼紙，隨節日自動驚喜出沒。</p>
+    </div>
+    <div class="feature-card">
+      <strong>🔒 照片只屬於你</strong>
+      <p>免註冊、零廣告、零追蹤，沒有開發者伺服器；匯出與分享的照片不夾帶 GPS 位置。</p>
+    </div>
+    <div class="feature-card">
+      <strong>☕ 一次買斷，沒有訂閱</strong>
+      <p>基本拍照與共享免費使用；VIP 一次買斷終身解鎖所有貼紙、風格、無浮水印與雙機 iCloud 同步。</p>
+    </div>
+  </div>
+
+  <div class="wish-box">
+    <img class="mini-fox" src="assets/fox_star.png" alt="星星眼許願小狐狸">
+    <div>
+      <span class="badge">🌟 VIP 專屬小驚喜</span>
+      <h2>只要你是 VIP，我們都接受許願！</h2>
+      <p>有超想要的貼紙主題（毛孩、宵夜、冷門運動或懷舊小物）、濾鏡色調，或是讓你拍照更順手的小功能嗎？寫信告訴小狐狸，我們都會認真看、努力幫你放進未來的免費更新裡！</p>
+      <p><a href="mailto:mochachen1225@gmail.com?subject=MoriSnap%20VIP%20許願">✉️ 寫信去許願 → mochachen1225@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>© 2026 MoriSnap · 摩卡 Mocha · <a href="support.html#zh">常見問題</a> · <a href="privacy.html#zh">隱私權政策</a><br>原創構想：摩卡｜插畫與文字：與 AI 協作產出</footer>
+</section>
+
+<!-- ==================== English ==================== -->
+<section class="lang-panel" data-lang="en" data-title="MoriSnap — Too lazy to edit? Just snap." id="en" lang="en">
+  <div class="hero">
+    <div class="hero-text">
+      <span class="badge">🌲 Cozy Photo Diary with a Forest Fox</span>
+      <h1>Too lazy to edit? That's okay. Just snap.</h1>
+      <p class="lead">MoriSnap is a cozy photo diary for lazy days: one tap makes a finished scrapbook page with warm film tones, illustrated stickers and dates, and every week turns into a little movie.</p>
+      <div class="cta-row">
+        <a class="cta-link primary" href="support.html#en">FAQ &amp; Support</a>
+        <a class="cta-link" href="privacy.html#en">Privacy Policy</a>
+      </div>
+    </div>
+    <img class="hero-fox" src="assets/fox_camera.png" alt="Mori Fox taking a photo">
+  </div>
+
+  <div class="manifesto">
+    <img class="mini-fox" src="assets/fox_journal.png" alt="Mori Fox keeping a photo diary">
+    <div>
+      <p>Most days are quiet, ordinary days. Breakfast, the sky on the way home, the cat asleep in the sun. They don't seem like much, until you look back and find them lovely.</p>
+      <p>MoriSnap helps you keep those days — no editing, no overthinking. Keep them to yourself, share them with a few close friends, or post them online. Any way is fine.</p>
+      <p>Too lazy to edit? That's okay. Just snap. 🦊</p>
+    </div>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <strong>📸 One tap, done</strong>
+      <p>Warm film tones, torn-paper frames, dates and seasonal illustrated stickers added for you. Shake to shuffle.</p>
+    </div>
+    <div class="feature-card">
+      <strong>🎬 Your week, as a movie</strong>
+      <p>Zero editing. Pick a style and turn a week or month of snaps and clips into a short video with music.</p>
+    </div>
+    <div class="feature-card">
+      <strong>💌 Shared albums with friends</strong>
+      <p>Create a free iCloud shared album and invite close friends so everyone's moments land in the same book.</p>
+    </div>
+    <div class="feature-card">
+      <strong>🦊 1,000+ original illustrated stickers</strong>
+      <p>Our little forest fox mascot, food, pets, retro childhood items, and seasonal sets picked for each day.</p>
+    </div>
+    <div class="feature-card">
+      <strong>🔒 Your photos stay yours</strong>
+      <p>No account, no ads, no tracking, and no developer servers. Exported photos never carry GPS location data.</p>
+    </div>
+    <div class="feature-card">
+      <strong>☕ Pay once, no subscription</strong>
+      <p>Free to use. One-time VIP unlocks all stickers, styles, filters, watermark removal, and iPhone–iPad iCloud sync.</p>
+    </div>
+  </div>
+
+  <div class="wish-box">
+    <img class="mini-fox" src="assets/fox_star.png" alt="Starry-eyed Mori Fox">
+    <div>
+      <span class="badge">🌟 VIP Wish Box</span>
+      <h2>VIP member? We take wishes!</h2>
+      <p>Dreaming of a specific sticker theme (your pet breed, favorite snack, sport, or nostalgic trinket), filter tone, or handy tweak? Send your wish to our little fox — we read every note and love bringing VIP wishes into future updates!</p>
+      <p><a href="mailto:mochachen1225@gmail.com?subject=MoriSnap%20VIP%20Wish">✉️ Send a wish → mochachen1225@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>© 2026 MoriSnap · Mocha · <a href="support.html#en">Support</a> · <a href="privacy.html#en">Privacy Policy</a><br>Original concept: Mocha · Illustrations and text created with AI assistance</footer>
+</section>
+
+<!-- ==================== 日本語 ==================== -->
+<section class="lang-panel" data-lang="ja" data-title="MoriSnap — 加工がめんどうでも大丈夫。パッと撮るだけ。" id="ja" lang="ja">
+  <div class="hero">
+    <div class="hero-text">
+      <span class="badge">🌲 森の子ぎつねの写真日記カメラ</span>
+      <h1>加工がめんどうでも大丈夫。パッと撮るだけ。</h1>
+      <p class="lead">MoriSnap はずぼらさんのための写真日記カメラ。シャッターを押すだけであたたかい色味・イラストステッカー・日付がそろい、週末には1週間が小さなムービーになります。</p>
+      <div class="cta-row">
+        <a class="cta-link primary" href="support.html#ja">よくある質問・サポート</a>
+        <a class="cta-link" href="privacy.html#ja">プライバシーポリシー</a>
+      </div>
+    </div>
+    <img class="hero-fox" src="assets/fox_camera.png" alt="カメラを持つ森の子ぎつね">
+  </div>
+
+  <div class="manifesto">
+    <img class="mini-fox" src="assets/fox_journal.png" alt="手帳を書く森の子ぎつね">
+    <div>
+      <p>毎日は、ほとんどがなんでもない日。朝ごはん、帰り道の空、ひなたで眠る猫。そのときは気にならないけれど、見返すと、どれも愛おしい。</p>
+      <p>MoriSnap は、そんな毎日を残すお手伝いをします。自分だけでとっておいても、仲のいい友だちだけに見せても、SNS に載せても、あなたの自由です。</p>
+      <p>加工がめんどうでも大丈夫。パッと撮るだけ。🦊</p>
+    </div>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <strong>📸 撮るだけで手帳の1ページに</strong>
+      <p>あたたかいフィルム調、ちぎった紙のフチ、日付、季節のイラストステッカーまで自動。振れば別の組み合わせに。</p>
+    </div>
+    <div class="feature-card">
+      <strong>🎬 1週間が小さなムービーに</strong>
+      <p>編集いらず。スタイルを選ぶだけで1週間や1か月の写真と動画が BGM 付きのショートムービーに。</p>
+    </div>
+    <div class="feature-card">
+      <strong>💌 仲のいい友だちと共有手帳</strong>
+      <p>無料の iCloud 共有手帳を作って友だちを招待。みんなの写真が同じ1冊に集まります。</p>
+    </div>
+    <div class="feature-card">
+      <strong>🦊 1,000種類以上のイラストステッカー</strong>
+      <p>森の子ぎつね、ごはん、ペット、レトロ雑貨、季節限定までたっぷり収録。</p>
+    </div>
+    <div class="feature-card">
+      <strong>🔒 写真はあなただけのもの</strong>
+      <p>登録不要・広告なし・追跡なし。独自サーバーを持たず、共有写真に位置情報も残りません。</p>
+    </div>
+    <div class="feature-card">
+      <strong>☕ 買い切り、サブスクなし</strong>
+      <p>基本無料。VIP は一度の購入で全ステッカー・ムービースタイル・透かし非表示・iPhone／iPad 同期に対応。</p>
+    </div>
+  </div>
+
+  <div class="wish-box">
+    <img class="mini-fox" src="assets/fox_star.png" alt="キラキラ目の森の子ぎつね">
+    <div>
+      <span class="badge">🌟 VIP リクエストボックス</span>
+      <h2>VIP の方は、いつでもリクエスト歓迎！</h2>
+      <p>「こんな動物や食べ物のステッカーがほしい」「こんな色味や機能があったらいいな」という願いごとがあれば、ぜひメールで教えてください。子ぎつねと一緒に、今後のアップデートで少しずつ形にしていきます！</p>
+      <p><a href="mailto:mochachen1225@gmail.com?subject=MoriSnap%20VIP%20リクエスト">✉️ リクエストを送る → mochachen1225@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>© 2026 MoriSnap · モカ (Mocha) · <a href="support.html#ja">サポート</a> · <a href="privacy.html#ja">プライバシーポリシー</a><br>原案：モカ｜イラスト・文章：AI との協働で制作</footer>
+</section>
+
+<!-- ==================== 한국어 ==================== -->
+<section class="lang-panel" data-lang="ko" data-title="MoriSnap — 보정이 귀찮아도 괜찮아요. 툭 찍기만 하면 돼요." id="ko" lang="ko">
+  <div class="hero">
+    <div class="hero-text">
+      <span class="badge">🌲 숲속 아기 여우의 감성 사진 일기</span>
+      <h1>보정이 귀찮아도 괜찮아요. 툭 찍기만 하면 돼요.</h1>
+      <p class="lead">MoriSnap은 귀차니스트를 위한 감성 사진 일기 카메라예요. 셔터만 누르면 따뜻한 필름 색감과 일러스트 스티커, 날짜가 한 번에 완성되고 주말에는 일주일이 작은 영상이 돼요.</p>
+      <div class="cta-row">
+        <a class="cta-link primary" href="support.html#ko">자주 묻는 질문 · 지원</a>
+        <a class="cta-link" href="privacy.html#ko">개인정보 처리방침</a>
+      </div>
+    </div>
+    <img class="hero-fox" src="assets/fox_camera.png" alt="카메라를 든 아기 여우">
+  </div>
+
+  <div class="manifesto">
+    <img class="mini-fox" src="assets/fox_journal.png" alt="다이어리를 쓰는 아기 여우">
+    <div>
+      <p>하루하루는 대부분 평범한 날이에요. 아침밥, 퇴근길 하늘, 햇살 아래 잠든 고양이. 그때는 별것 아닌 것 같아도, 돌아보면 하나하나 다 소중해요.</p>
+      <p>MoriSnap은 그런 날들을 남겨두도록 도와줘요. 나만 간직해도, 친한 친구들에게만 보여줘도, SNS에 올려도 다 좋아요.</p>
+      <p>보정이 귀찮아도 괜찮아요. 툭 찍기만 하면 돼요. 🦊</p>
+    </div>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <strong>📸 셔터 한 번이면 완성</strong>
+      <p>따뜻한 필름 색감, 찢은 종이 테두리, 날짜, 계절 일러스트 스티커까지 자동으로. 흔들면 새 조합으로 바뀌어요.</p>
+    </div>
+    <div class="feature-card">
+      <strong>🎬 일주일이 작은 영상으로</strong>
+      <p>편집 없이 스타일만 고르면 일주일이나 한 달의 사진·영상이 음악이 담긴 짧은 영상으로 완성돼요.</p>
+    </div>
+    <div class="feature-card">
+      <strong>💌 친한 친구들과 공유 다이어리</strong>
+      <p>무료 iCloud 공유 다이어리를 만들어 친구를 초대하면 모두의 사진이 한 권에 모여요.</p>
+    </div>
+    <div class="feature-card">
+      <strong>🦊 1,000+ 오리지널 일러스트 스티커</strong>
+      <p>숲속 아기 여우 마스코트, 음식, 반려동물, 레트로 추억 소품, 계절 한정 스티커까지 가득해요.</p>
+    </div>
+    <div class="feature-card">
+      <strong>🔒 사진은 오직 나만의 것</strong>
+      <p>회원가입·광고·추적 없음. 자체 서버가 없고 공유하는 사진에도 GPS 위치 정보가 포함되지 않아요.</p>
+    </div>
+    <div class="feature-card">
+      <strong>☕ 한 번 구매, 구독 없음</strong>
+      <p>무료로 시작하고, VIP 한 번 결제로 모든 스티커·스타일·워터마크 제거·iPhone/iPad 동기화를 평생 써요.</p>
+    </div>
+  </div>
+
+  <div class="wish-box">
+    <img class="mini-fox" src="assets/fox_star.png" alt="별눈 반짝 아기 여우">
+    <div>
+      <span class="badge">🌟 VIP 소원 우체통</span>
+      <h2>VIP라면 무엇이든 소원 받아요!</h2>
+      <p>갖고 싶은 스티커 테마(반려동물, 간식, 취미, 추억 소품)나 필터 색감, 있으면 좋을 작은 기능이 있나요? 아기 여우에게 메일로 보내주시면 하나하나 소중히 읽고 업데이트에 담아볼게요!</p>
+      <p><a href="mailto:mochachen1225@gmail.com?subject=MoriSnap%20VIP%20소원">✉️ 소원 보내기 → mochachen1225@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>© 2026 MoriSnap · 모카 (Mocha) · <a href="support.html#ko">고객 지원</a> · <a href="privacy.html#ko">개인정보 처리방침</a><br>원작 구상: 모카｜일러스트·글: AI와 협업 제작</footer>
+</section>
 </main>
+
+<script>
+(function() {
+  var valid = ['zh', 'en', 'ja', 'ko'];
+  function detect() {
+    var hash = location.hash.replace('#', '');
+    if (valid.indexOf(hash) !== -1) return hash;
+    var q = new URLSearchParams(location.search).get('lang');
+    if (valid.indexOf(q) !== -1) return q;
+    try {
+      var saved = localStorage.getItem('morisnap_lang');
+      if (valid.indexOf(saved) !== -1) return saved;
+    } catch (e) {}
+    var nav = (navigator.language || 'zh').toLowerCase();
+    if (nav.startsWith('ja')) return 'ja';
+    if (nav.startsWith('ko')) return 'ko';
+    if (nav.startsWith('en')) return 'en';
+    return 'zh';
+  }
+  function setLang(lang, updateHash) {
+    document.body.classList.add('js-ready');
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : lang;
+    try { localStorage.setItem('morisnap_lang', lang); } catch (e) {}
+    document.querySelectorAll('.lang-panel').forEach(function(el) {
+      var on = el.getAttribute('data-lang') === lang;
+      el.classList.toggle('active', on);
+      if (on && el.getAttribute('data-title')) document.title = el.getAttribute('data-title');
+    });
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+    if (updateHash) history.replaceState(null, '', '#' + lang);
+  }
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() { setLang(btn.getAttribute('data-lang'), true); });
+  });
+  window.addEventListener('hashchange', function() { setLang(detect(), false); });
+  setLang(detect(), false);
+})();
+</script>
 </body>
 </html>
