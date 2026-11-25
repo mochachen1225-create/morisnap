@@ -20,7 +20,7 @@
             {
               q: '是訂閱制嗎？免費能用什麼？',
               kw: ['錢', '價格', '訂閱', '免費', 'vip', '買斷', '廣告', '收費'],
-              a: '完全不是訂閱制，也沒有廣告！免費就能拍照、錄 3 秒短片、寫手帳、用每類前 10 張插畫貼紙、當季免費節日貼紙，還能免費玩「共享手帳」。VIP 是「一次買斷終身用」，解鎖 1,000+ 貼紙、全部濾鏡風格、去浮水印、雙機同步和雲端資料夾備份！'
+              a: '完全不是訂閱制，免費版也完全沒廣告、不限拍照張數！和 VIP 的差別只在「貼紙豐富度與進階功能」而已：免費就能拍照、錄 3 秒短片、寫手帳、用每類前 10 張插畫貼紙、當季免費節日貼紙，還能免費玩「共享手帳」。VIP 是「一次買斷終身用」，解鎖 1,000+ 貼紙、全部濾鏡風格、去浮水印、雙機同步和雲端資料夾備份！'
             },
             {
               q: '換新手機／iPad 怎麼恢復 VIP？',
@@ -135,7 +135,7 @@
             {
               q: 'Is it a subscription? What is free?',
               kw: ['price', 'cost', 'sub', 'subscription', 'free', 'vip', 'ad', 'ads'],
-              a: 'No subscription and zero ads! Photos, 3-second clips, your photo diary, the first 10 stickers in every tab, current seasonal stickers, and Shared Albums are all free. VIP is a one-time lifetime unlock for 1,000+ stickers, all styles/filters, watermark removal, iPhone–iPad sync, and cloud folder auto-backup!'
+              a: 'No subscription — and even the free version has zero ads and no photo limits! The only difference with VIP is extra sticker variety and pro features. Photos, 3-second clips, your photo diary, the first 10 stickers in every tab, current seasonal stickers, and Shared Albums are all free. VIP is a one-time lifetime unlock for 1,000+ stickers, all styles/filters, watermark removal, iPhone–iPad sync, and cloud folder auto-backup!'
             },
             {
               q: 'How do I restore VIP on a new device?',
@@ -250,7 +250,7 @@
             {
               q: 'サブスクですか？無料でどこまで使える？',
               kw: ['料金', '値段', 'サブスク', '無料', 'vip', '買い切り', '広告'],
-              a: 'サブスクではなく、広告もゼロ！写真・3秒動画・個人手帳・各カテゴリ最初の10種ステッカー・季節の無料ステッカー・共有手帳は全部無料です。VIP は一度きりの買い切りで、1,000種以上の全ステッカー、全スタイル、透かし非表示、iPhone／iPad 同期などが解放されます！'
+              a: 'サブスクではなく、無料版も広告ゼロ・撮影枚数無制限！VIP との違いは「ステッカーの豊富さと便利機能」だけです。写真・3秒動画・個人手帳・各カテゴリ最初の10種ステッカー・季節の無料ステッカー・共有手帳は全部無料。VIP は一度きりの買い切りで、1,000種以上の全ステッカー、全スタイル、透かし非表示、iPhone／iPad 同期などが解放されます！'
             },
             {
               q: '機種変更や iPad で VIP を復元するには？',
@@ -365,7 +365,7 @@
             {
               q: '구독제인가요? 무료로 어디까지 쓸 수 있나요?',
               kw: ['가격', '요금', '구독', '무료', 'vip', '광고', '결제'],
-              a: '구독제도 아니고 광고도 없어요! 사진·3초 영상·개인 다이어리·모든 탭 기본 10종 스티커·계절 무료 스티커·공유 다이어리가 모두 무료! VIP는 평생 1회 구매로 1,000+ 스티커, 전체 스타일, 워터마크 숨기기, iPhone·iPad 동기화까지 다 열려요!'
+              a: '구독제도 아니고 무료 버전도 광고 전혀 없음·촬영 횟수 무제한이에요! VIP와의 차이는 \'스티커의 풍부함과 편의 기능\'뿐이에요. 사진·3초 영상·개인 다이어리·모든 탭 기본 10종 스티커·계절 무료 스티커·공유 다이어리가 모두 무료! VIP는 평생 1회 구매로 1,000+ 스티커, 전체 스타일, 워터마크 숨기기, iPhone·iPad 동기화까지 다 열려요!'
             },
             {
               q: '새 기기나 iPad에서 VIP를 어떻게 복원하나요?',
