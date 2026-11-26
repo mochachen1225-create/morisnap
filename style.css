@@ -1541,6 +1541,58 @@ footer {
   .icon-pick img { width: 56px; height: 56px; border-radius: 13px; }
 }
 
+/* ===== Mid-Page Lightweight Conversion CTA Strip ===== */
+.mid-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+  margin: 18px 0 22px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fff9ef 0%, #f8ebd8 100%);
+  border: 1px solid var(--wish-line);
+  box-shadow: 0 4px 16px rgba(150, 102, 64, .07);
+}
+.mid-cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.mid-cta-text strong {
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.mid-cta-text span {
+  font-size: 13px;
+  color: var(--soft);
+  line-height: 1.4;
+}
+.mid-cta .beta-cta {
+  flex-shrink: 0;
+  padding: 10px 18px;
+  font-size: 14px;
+}
+.compare-foot {
+  margin: -14px 0 22px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--soft);
+}
+.compare-foot a {
+  color: var(--accent-deep);
+  font-weight: 700;
+  text-decoration: none;
+}
+.compare-foot a:hover { text-decoration: underline; }
+@media (max-width: 680px) {
+  .mid-cta { flex-direction: column; align-items: stretch; text-align: center; padding: 14px 15px; gap: 10px; margin: 14px 0 18px; }
+  .mid-cta .beta-cta { justify-content: center; }
+  .compare-foot { margin: -8px 0 16px; }
+}
+
 
 
 
