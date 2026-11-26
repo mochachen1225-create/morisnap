@@ -836,6 +836,11 @@ footer {
   padding: 22px;
   margin: 18px 0;
   box-shadow: 0 5px 20px rgba(120, 92, 66, .05);
+  transition: box-shadow .35s ease, border-color .35s ease;
+}
+.guide-card.anchor-highlight {
+  border-color: var(--sage);
+  box-shadow: 0 0 0 4px rgba(107, 138, 113, .24), 0 5px 20px rgba(120, 92, 66, .08);
 }
 .guide-card.alt { flex-direction: row-reverse; }
 .guide-visual {
