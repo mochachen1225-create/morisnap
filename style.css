@@ -847,11 +847,100 @@ footer {
   box-shadow: 0 8px 22px rgba(120, 92, 66, .09);
   background: #f5ede2;
 }
-.guide-visual img {
+.guide-visual img,
+.guide-visual video {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  background: #f5ede2;
+}
+.guide-visual { position: relative; }
+.guide-sound {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  background: rgba(45, 34, 26, .74);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.guide-sound:hover { background: var(--accent-deep); }
+
+/* ===== 5-Second Bento Highlights (Ultra-Low-Text) ===== */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 11px;
+  margin: 22px 0 26px;
+}
+.bento-tile {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 15px 15px 14px;
+  box-shadow: 0 3px 12px rgba(120, 92, 66, .04);
+}
+.bento-tile.accent {
+  background: var(--wish-bg);
+  border-color: var(--wish-line);
+}
+.bento-num {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--accent-deep);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.bento-tile span {
+  display: block;
+  font-size: 13px;
+  color: var(--soft);
+  line-height: 1.45;
+}
+@media (max-width: 720px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== Hero Widescreen Little Fox Veo Cinema ===== */
+.hero-cinema {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  margin: 18px 0 22px;
+  border: 1.5px solid var(--line);
+  background: #2b221c;
+  box-shadow: 0 12px 32px rgba(72, 50, 34, .14);
+}
+.hero-cinema video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.hero-cinema .cinema-badge {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  background: rgba(45, 34, 26, .68);
+  color: #fff6ea;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 700;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.hero-cinema .sound-pill {
+  right: 14px;
+  bottom: 14px;
 }
 .guide-body { flex: 1; min-width: 0; }
 .guide-body h2 { margin: 4px 0 10px; font-size: 20px; }
