@@ -45,8 +45,8 @@
           items: [
             {
               q: '怎麼把 MoriSnap 加到主畫面（小工具）？',
-              kw: ['小工具', '主畫面', '桌面', '冰箱貼', '月曆', '本月封面', '去年的今天', 'widget'],
-              a: '先打開 App 一次，回主畫面長按空白處 → 點左上「＋」→ 搜尋 MoriSnap，就有冰箱貼（小）、本月封面（中）、磁鐵月曆（大）三種大小！冰箱貼會自動挑照片，有「去年的今天」會優先放那張喔 ✨'
+              kw: ['小工具', '主畫面', '桌面', '冰箱貼', '月曆', '本月封面', '去年的今天', '暗房倒數', 'widget'],
+              a: '先打開 App 一次，回主畫面長按空白處 → 點左上「＋」→ 搜尋 MoriSnap，就有冰箱貼（小）、本月封面（中）、磁鐵月曆（大），還有「暗房倒數」（開今晚才顯影時看暗房裡幾張、還要多久洗好）！冰箱貼有「去年的今天」會優先放那張喔 ✨'
             },
             {
               q: '「今晚才顯影」是什麼？',
@@ -137,8 +137,8 @@
             },
             {
               q: 'iCloud 同步和「另存到雲端硬碟資料夾」有什麼不同？',
-              kw: ['同步', 'icloud', 'ipad', '雙機', '備份', '雲端', '資料夾', '另存', '不同', '差別', '檔案'],
-              a: '・iCloud 同步（VIP）：讓你的 iPhone 和 iPad 手帳一模一樣（照片、貼紙、印章、濾鏡、牆面風格全同步），換手機打開就回來。\n・另存一份到雲端硬碟資料夾（VIP）：每存一張就複製一份圖片到你選的資料夾——只要雲端硬碟 App 出現在 iPhone「檔案」裡就能直接選，不用另設帳號，適合想在電腦看或多留備份的人。\n兩者可以一起開，也可以只開一個；換機整本搬家則可用「匯出／匯入封存檔」！'
+              kw: ['同步', 'icloud', 'ipad', '雙機', '備份', '雲端', '資料夾', '另存', '不同', '差別', '檔案', '灰色'],
+              a: '・iCloud 同步（VIP）：讓你的 iPhone 和 iPad 手帳一模一樣（照片、貼紙、印章、濾鏡、牆面風格全同步），換手機打開就回來。\n・另存一份到資料夾（VIP）：每存一張就複製一份圖片到你選的資料夾（建議先建一個 MoriSnap 資料夾），可選 iCloud Drive 或「我的 iPhone」裡的資料夾，免另設帳號。\n・小提醒：有些雲端硬碟 App 不開放選資料夾（會顯示灰色），這時請改選 iCloud Drive，或在照片詳情頁按分享存進去。換機整本搬家則可用「匯出／匯入封存檔」！'
             },
             {
               q: '共享手帳免費嗎？誰可以刪照片？',
@@ -224,8 +224,8 @@
           items: [
             {
               q: 'How do I add MoriSnap widgets to my Home Screen?',
-              kw: ['widget', 'home screen', 'fridge', 'magnet', 'calendar', 'on this day'],
-              a: 'Open MoriSnap once, long-press an empty area on your Home Screen → tap "+" at top-left → search MoriSnap! Pick from Fridge Magnet (small — automatically shows "On This Day" when available), Month Cover (medium), or Magnet Calendar (large).'
+              kw: ['widget', 'home screen', 'fridge', 'magnet', 'calendar', 'on this day', 'countdown'],
+              a: 'Open MoriSnap once, long-press an empty area on your Home Screen → tap "+" at top-left → search MoriSnap! Pick from Fridge Magnet ("On This Day"), Month Cover, Magnet Calendar, or Darkroom Countdown (shows pending photos & time left when VIP Develop Tonight is on)!'
             },
             {
               q: 'What is "Develop Tonight"?',
@@ -301,8 +301,8 @@
             },
             {
               q: 'iCloud Sync vs. saving a copy to a cloud drive folder?',
-              kw: ['sync', 'icloud', 'ipad', 'backup', 'folder', 'cloud drive', 'files', 'difference', 'copy'],
-              a: '• iCloud Sync (VIP): Keeps your iPhone & iPad diaries identical (photos, cutouts, stamps, custom filters & themes).\n• Save a Copy to Cloud Folder (VIP): Copies each saved card to any cloud drive folder visible in Apple\'s Files app (no extra account setup) — great for computer viewing or extra backup.\nUse either or both; use Export/Import Archive when moving to a new phone!'
+              kw: ['sync', 'icloud', 'ipad', 'backup', 'folder', 'cloud drive', 'files', 'difference', 'copy', 'gray', 'grey'],
+              a: '• iCloud Sync (VIP): Keeps your iPhone & iPad diaries identical (photos, cutouts, stamps, custom filters & themes).\n• Save a Copy to Folder (VIP): Copies each saved card to a folder in iCloud Drive or "On My iPhone" (create a "MoriSnap" folder first) with no extra login.\n• Note: Some cloud drive apps don\'t allow folder picking (they appear grayed out) — use iCloud Drive instead, or tap Share on a photo\'s detail page to save there. Use Export/Import Archive when switching phones!'
             },
             {
               q: 'Shared Albums: deleting photos, sync delay & leaving?',
@@ -363,8 +363,8 @@
           items: [
             {
               q: 'ホーム画面（ウィジェット）に追加するには？',
-              kw: ['ウィジェット', 'ホーム画面', '冷蔵庫', 'マグネット', 'カレンダー', '去年の今日'],
-              a: 'アプリを一度開いてから、ホーム画面の空きスペースを長押し → 左上「＋」→ MoriSnap を検索！冷蔵庫マグネット（去年の今日を優先表示）・今月の表紙・マグネットカレンダーの 3 サイズから選べるよ ✨'
+              kw: ['ウィジェット', 'ホーム画面', '冷蔵庫', 'マグネット', 'カレンダー', '去年の今日', 'カウントダウン'],
+              a: 'アプリを一度開いてから、ホーム画面の空きスペースを長押し → 左上「＋」→ MoriSnap を検索！冷蔵庫マグネット（去年の今日を優先表示）・今月の表紙・マグネットカレンダーに加え、「暗室カウントダウン」（VIP 今夜現像の枚数と残り時間）もあるよ ✨'
             },
             {
               q: '「今夜現像」とは何ですか？',
@@ -440,8 +440,8 @@
             },
             {
               q: 'iCloud 同期と「クラウドフォルダに別保存」の違いは？',
-              kw: ['同期', 'icloud', '違い', 'クラウド', 'フォルダ', 'バックアップ', 'ファイル', 'パソコン'],
-              a: '・iCloud 同期（VIP）：iPhone と iPad の手帳をまるごと同期（写真・自作切り抜き・スタンプ・フィルター・壁テーマ）。\n・クラウドフォルダにもう 1 部保存（VIP）：保存のたびに iPhone の「ファイル」に見えるクラウドフォルダへ画像をコピー（追加アカウント不要）。PC 閲覧や別バックアップに便利！\n両方オンでも片方だけでも OK、機種変更の引っ越しはアーカイブ書き出しも使えます。'
+              kw: ['同期', 'icloud', '違い', 'クラウド', 'フォルダ', 'バックアップ', 'ファイル', 'パソコン', 'グレー'],
+              a: '・iCloud 同期（VIP）：iPhone と iPad の手帳をまるごと同期（写真・自作切り抜き・スタンプ・フィルター・壁テーマ）。\n・フォルダにもう 1 部保存（VIP）：保存のたびに iCloud Drive や「この iPhone 内」の選んだフォルダへ画像をコピー（先に MoriSnap フォルダを作ると便利・追加アカウント不要）。\n・ご注意：クラウドアプリによってはフォルダ選択非対応（グレー表示）のことがあります。その場合は iCloud Drive を選ぶか、写真詳細の共有から保存してね！'
             },
             {
               q: '共有手帳の削除権限・反映タイミング・退出したら？',
@@ -502,8 +502,8 @@
           items: [
             {
               q: '홈 화면(위젯)에 어떻게 추가하나요?',
-              kw: ['위젯', '홈 화면', '냉장고', '자석', '달력', '작년의 오늘'],
-              a: '앱을 한 번 연 뒤 홈 화면 빈 곳을 길게 누르기 → 왼쪽 위 \'＋\' → MoriSnap 검색! 냉장고 자석(\'작년의 오늘\' 우선 표시)·이달의 커버·자석 달력 3가지 크기가 있어요 ✨'
+              kw: ['위젯', '홈 화면', '냉장고', '자석', '달력', '작년의 오늘', '카운트다운'],
+              a: '앱을 한 번 연 뒤 홈 화면 빈 곳을 길게 누르기 → 왼쪽 위 \'＋\' → MoriSnap 검색! 냉장고 자석(\'작년의 오늘\' 우선 표시)·이달의 커버·자석 달력에 더해 \'암실 카운트다운\'(VIP 오늘 밤 현상 장수와 남은 시간 표시)도 있어요 ✨'
             },
             {
               q: '\'오늘 밤 현상\'은 무엇인가요?',
@@ -579,8 +579,8 @@
             },
             {
               q: 'iCloud 동기화와 클라우드 폴더 사본 저장의 차이는?',
-              kw: ['동기화', 'icloud', '차이', '클라우드', '폴더', '백업', '파일', '사본'],
-              a: '・iCloud 동기화(VIP): iPhone과 iPad 다이어리를 똑같이 맞춰줘요(사진·자작 누끼·스탬프·필터·벽 테마 포함).\n・클라우드 폴더 사본 저장(VIP): 카드를 저장할 때마다 iPhone \'파일\' 앱에 보이는 클라우드 폴더로 이미지를 한 장씩 복사해 줘요(별도 계정 설정 불필요). PC 보기나 추가 백업에 딱 좋아요!\n둘 다 켜거나 하나만 켜도 되고, 기기 변경 전체 이사는 아카이브 내보내기를 쓰면 돼요.'
+              kw: ['동기화', 'icloud', '차이', '클라우드', '폴더', '백업', '파일', '사본', '회색'],
+              a: '・iCloud 동기화(VIP): iPhone과 iPad 다이어리를 똑같이 맞춰줘요(사진·자작 누끼·스탬프·필터·벽 테마 포함).\n・폴더에 사본 저장(VIP): 카드를 저장할 때마다 iCloud Drive 또는 \'나의 iPhone\'의 선택한 폴더로 이미지를 복사해요(먼저 MoriSnap 폴더를 만들어 두면 좋아요・별도 가입 불필요).\n・참고: 일부 클라우드 앱은 폴더 선택을 지원하지 않아 회색으로 보일 수 있어요. 이때는 iCloud Drive를 쓰거나 사진 상세 화면에서 공유로 저장해 주세요!'
             },
             {
               q: '공유 다이어리 사진 삭제 · 반영 시점 · 나가면?',
