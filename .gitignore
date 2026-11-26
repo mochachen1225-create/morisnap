@@ -1,3 +1,3 @@
 # macOS Finder metadata & custom folder icons
 .DS_Store
-Icon?
+Icon[!a-zA-Z0-9_-]
