@@ -17,9 +17,9 @@
 <meta name="twitter:description" content="One tap to scrapbook, beat-synced movies, 1-sec cutout co-snap. Zero ads, no subscription. Join TestFlight Beta!">
 <meta name="twitter:image" content="https://mochachen1225-create.github.io/morisnap/assets/og-cover.jpg">
 <link rel="icon" type="image/png" href="assets/fox_happy.png">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
-<body>
+<body class="home-page">
 <main>
 <header>
   <div class="topbar">
@@ -560,9 +560,24 @@
 </section>
 </main>
 
+<!-- Mobile-only sticky TestFlight CTA bar -->
+<div class="mobile-sticky-bar" aria-label="Quick Beta Access">
+  <div class="mobile-sticky-left">
+    <img src="assets/fox_happy.png" alt="MoriSnap">
+    <span class="mobile-sticky-label" id="msb-label">MoriSnap 免費試玩</span>
+  </div>
+  <a class="mobile-sticky-btn" id="msb-btn" href="https://testflight.apple.com/join/1StVFFhe" target="_blank" rel="noopener">加入 TestFlight →</a>
+</div>
+
 <script>
 (function() {
   var valid = ['zh', 'en', 'ja', 'ko'];
+  var msbText = {
+    zh: ['MoriSnap 免費測試', '加入 TestFlight →'],
+    en: ['MoriSnap Free Beta', 'Join TestFlight →'],
+    ja: ['MoriSnap 無料ベータ', 'TestFlight 参加 →'],
+    ko: ['MoriSnap 무료 베타', 'TestFlight 참여 →']
+  };
   function detect() {
     var hash = location.hash.replace('#', '');
     if (valid.indexOf(hash) !== -1) return hash;
@@ -594,6 +609,12 @@
     document.querySelectorAll('.lang-btn').forEach(function(btn) {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+    var ml = document.getElementById('msb-label');
+    var mb = document.getElementById('msb-btn');
+    if (ml && mb && msbText[lang]) {
+      ml.textContent = msbText[lang][0];
+      mb.textContent = msbText[lang][1];
+    }
     if (updateHash) history.replaceState(null, '', '#' + lang);
   }
   document.querySelectorAll('.lang-btn').forEach(function(btn) {

@@ -1140,7 +1140,208 @@ footer {
   gap: 10px;
 }
 @media (max-width: 640px) {
-  .beta-box { flex-direction: column; align-items: flex-start; padding: 18px; }
+  .beta-box { flex-direction: column; align-items: center; text-align: center; padding: 18px 16px; gap: 12px; }
+  .beta-actions { justify-content: center; }
+}
+
+/* ===== Mobile-First Sticky Beta Bar & Ultra-Snappy Phone Layout ===== */
+.mobile-sticky-bar {
+  display: none;
+}
+@media (max-width: 680px) {
+  body.home-page main {
+    padding: 14px 13px 94px;
+  }
+  body.home-page header {
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  body.home-page .topbar {
+    gap: 8px;
+  }
+  body.home-page .lang-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  body.home-page .hero {
+    padding: 16px 15px 14px;
+    margin-bottom: 12px !important;
+    border-radius: 18px;
+    gap: 10px;
+  }
+  body.home-page .hero .badge {
+    font-size: 11.5px;
+    padding: 3px 10px;
+    margin-bottom: 6px;
+  }
+  body.home-page .hero h1 {
+    font-size: 21px;
+    line-height: 1.28;
+    margin-bottom: 5px;
+  }
+  body.home-page .hero .lead {
+    font-size: 13.5px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+  }
+  body.home-page .hero-fox {
+    display: none;
+  }
+  body.home-page .beta-cta {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  body.home-page .beta-hint {
+    font-size: 11.5px;
+    margin-top: 6px;
+  }
+  body.home-page .hero-sublinks {
+    justify-content: center;
+    margin-top: 8px;
+    gap: 4px 10px;
+    font-size: 12.5px;
+  }
+  body.home-page .hero-cinema {
+    margin: 10px 0 14px;
+    border-radius: 18px;
+  }
+  body.home-page .hero-cinema .cinema-badge {
+    left: 10px;
+    top: 10px;
+    font-size: 11px;
+    padding: 4px 9px;
+  }
+  body.home-page .bento-grid {
+    gap: 8px;
+    margin: 14px 0 16px;
+  }
+  body.home-page .bento-tile {
+    padding: 11px 11px 10px;
+    border-radius: 14px;
+  }
+  body.home-page .bento-num {
+    font-size: 15.5px;
+    margin-bottom: 2px;
+  }
+  body.home-page .bento-tile span {
+    font-size: 11.8px;
+    line-height: 1.38;
+  }
+  /* Single-row thumb-swipe video tabs on mobile */
+  .theater-wrap {
+    padding: 14px 13px 16px;
+    margin: 14px 0 18px;
+    border-radius: 18px;
+  }
+  .theater-tabs {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 7px;
+    padding: 2px 2px 6px;
+    margin: 10px 0 12px;
+  }
+  .theater-tabs::-webkit-scrollbar { display: none; }
+  .theater-tab {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+  .theater-info h3 {
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  .theater-info p {
+    font-size: 13.5px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .compare-grid {
+    gap: 10px;
+    margin: 16px 0 20px;
+  }
+  .compare-card {
+    padding: 15px 16px;
+    border-radius: 16px;
+  }
+  .compare-head h3 {
+    font-size: 16px;
+  }
+  .compare-list {
+    font-size: 13px;
+    gap: 5px;
+  }
+  /* Mobile-only frosted bottom sticky TestFlight bar */
+  .mobile-sticky-bar {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(10px + env(safe-area-inset-bottom));
+    z-index: 88;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 7px 8px 7px 13px;
+    border-radius: 999px;
+    background: rgba(255, 250, 243, .93);
+    border: 1.5px solid var(--wish-line);
+    box-shadow: 0 10px 26px rgba(72, 46, 26, .20);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .mobile-sticky-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+  }
+  .mobile-sticky-left img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  .mobile-sticky-label {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--ink);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mobile-sticky-btn {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 15px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d18653, #b56839);
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(181, 104, 57, .28);
+  }
+  /* Shift fox-bot FAB neatly above the sticky bar on home page */
+  body.home-page .foxbot-fab {
+    bottom: calc(70px + env(safe-area-inset-bottom));
+    right: 12px;
+    padding: 6px 11px 6px 8px;
+    font-size: 12.5px;
+  }
+  body.home-page .foxbot-fab img {
+    width: 24px;
+    height: 24px;
+  }
+  body.home-page .foxbot-drawer {
+    bottom: calc(120px + env(safe-area-inset-bottom));
+    right: 12px;
+  }
 }
 
 
