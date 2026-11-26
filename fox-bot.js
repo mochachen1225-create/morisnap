@@ -18,9 +18,14 @@
           label: '💳 價錢＆VIP',
           items: [
             {
-              q: '是訂閱制嗎？免費能用什麼？',
-              kw: ['錢', '價格', '訂閱', '免費', 'vip', '買斷', '廣告', '收費'],
-              a: '完全不是訂閱制，免費版也完全沒廣告、不限拍照張數！和 VIP 的差別只在「貼紙豐富度與進階功能」而已：免費就能拍照、錄 3 秒短片、寫手帳、用每類前 10 張插畫貼紙、當季免費節日貼紙，還能免費玩「共享手帳」。VIP 是「一次買斷終身用」，解鎖 1,000+ 貼紙、全部濾鏡風格、去浮水印、雙機同步和雲端資料夾備份！'
+              q: '是訂閱制嗎？VIP 1.0 有什麼？',
+              kw: ['錢', '價格', '訂閱', '免費', 'vip', '買斷', '廣告', '收費', '打孔', '色卡', '海報'],
+              a: '完全不是訂閱制，免費版也完全沒廣告、不限拍照張數！VIP 是「一次買斷終身用」，解鎖 1.0 全部 1,200+ 原創插畫貼紙與季節分類、特殊框（含打孔框）、自動色卡、日期字體、列印級畫質、月度拍立得牆海報、更多限動棉紙底、全部小電影風格、關閉浮水印與自訂印章、iCloud 個人雙機同步與雲端資料夾備份！'
+            },
+            {
+              q: '新貼紙和新功能怎麼來？要再付錢嗎？',
+              kw: ['更新', '新貼紙', '新功能', '再付費', '再付錢'],
+              a: '都透過 App Store 更新直接提供！買過終身 VIP 的人更新後會自動解鎖新內容，完全不需要再付錢 ✨'
             },
             {
               q: '換新手機／iPad 怎麼恢復 VIP？',
@@ -65,9 +70,24 @@
               a: '可以！編輯頁點「我的去背」就能在本機一秒把相簿照片變貼紙；點 ✏️ 就能打字或直接手寫塗鴉（iPad 支援 Apple Pencil），還能加上純白貼紙邊框！'
             },
             {
-              q: '小電影怎麼做？浮水印能關嗎？',
-              kw: ['電影', '回顧', '浮水印', 'reels', '音樂'],
-              a: '在手帳牆上方點小電影入口，選本週或本月、挑一種風格就會自動配音樂剪好，完全不用剪輯！右下角的小浮水印在免費版會保留，升級一次買斷 VIP 就能隨時關閉喔。'
+              q: '怎麼印出來（4×6 超商列印）？',
+              kw: ['列印', '超商', '印出來', '4x6', '虛線', '裁切', '畫質'],
+              a: '用「4×6 列印版」匯出，會自動留好 5mm 安全邊距不怕超商機器裁切到字，還能加上淡灰裁切虛線，剪下來剛好是一張卡片！搭配 VIP 列印級畫質印出來最清楚 ✨'
+            },
+            {
+              q: '很暗的地方也能拍嗎？',
+              kw: ['暗', '夜拍', '夜景', '晚上', '極光', '夜色', '黑'],
+              a: '可以！所有濾鏡都會自動判斷亮度，暗處按快門會自動連拍疊圖（拿穩約半秒就好）；「夜色極光」濾鏡更會收集約 2 秒微光，晚上也很好拍 🌙'
+            },
+            {
+              q: 'IG 限動和小電影怎麼分享？',
+              kw: ['電影', '回顧', '浮水印', 'reels', '音樂', '限動', 'ig', '靜音'],
+              a: '照片支援一鍵分享與自動棉紙底限動排版；1080p 每週／每月小電影也避開 IG 安全區，而且支援靜音輸出，到 IG 再配喜歡的音樂超方便！右下角小浮水印升級一次買斷 VIP 就能隨時關掉喔。'
+            },
+            {
+              q: '小狐狸是誰？',
+              kw: ['小狐狸', '狐狸', '吉祥物', '名字', '是誰'],
+              a: '就是我本人啦 🦊！我是 MoriSnap 的專屬吉祥物，名字就叫「小狐狸」～App 裡有 66 款我的日常貼紙，平常也在這個客服小站陪大家聊天解惑！'
             }
           ]
         },
@@ -97,9 +117,9 @@
           label: '🗑️ 誤刪救回＆排解',
           items: [
             {
-              q: '不小心刪掉照片救得回來嗎？',
-              kw: ['刪除', '刪掉', '誤刪', '復原', '救回', '不見'],
-              a: '別擔心！刪掉的照片會先躲在手帳牆上方選單的「最近刪除」裡保留 30 天，30 天內點開就能一鍵救回原本的手帳 ✨'
+              q: '換手機或不小心刪掉 App，照片還在嗎？',
+              kw: ['刪除', '刪掉', '誤刪', '復原', '救回', '不見', '換手機', '換機', '空間', '容量', 'mb'],
+              a: 'iPhone 的 iCloud 備份和換機移轉會帶走 MoriSnap 資料，「自動存到照片」也預設開啟，VIP 還可開 iCloud 同步。但「刪除 App 會刪掉裝置裡的手帳」，建議開著 iPhone iCloud 備份！若是單張誤刪，30 天內都能從「最近刪除」救回。空間方面一般每張約 0.5–1MB、VIP 列印級畫質約 2MB，在設定裡就能看用量與清理舊原圖喔！'
             },
             {
               q: '權限按到拒絕、沒聲音或 iPad 分割畫面卡住？',
@@ -138,9 +158,14 @@
           label: '💳 Pricing & VIP',
           items: [
             {
-              q: 'Is it a subscription? What is free?',
-              kw: ['price', 'cost', 'sub', 'subscription', 'free', 'vip', 'ad', 'ads'],
-              a: 'No subscription — and even the free version has zero ads and no photo limits! The only difference with VIP is extra sticker variety and pro features. Photos, 3-second clips, your photo diary, the first 10 stickers in every tab, current seasonal stickers, and Shared Albums are all free. VIP is a one-time lifetime unlock for 1,000+ stickers, all styles/filters, watermark removal, iPhone–iPad sync, and cloud folder auto-backup!'
+              q: 'Is it a subscription? What does 1.0 VIP include?',
+              kw: ['price', 'cost', 'sub', 'subscription', 'free', 'vip', 'ad', 'ads', 'poster', 'punch', 'palette'],
+              a: 'No subscription — and even Free has zero ads and unlimited photos! One-time lifetime VIP unlocks all 1,200+ illustrated stickers & seasonal packs, special frames (incl. punch frames), auto color palettes, date fonts, Print-Grade Quality, Monthly Polaroid Wall Posters, extra Story cotton papers, all movie styles, watermark toggle, private iCloud Sync & cloud folder backup!'
+            },
+            {
+              q: 'How do new stickers and features arrive?',
+              kw: ['update', 'new sticker', 'new feature', 'pay again'],
+              a: 'New stickers and features arrive through regular App Store updates. Lifetime VIP owners get all future updates automatically at zero extra cost ✨'
             },
             {
               q: 'How do I restore VIP on a new device?',
@@ -185,9 +210,14 @@
               a: 'Yes! Tap "My Cutouts" to lift a subject from your photo on-device in one tap. Tap ✏️ to type or doodle with Apple Pencil and add a crisp white border!'
             },
             {
-              q: 'How do weekly movies & watermarks work?',
-              kw: ['movie', 'recap', 'watermark', 'music'],
-              a: 'Open the movie button at the top of your album, choose Weekly or Monthly, and pick a style — zero editing needed! The small bottom-right watermark is kept on Free and can be toggled off anytime with one-time VIP.'
+              q: 'How do I print 4×6 cards or shoot in the dark?',
+              kw: ['print', '4x6', 'kiosk', 'cut', 'dark', 'night', 'aurora', 'low light'],
+              a: 'Use the 4×6 Print Sheet (5mm safe margins + optional dashed cut lines) so photo kiosks never crop your card — VIP Print-Grade Quality looks sharpest! For dark rooms, every filter auto-stacks a quick burst (~0.5s hold), and Night Aurora gathers ~2s of light 🌙'
+            },
+            {
+              q: 'How do IG Stories, 1080p movies & Little Fox work?',
+              kw: ['movie', 'recap', 'watermark', 'music', 'story', 'ig', 'mute', 'fox', 'mascot'],
+              a: 'Share in one tap or use our cotton-paper Story Layout; 1080p weekly/monthly movies respect IG safe zones and support muted export for IG music! And who am I? I\'m MoriSnap\'s mascot — simply named Little Fox (小狐狸) 🦊'
             }
           ]
         },
@@ -217,9 +247,9 @@
           label: '🗑️ Recovery & Fixes',
           items: [
             {
-              q: 'I deleted a photo by mistake!',
-              kw: ['delete', 'deleted', 'recover', 'restore', 'trash', 'lost'],
-              a: 'Don\'t worry! Deleted snaps stay in "Recently Deleted" (in the top album switcher) for 30 days so you can restore them in one tap ✨'
+              q: 'Switching phones, deleting the app, or storage size?',
+              kw: ['delete', 'deleted', 'recover', 'restore', 'trash', 'lost', 'switch', 'storage', 'space', 'mb'],
+              a: 'iPhone iCloud Backup & Quick Start carry MoriSnap over, Auto-Save to Photos is ON by default, and VIP adds iCloud Sync. Deleting the app deletes local diary data, so keep iCloud Backup on (single deleted photos stay in Recently Deleted for 30 days!). Standard cards are ~0.5–1MB (~2MB for VIP Print-Grade Quality), and Settings → Storage lets you clear old originals.'
             },
             {
               q: 'Permissions denied, no sound, or iPad Split View?',
@@ -258,9 +288,9 @@
           label: '💳 料金・VIP',
           items: [
             {
-              q: 'サブスクですか？無料でどこまで使える？',
-              kw: ['料金', '値段', 'サブスク', '無料', 'vip', '買い切り', '広告'],
-              a: 'サブスクではなく、無料版も広告ゼロ・撮影枚数無制限！VIP との違いは「ステッカーの豊富さと便利機能」だけです。写真・3秒動画・個人手帳・各カテゴリ最初の10種ステッカー・季節の無料ステッカー・共有手帳は全部無料。VIP は一度きりの買い切りで、1,000種以上の全ステッカー、全スタイル、透かし非表示、iPhone／iPad 同期などが解放されます！'
+              q: 'サブスクですか？VIP の内容とアップデートは？',
+              kw: ['料金', '値段', 'サブスク', '無料', 'vip', '買い切り', '広告', 'アップデート', 'ポスター'],
+              a: 'サブスクではなく一度きりの買い切り（無料版も広告ゼロ）！VIP は 1,200 種以上の全ステッカー、パンチ穴枠・自動カラーパレット・日付フォント・プリント画質・月間ポスター・追加のストーリー棉紙・iCloud 同期などを永久解放。新ステッカーや機能は App Store 更新で届き、VIP の方は追加料金なしで自動追加されます ✨'
             },
             {
               q: '機種変更や iPad で VIP を復元するには？',
@@ -305,9 +335,9 @@
               a: 'できるよ！編集画面の「マイ切り抜き」で端末内ですぐ切り抜きステッカーが作れて、✏️ ボタンで文字や手書き（Apple Pencil 対応）も白いフチ付きで貼れます！'
             },
             {
-              q: 'ムービーの作り方と透かしの消し方は？',
-              kw: ['ムービー', '透かし', 'ウォーターマーク', '音楽'],
-              a: '手帳画面の上からムービーを開いて週／月とスタイルを選ぶだけで、BGM 付きショートムービーが完成！右下の小さな透かしは VIP 買い切りでいつでもオフにできます。'
+              q: '4×6 印刷・暗い場所の撮影・IG ストーリーと子ぎつね',
+              kw: ['ムービー', '透かし', '音楽', '印刷', 'プリント', '暗い', '夜景', 'ストーリー', '無音', '子ぎつね', '誰'],
+              a: '4×6 プリント用は 5mm 安全余白＋切り取り点線つき！暗い場所では全フィルターが自動連写（約0.5秒）、夜色オーロラは約2秒で明るく撮れます🌙 ストーリー用棉紙レイアウト＆ 1080p ムービー（無音書き出し対応）も完備。そしてぼくは公式マスコットの「子ぎつね（小狐狸）」だよ 🦊'
             }
           ]
         },
@@ -337,9 +367,9 @@
           label: '🗑️ 復元・困ったとき',
           items: [
             {
-              q: '間違えて写真を消してしまった！',
-              kw: ['消した', '削除', '戻す', '復元', 'ゴミ箱'],
-              a: '大丈夫！消した写真は手帳メニューの「最近削除した項目」に 30 日間残っているので、ワンタップで元に戻せるよ ✨'
+              q: '機種変更・アプリ削除・スマホの容量は大丈夫？',
+              kw: ['消した', '削除', '戻す', '復元', 'ゴミ箱', '機種変更', '容量', 'ストレージ', 'mb'],
+              a: 'iPhone の iCloud バックアップや移行で引き継がれ、写真アプリへの自動保存も初期オンです。アプリ自体を削除すると端末内の手帳も消えるので iCloud バックアップ推奨（単体削除は 30 日間復元可）。容量は通常 0.5〜1MB／プリント画質約 2MB で、設定から元データの整理もできます！'
             },
             {
               q: '許可をオフにした・音が出ない・iPad 分割画面で止まる',
@@ -378,9 +408,9 @@
           label: '💳 요금 & VIP',
           items: [
             {
-              q: '구독제인가요? 무료로 어디까지 쓸 수 있나요?',
-              kw: ['가격', '요금', '구독', '무료', 'vip', '광고', '결제'],
-              a: '구독제도 아니고 무료 버전도 광고 전혀 없음·촬영 횟수 무제한이에요! VIP와의 차이는 \'스티커의 풍부함과 편의 기능\'뿐이에요. 사진·3초 영상·개인 다이어리·모든 탭 기본 10종 스티커·계절 무료 스티커·공유 다이어리가 모두 무료! VIP는 평생 1회 구매로 1,000+ 스티커, 전체 스타일, 워터마크 숨기기, iPhone·iPad 동기화까지 다 열려요!'
+              q: '구독제인가요? VIP 혜택과 업데이트는요?',
+              kw: ['가격', '요금', '구독', '무료', 'vip', '광고', '결제', '업데이트', '포스터'],
+              a: '구독제가 아닌 평생 1회 구매(무료도 광고 0)! VIP는 1,200+ 전체 스티커·펀치 프레임·자동 컬러 팔레트·날짜 폰트·인화급 화질·월간 포스터·추가 스토리 코튼지·iCloud 동기화 등을 모두 해제해요. 새 스티커와 기능은 App Store 업데이트로 제공되며 VIP는 추가 결제 없이 자동 적용됩니다 ✨'
             },
             {
               q: '새 기기나 iPad에서 VIP를 어떻게 복원하나요?',
@@ -425,9 +455,9 @@
               a: '네! 편집 화면의 \'내 누끼\'로 기기 안에서 바로 1초 누끼 스티커를 만들고, ✏️ 버튼으로 글씨나 손글씨(iPad Apple Pencil 지원)도 흰 테두리와 함께 붙여요!'
             },
             {
-              q: '주간 영상 만들기와 워터마크 끄기는요?',
-              kw: ['주간', '영상', '워터마크', '음악', '영화'],
-              a: '다이어리 위쪽 영상 버튼을 눌러 주간/월간과 스타일만 고르면 음악까지 자동 완성! 오른쪽 아래 작은 워터마크는 VIP 1회 구매 후 설정에서 언제든 끌 수 있어요.'
+              q: '4×6 인화 · 야간 촬영 · IG 스토리 공유 · 아기 여우 소개',
+              kw: ['주간', '영상', '워터마크', '음악', '영화', '인화', '출력', '어두운', '야간', '스토리', '무음', '여우', '누구'],
+              a: '4×6 인화용은 5mm 안전 여백＋자르기 점선으로 깔끔하게 출력! 어두운 곳에선 모든 필터가 자동 연사(~0.5초), 밤빛 오로라는 ~2초 집광 촬영을 지원해요 🌙 코튼지 스토리 레이아웃 & 1080p 영상(무음 내보내기 지원)도 완비! 그리고 나는 MoriSnap 공식 마스코트 \'아기 여우(小狐狸)\'야 🦊'
             }
           ]
         },
@@ -457,9 +487,9 @@
           label: '🗑️ 복구 & 문제 해결',
           items: [
             {
-              q: '실수로 사진을 지워버렸어요!',
-              kw: ['삭제', '지웠', '복구', '휴지통', '사라졌'],
-              a: '걱정 마세요! 지운 사진은 다이어리 상단 메뉴의 \'최근 삭제된 항목\'에 30일간 안전하게 보관돼서 한 번에 복원할 수 있어요 ✨'
+              q: '기기 변경 · 앱 삭제 · 저장 공간이 궁금해요',
+              kw: ['삭제', '지웠', '복구', '휴지통', '사라졌', '기기', '용량', '공간', 'mb'],
+              a: 'iPhone iCloud 백업과 기기 이동으로 데이터가 함께 옮겨지며 \'사진 앱 자동 저장\'도 기본 켜짐이에요. 단, 앱을 삭제하면 기기 내 다이어리도 삭제되니 iCloud 백업을 켜두세요(개별 삭제는 30일간 복구 가능). 용량은 일반 0.5~1MB / 인화급 약 2MB이며 설정에서 오래된 원본만 정리할 수 있어요!'
             },
             {
               q: '권한 거부 / 영상 무음 / iPad 분할 화면 멈춤',
