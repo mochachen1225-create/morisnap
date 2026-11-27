@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mochachen1225-create.github.io/morisnap/sitemap.xml
