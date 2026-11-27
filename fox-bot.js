@@ -54,14 +54,14 @@
               a: '在手帳牆（或月曆裡點進某一天）直接點一下卡片，就能全螢幕放大檢視（微短片會自動循環播放）！\n如果那天拍了超過 1 張且開著「依天收合」，先點疊牌展開當天全部卡片，再點單張就會打開。\n點開後可以：\n・左右滑動翻看上一張／下一張\n・點上方「日期」補改拍攝日期（卡片上的日期也會一起更新！）\n・點「📍 城市」手動補選城市\n・點上方手帳名稱，把照片移進「共享手帳」\n・底部可一鍵發限動、4×6 列印、下載到「照片」App 或刪除 ✨'
             },
             {
-              q: '怎麼切換桌面 App Icon（圖示）？12 款季節圖示怎麼解鎖？',
-              kw: ['icon', '圖示', '換icon', '切換icon', '桌面圖示', '季節圖示', '自動換季', '櫻花', '楓葉', '下雪', '聖誕', '新年', '帥氣'],
-              a: '換桌面圖示步驟：\n① 進入手帳牆 → 點右上角「⚙️ 設定」（VIP 是 👑 皇冠圖示）\n② 往下滑到「App 圖示」區塊，就能在「復古皮革相機」與「小狐狸」兩種風格、共 12 款季節圖示之間自由點選切換！\n・經典 2 款免費隨時換；5 大季節款當季免費開放（櫻花 3–4 月、楓葉 10–11 月、下雪 12–2 月、聖誕 12/1–12/31、新年 12/26–2/15），VIP 全年 12 款隨時換。\n・也可打開「跟著季節自動換」讓它隨日期自動換裝。\n・備註：換圖示時 iPhone 會跳出一則系統提示，這是 iOS 的規定；帥氣極簡深色金屬相機系列也將在後續更新登場 🖤'
+              q: '怎麼切換桌面 App Icon（圖示）？18 款專屬圖示怎麼解鎖？',
+              kw: ['icon', '圖示', '換icon', '切換icon', '桌面圖示', '季節圖示', '自動換季', '櫻花', '楓葉', '下雪', '聖誕', '新年', '帥氣', '曜石黑鈦', '金屬'],
+              a: '換桌面圖示步驟：\n① 進入手帳牆 → 點右上角「⚙️ 設定」（VIP 是 👑 皇冠圖示）\n② 往下滑到「App 圖示」區塊，就能在「復古皮革相機」「萌系小狐狸」「極簡金屬相機」3 種風格、共 18 款專屬圖示之間自由切換！\n・經典 3 款（經典鼠尾草、經典奶油小狐狸、曜石黑鈦）免費隨時換；5 大季節款當季免費開放（櫻花 3–4 月、楓葉 10–11 月、下雪 12–2 月、聖誕 12/1–12/31、新年 12/26–2/15），VIP 全年 18 款（12 季節＋6 金屬極簡）全部隨心換。\n・也可打開「跟著季節自動換」讓它隨日期自動換裝。（換圖示時 iPhone 會跳出一則系統提示，這是 iOS 的正常規定 🖤）'
             },
             {
               q: '怎麼切換版面、牆面背景與外觀風格（森林文青／極簡深色）？',
               kw: ['牆面', '牆面風格', '背景', '底紙', '背景照', '牛皮紙', '方格', '深色', '主題', '切換版面', '版面', '外觀風格', '極簡深色', '森林文青', '簡約風格'],
-              a: '多種版面與風格隨你切：\n① 手帳牆排列版面：點上方左側月份選單（📅 ▾），自由切「依天收合」「全部攤開」或「月曆頁」。\n② 牆面背景風格：點右上「⋯（更多）」→「展示牆面風格」，可換奶油棉紙、牛皮紙、方格筆記、午夜書桌，VIP 也能自訂背景照。\n③ 四格／限動版面：四格可切 1×4 與 2×2；限動有 9 色棉紙一鍵換裝。\n④ 外觀風格（1.1 免費更新即將登場）：到「設定 › 外觀風格」可一鍵切「極簡深色（Minimal Dark）」，自動連動霧黑介面、酷感濾鏡與極簡貼紙，切回森林文青立即恢復 🎨'
+              a: '多種版面與風格隨你切：\n① 手帳牆排列版面：點上方左側月份選單（📅 ▾），自由切「依天收合」「全部攤開」或「月曆頁」。\n② 牆面背景風格：點右上「⋯（更多）」→「展示牆面風格」，可換奶油棉紙、牛皮紙、方格筆記、午夜書桌，VIP 也能自訂背景照。\n③ 四格／限動版面：四格可切 1×4 與 2×2；限動有 9 色棉紙一鍵換裝。\n④ 外觀風格（免費內建）：到「設定 › 外觀風格」即可免費一鍵切「極簡深色（Minimal Dark）」，自動連動霧黑介面、酷感濾鏡與極簡貼紙，切回森林文青立即恢復 🎨'
             }
           ]
         },
@@ -211,7 +211,7 @@
             {
               q: '是訂閱制嗎？VIP 1.0 有什麼？更新要再付錢嗎？',
               kw: ['錢', '價格', '訂閱', '免費', 'vip', '買斷', '廣告', '收費', '更新', '新貼紙', '新功能'],
-              a: '完全不是訂閱制，免費版也零廣告、不限張數！VIP 是「一次買斷終身用」，解鎖 1.0 全部 1,200+ 貼紙與季節分類、26 款日期貼紙、12 顆戳印、打孔框、自動色卡、日期字體、列印級畫質、今晚才顯影、足跡地圖、月度海報、9 色限動、全部小電影風格、關閉浮水印、全年 12 款季節圖示、iCloud 雙機同步與雲端資料夾備份——之後 App Store 更新加的新素材也完全免費自動解鎖 ✨'
+              a: '完全不是訂閱制，免費版也零廣告、不限張數！VIP 是「一次買斷終身用」，解鎖 1.0 全部 1,200+ 貼紙與季節分類、26 款日期貼紙、12 顆戳印、打孔框、自動色卡、日期字體、列印級畫質、今晚才顯影、足跡地圖、月度海報、9 色限動、全部小電影風格、關閉浮水印、全年 18 款專屬圖示（12 季節＋6 金屬極簡）、iCloud 雙機同步與雲端資料夾備份——之後 App Store 更新加的新素材也完全免費自動解鎖 ✨'
             },
             {
               q: '換新手機／iPad 怎麼恢復 VIP？怎麼申請退款？',
@@ -267,13 +267,13 @@
             },
             {
               q: 'How do I change the Home Screen App Icon?',
-              kw: ['icon', 'app icon', 'change icon', 'switch icon', 'seasonal icon', 'sakura', 'maple', 'snow', 'christmas', 'new year', 'minimal'],
-              a: 'To switch your App Icon:\n① Open the Journal Wall → tap ⚙️ Settings at the top-right (👑 crown if you\'re VIP)\n② Scroll to the "App Icon" section to pick from 12 icons across Vintage Leather Camera & Little Fox!\n• The 2 Classic icons are free anytime; 5 seasonal icons unlock free in season (Sakura Mar–Apr, Maple Oct–Nov, Snow Dec–Feb, Christmas Dec 1–31, New Year Dec 26–Feb 15), and VIP unlocks all 12 year-round.\n• Toggle "Change with the seasons" for automatic seasonal icon swaps. (iOS always displays a brief confirmation alert when any app changes its icon; sleek metallic dark camera icons are also arriving in an upcoming update 🖤)'
+              kw: ['icon', 'app icon', 'change icon', 'switch icon', 'seasonal icon', 'sakura', 'maple', 'snow', 'christmas', 'new year', 'minimal', 'obsidian', 'metallic'],
+              a: 'To switch your App Icon:\n① Open the Journal Wall → tap ⚙️ Settings at the top-right (👑 crown if you\'re VIP)\n② Scroll to the "App Icon" section to pick from 18 icons across Vintage Leather Camera, Little Fox & Metallic Minimalist Camera!\n• 3 Classic icons (Sage Camera, Cream Fox & Obsidian Titanium) are free anytime; 5 seasonal icons unlock free in season (Sakura Mar–Apr, Maple Oct–Nov, Snow Dec–Feb, Christmas Dec 1–31, New Year Dec 26–Feb 15), and VIP unlocks all 18 year-round.\n• Toggle "Change with the seasons" for automatic seasonal icon swaps. (iOS always displays a brief confirmation alert when any app changes its icon 🖤)'
             },
             {
               q: 'How do I switch layouts, wall backgrounds & app appearance styles?',
               kw: ['wall style', 'background', 'theme', 'paper', 'kraft', 'grid', 'dark', 'custom background', 'layout', 'switch layout', 'appearance', 'minimal dark', 'forest'],
-              a: 'Switch layouts & styles anytime:\n① Wall layout: Tap the top-left month pill (📅 ▾) to switch between Stack by Day, Show Every Photo, and Calendar.\n② Wall background: Tap "⋯ (More)" → "Wall Style" for Cream Paper, Kraft, Grid, Midnight Desk, or a custom photo (VIP).\n③ 4-Cut & Story layouts: Toggle 1×4 vs. 2×2 in 4-Cut, or shuffle 9 cotton-paper Story layouts in one tap.\n④ Appearance Style (Coming free in 1.1): Settings › Appearance will add a one-tap switch between Warm Forest and Minimal Dark with matching dark UI, editorial filters & minimal stickers 🎨'
+              a: 'Switch layouts & styles anytime:\n① Wall layout: Tap the top-left month pill (📅 ▾) to switch between Stack by Day, Show Every Photo, and Calendar.\n② Wall background: Tap "⋯ (More)" → "Wall Style" for Cream Paper, Kraft, Grid, Midnight Desk, or a custom photo (VIP).\n③ 4-Cut & Story layouts: Toggle 1×4 vs. 2×2 in 4-Cut, or shuffle 9 cotton-paper Story layouts in one tap.\n④ Appearance Style (Included free): Go to Settings › Appearance for a one-tap switch between Warm Forest and Minimal Dark with matching dark UI, editorial filters & minimal stickers 🎨'
             }
           ]
         },
@@ -418,7 +418,7 @@
             {
               q: 'Is it a subscription? What does 1.0 VIP include & how do updates work?',
               kw: ['price', 'cost', 'sub', 'subscription', 'free', 'vip', 'ad', 'ads', 'update', 'new sticker'],
-              a: 'No subscription — and even Free has zero ads and unlimited photos! One-time lifetime VIP unlocks all 1,200+ illustrated stickers & seasonal packs, all 26 date stickers, all 12 mood stamps, punch frames, auto color palettes, date fonts, Print-Grade Quality, Develop Tonight, Footprint Map, Monthly Wall Posters, 9 Story cotton papers, all movie styles, watermark toggle, all 12 seasonal icons year-round, private iCloud Sync & cloud folder backup — plus future App Store update additions at zero extra cost ✨'
+              a: 'No subscription — and even Free has zero ads and unlimited photos! One-time lifetime VIP unlocks all 1,200+ illustrated stickers & seasonal packs, all 26 date stickers, all 12 mood stamps, punch frames, auto color palettes, date fonts, Print-Grade Quality, Develop Tonight, Footprint Map, Monthly Wall Posters, 9 Story cotton papers, all movie styles, watermark toggle, all 18 custom icons (12 seasonal + 6 metallic) year-round, private iCloud Sync & cloud folder backup — plus future App Store update additions at zero extra cost ✨'
             },
             {
               q: 'How do I restore VIP or request a refund?',
@@ -469,13 +469,13 @@
             },
             {
               q: 'ホーム画面のアプリアイコンはどうやって変えるの？',
-              kw: ['アイコン', 'icon', 'アプリアイコン', '変更', '着せ替え', '季節', '自動', '桜', '紅葉', '雪', 'クリスマス', 'お正月'],
-              a: 'アイコン変更の手順：\n① 手帳ウォール右上「⚙️ 設定」（VIP は 👑 王冠アイコン）を開く\n② 下へスクロールして「アプリアイコン」から、レトロ革カメラ＆子ぎつねの計 12 種をワンタップで切り替え！\n・定番 2 種はいつでも無料。5 つの季節アイコンはその季節に無料解放（さくら 3–4 月・もみじ 10–11 月・ゆき 12–2 月・クリスマス 12/1–12/31・お正月 12/26–2/15）、VIP は年中 12 種すべて使えます。\n・「季節にあわせて自動で変更」もオンにできるよ。（変更時に iOS の短い確認通知が出るのは iPhone の仕様です。クール金属レザー系も今後のアップデートで登場予定 🖤）'
+              kw: ['アイコン', 'icon', 'アプリアイコン', '変更', '着せ替え', '季節', '自動', '桜', '紅葉', '雪', 'クリスマス', 'お正月', '黒曜', '金属'],
+              a: 'アイコン変更の手順：\n① 手帳ウォール右上「⚙️ 設定」（VIP は 👑 王冠アイコン）を開く\n② 下へスクロールして「アプリアイコン」から、レトロ革カメラ・子ぎつね・クール金属カメラの計 18 種をワンタップで切り替え！\n・定番 3 種（定番セージ革カメラ・定番クリーム子ぎつね・黒曜チタン）はいつでも無料。5 つの季節アイコンはその季節に無料解放（さくら 3–4 月・もみじ 10–11 月・ゆき 12–2 月・クリスマス 12/1–12/31・お正月 12/26–2/15）、VIP は年中 18 種すべて使えます。\n・「季節にあわせて自動で変更」もオンにできるよ。（変更時に iOS の短い確認通知が出るのは iPhone の仕様です 🖤）'
             },
             {
-              q: 'レイアウト・背景テーマ・外観スタイル（森の文青／ミニマルダーク）の切替は？',
+              q: 'レイアウト・背景テーマ・外観スタイル（森の紙モノ／ミニマルダーク）の切替は？',
               kw: ['背景', '背景テーマ', '壁テーマ', '紙', 'クラフト', '方眼', 'ダーク', 'レイアウト', '切替', '外観スタイル', 'ミニマルダーク'],
-              a: '自由に切り替えられます：\n① 手帳ウォール表示：左上部の月メニュー（📅 ▾）で「日ごとにまとめる」「すべて広げる」「カレンダー」を切替。\n② 背景テーマ：右上「⋯（その他）」→「背景テーマ」でクリーム紙・クラフト・方眼・ミッドナイトデスクへ（VIP は背景写真も可）。\n③ 4 カット／ストーリー：1×4 と 2×2 切替、9 色棉紙レイアウト着せ替え。\n④ 外観スタイル（1.1 無料予定）：「設定 › 外観スタイル」で無料のミニマルダークへ一括切替し、ダーク画面・フィルター・ミニマルステッカーが連動します 🎨'
+              a: '自由に切り替えられます：\n① 手帳ウォール表示：左上部の月メニュー（📅 ▾）で「日ごとにまとめる」「すべて広げる」「カレンダー」を切替。\n② 背景テーマ：右上「⋯（その他）」→「背景テーマ」でクリーム紙・クラフト・方眼・ミッドナイトデスクへ（VIP は背景写真も可）。\n③ 4 カット／ストーリー：1×4 と 2×2 切替、9 色棉紙レイアウト着せ替え。\n④ 外観スタイル（無料標準搭載）：「設定 › 外観スタイル」から無料のミニマルダークへ一括切替し、ダーク画面・フィルター・ミニマルステッカーが連動します 🎨'
             }
           ]
         },
@@ -620,7 +620,7 @@
             {
               q: 'サブスクですか？VIP の内容とアップデートは？',
               kw: ['料金', '値段', 'サブスク', '無料', 'vip', '買い切り', '広告', 'アップデート'],
-              a: 'サブスクではなく一度きりの買い切り（無料版も広告ゼロ）！VIP は 1,200 種以上の全ステッカー、26 種日付ステッカー、気分スタンプ全 12 種、パンチ枠・自動カラーパレット・日付フォント・プリント画質・今夜現像・足あとマップ・月間ポスター・12 種季節アイコン年中自由・iCloud 個人同期などを永久解放。今後のアップデートも追加料金なしです ✨'
+              a: 'サブスクではなく一度きりの買い切り（無料版も広告ゼロ）！VIP は 1,200 種以上の全ステッカー、26 種日付ステッカー、気分スタンプ全 12 種、パンチ枠・自動カラーパレット・日付フォント・プリント画質・今夜現像・足あとマップ・月間ポスター・全 18 種専用アイコン（季節 12 種＋金属 6 種）年中自由・iCloud 個人同期などを永久解放。今後のアップデートも追加料金なしです ✨'
             },
             {
               q: 'VIP の復元や返金について',
@@ -670,14 +670,14 @@
               a: '다이어리 벽(또는 캘린더에서 연 날짜)에서 카드를 한 번 누르면 전체 화면으로 열려요(3초 영상은 자동 반복 재생). "날짜별로 모아 보기" 상태에서 여러 장이 겹쳐 있으면 먼저 묶음을 눌러 펼친 뒤 카드를 골라줘.\n열린 화면에서는:\n・좌우 스와이프로 이전·다음 사진 넘기기\n・위쪽 "날짜"를 눌러 촬영 날짜 수정(카드 인쇄 날짜도 함께 갱신!)\n・"📍 도시"에서 도시 수동 선택\n・다이어리 이름을 눌러 공유 다이어리로 이동\n・아래에서 스토리 공유, 4×6 인화, 사진 앱 저장, 삭제 가능 ✨'
             },
             {
-              q: '홈 화면 앱 아이콘은 어떻게 바꾸나요? 12종 시즌 아이콘 안내',
-              kw: ['아이콘', 'icon', '앱 아이콘', '변경', '바꾸기', '계절', '자동 변경', '벚꽃', '단풍', '눈', '크리스마스', '새해'],
-              a: '앱 아이콘 바꾸는 법:\n① 다이어리 벽 오른쪽 위 "⚙️ 설정"(VIP는 👑 왕관 아이콘) 열기\n② 아래로 내려 "앱 아이콘"에서 빈티지 가죽 카메라 & 아기 여우 총 12종 중 원하는 아이콘을 탭!\n・클래식 2종은 평생 무료, 5가지 시즌 아이콘은 해당 계절에 무료 개방(벚꽃 3–4월·단풍 10–11월·눈 12–2월·크리스마스 12/1–12/31·새해 12/26–2/15), VIP는 1년 내내 12종 전부 자유 전환.\n・"계절에 맞춰 자동 변경"도 켤 수 있어요. (변경 시 iPhone 안내창이 뜨는 건 iOS 규칙이며, 시크 메탈 다크 카메라 라인도 곧 업데이트로 찾아올 예정이야 🖤)'
+              q: '홈 화면 앱 아이콘은 어떻게 바꾸나요? 18종 아이콘 안내',
+              kw: ['아이콘', 'icon', '앱 아이콘', '변경', '바꾸기', '계절', '자동 변경', '벚꽃', '단풍', '눈', '크리스마스', '새해', '옵시디언', '메탈'],
+              a: '앱 아이콘 바꾸는 법:\n① 다이어리 벽 오른쪽 위 "⚙️ 설정"(VIP는 👑 왕관 아이콘) 열기\n② 아래로 내려 "앱 아이콘"에서 빈티지 가죽 카메라·아기 여우·시크 메탈 카메라 총 18종 중 원하는 아이콘을 탭!\n・기본 3종(세이지 카메라·크림 아기 여우·옵시디언 티타늄)은 평생 무료, 5가지 시즌 아이콘은 해당 계절에 무료 개방(벚꽃 3–4월·단풍 10–11월·눈 12–2월·크리스마스 12/1–12/31·새해 12/26–2/15), VIP는 1년 내내 18종 전부 자유 전환.\n・"계절에 맞춰 자동 변경"도 켤 수 있어요. (변경 시 iPhone 안내창이 뜨는 건 iOS 규칙이야 🖤)'
             },
             {
               q: '레이아웃 · 배경 테마 · 화면 스타일(숲 감성 / 미니멀 다크) 전환 방법',
               kw: ['배경', '배경 테마', '벽 테마', '종이', '크래프트', '모눈', '다크', '레이아웃', '전환', '화면 스타일', '미니멀 다크'],
-              a: '원하는 대로 바꿀 수 있어:\n① 다이어리 벽 보기: 왼쪽 위 월 메뉴(📅 ▾)에서 날짜별로 모아 보기 / 모두 펼쳐 보기 / 캘린더 전환.\n② 배경 테마: 오른쪽 위 "⋯(더 보기)" → "배경 테마"에서 크림 종이·크래프트·모눈·미드나잇 데스크 선택(VIP는 내 사진 배경도 가능).\n③ 네컷·스토리 레이아웃: 1×4 / 2×2 전환 및 9가지 코튼지 레이아웃 원탭 교체.\n④ 화면 스타일(1.1 무료 예정): "설정 › 화면 스타일"에서 무료 미니멀 다크로 원탭 전환하면 다크 UI와 시크 필터·미니멀 스티커가 함께 연동돼 🎨'
+              a: '원하는 대로 바꿀 수 있어:\n① 다이어리 벽 보기: 왼쪽 위 월 메뉴(📅 ▾)에서 날짜별로 모아 보기 / 모두 펼쳐 보기 / 캘린더 전환.\n② 배경 테마: 오른쪽 위 "⋯(더 보기)" → "배경 테마"에서 크림 종이·크래프트·모눈·미드나잇 데스크 선택(VIP는 내 사진 배경도 가능).\n③ 네컷·스토리 레이아웃: 1×4 / 2×2 전환 및 9가지 코튼지 레이아웃 원탭 교체.\n④ 화면 스타일(무료 기본 지원): "설정 › 화면 스타일"에서 무료로 미니멀 다크로 원탭 전환하면 다크 UI와 시크 필터·미니멀 스티커가 함께 연동돼 🎨'
             }
           ]
         },
@@ -822,7 +822,7 @@
             {
               q: '구독제인가요? VIP 혜택과 업데이트는요?',
               kw: ['가격', '요금', '구독', '무료', 'vip', '광고', '결제', '업데이트'],
-              a: '구독제가 아닌 평생 1회 구매(무료도 광고 0)! VIP는 1,200+ 전체 스티커·26종 날짜 스티커·기분 도장 12종·펀치 프레임·자동 컬러 팔레트·날짜 폰트·인화급 화질·오늘 밤 현상·발자국 지도·월간 포스터·12종 계절 아이콘 연중 자유·iCloud 개인 동기화 등을 모두 해제해요. 이후 업데이트도 추가 결제 없이 자동 적용됩니다 ✨'
+              a: '구독제가 아닌 평생 1회 구매(무료도 광고 0)! VIP는 1,200+ 전체 스티커·26종 날짜 스티커·기분 도장 12종·펀치 프레임·자동 컬러 팔레트·날짜 폰트·인화급 화질·오늘 밤 현상·발자국 지도·월간 포스터·전용 아이콘 18종(계절 12종＋메탈 6종) 연중 자유·iCloud 개인 동기화 등을 모두 해제해요. 이후 업데이트도 추가 결제 없이 자동 적용됩니다 ✨'
             },
             {
               q: 'VIP 복원과 환불은 어떻게 하나요?',
