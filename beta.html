@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MoriSnap — 15 秒領取 TestFlight 搶先體驗</title>
-<meta name="description" content="15 秒領取 MoriSnap iOS 搶先體驗：0 廣告、不訂閱、免註冊帳號，文青安靜風與極簡深色一鍵切換，回饋就送正式版永久免費 VIP 兌換碼。">
+<title>MoriSnap — 10 秒領取 TestFlight 搶先體驗</title>
+<meta name="description" content="10 秒填信箱領取 MoriSnap iOS 搶先體驗：0 廣告、不訂閱、免註冊帳號，文青安靜風與極簡深色一鍵切換，回饋就送正式版永久免費 VIP 兌換碼。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="MoriSnap — Request iOS TestFlight Beta in 15 Seconds">
-<meta property="og:description" content="Zero ads, no subscription, no account needed. Pick what you want to capture and request your Apple TestFlight invite in 15 seconds.">
+<meta property="og:title" content="MoriSnap — Request iOS TestFlight Beta in 10 Seconds">
+<meta property="og:description" content="Zero ads, no subscription, no account needed. Pick what you want to capture and enter your email in 10 seconds to get your Apple TestFlight invite.">
 <meta property="og:image" content="https://mochachen1225-create.github.io/morisnap/assets/og-cover.jpg">
 <meta property="og:url" content="https://mochachen1225-create.github.io/morisnap/beta.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/icons/favicon.png">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=18">
+<link rel="stylesheet" href="style.css?v=19">
 <style>
   main.beta-main {
     max-width: 640px;
@@ -137,19 +137,31 @@
   }
   .beta-input {
     width: 100%;
-    padding: 11px 14px;
+    padding: 12px 14px;
     border-radius: 12px;
-    border: 1px solid var(--line);
+    border: 1.5px solid var(--line);
     background: #fff;
     color: var(--ink);
     font: inherit;
-    font-size: 14px;
-    margin-bottom: 16px;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
   .beta-input:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(200, 135, 90, .16);
+    box-shadow: 0 0 0 3px rgba(200, 135, 90, .18);
+  }
+  .beta-input-opt {
+    font-size: 13.8px;
+    border-width: 1px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+  }
+  .beta-honey {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
   }
   .beta-primary-btn {
     display: flex;
@@ -168,39 +180,61 @@
     text-decoration: none;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(179, 92, 52, .28);
-    transition: transform .12s ease, box-shadow .12s ease;
+    transition: transform .12s ease, box-shadow .12s ease, opacity .15s ease;
   }
-  .beta-primary-btn:hover {
+  .beta-primary-btn:hover:not(:disabled) {
     transform: translateY(-1px);
     box-shadow: 0 10px 24px rgba(179, 92, 52, .34);
   }
-  .beta-copy-row {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    align-items: center;
+  .beta-primary-btn:disabled {
+    opacity: .68;
+    cursor: wait;
   }
-  .beta-copy-btn {
-    appearance: none;
-    width: 100%;
-    padding: 10px 14px;
-    border-radius: 12px;
-    border: 1px dashed #d3bfa8;
-    background: var(--paper);
-    color: var(--ink);
-    font: inherit;
-    font-size: 13px;
+  .beta-status-box {
+    display: none;
+    margin-top: 12px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.6;
     font-weight: 600;
-    cursor: pointer;
-    transition: background .15s, border-color .15s;
+    text-align: center;
   }
-  .beta-copy-btn:hover {
-    background: var(--accent-soft);
-    border-color: var(--accent);
+  .beta-status-box.ok {
+    display: block;
+    color: #2f5e39;
+    background: #e9f6ec;
+    border: 1.5px solid #bfe2c7;
+  }
+  .beta-status-box.err {
+    display: block;
+    color: #8f341b;
+    background: #fdece6;
+    border: 1.5px solid #f4c6b5;
+  }
+  .beta-alt-row {
+    margin-top: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12.5px;
+    color: var(--soft);
+  }
+  .beta-alt-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--accent-deep);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
   }
   .beta-copy-toast {
     display: none;
+    margin-top: 8px;
     font-size: 12.5px;
     font-weight: 700;
     color: #366b43;
@@ -208,7 +242,6 @@
     border: 1px solid #c6e2cc;
     padding: 7px 12px;
     border-radius: 10px;
-    width: 100%;
     text-align: center;
   }
   .beta-copy-toast.show { display: block; }
@@ -321,13 +354,13 @@
 </header>
 
 <!-- ==================== 繁體中文 ==================== -->
-<section class="lang-panel" data-lang="zh" data-title="MoriSnap — 15 秒領取 TestFlight 搶先體驗" id="zh" lang="zh-Hant">
+<section class="lang-panel" data-lang="zh" data-title="MoriSnap — 10 秒領取 TestFlight 搶先體驗" id="zh" lang="zh-Hant">
   <div class="beta-card">
     <div class="beta-top-row">
       <span class="beta-live-pill"><span class="beta-live-dot"></span>Apple 官方 TestFlight · 限量名額</span>
       <img src="assets/fox_wave.png" alt="揮手的小狐狸" style="width:46px;height:46px;object-fit:contain">
     </div>
-    <h1 class="beta-h1">15 秒領取 MoriSnap 搶先體驗</h1>
+    <h1 class="beta-h1">10 秒領取 MoriSnap 搶先體驗</h1>
     <p class="beta-sub">拍一下就收好的 iPhone 生活手帳：<strong>0 廣告、不訂閱、免註冊帳號</strong>，文青紙質與極簡深色免費自由切換。</p>
 
     <div class="beta-dual-thumb">
@@ -341,21 +374,30 @@
       </figure>
     </div>
 
-    <p class="beta-step-label">STEP 1 · 點一下，你最想先拿 MoriSnap 拍什麼？（可複選）</p>
-    <div class="topic-grid" data-lang-form="zh">
-      <button type="button" class="topic-btn" data-val="毛孩／小孩成長年曆">🐱 毛孩／小孩日常</button>
-      <button type="button" class="topic-btn" data-val="跑咖／安靜生活手帳">☕ 跑咖／安靜日常</button>
-      <button type="button" class="topic-btn" data-val="情侶／閨蜜免費共享本">🤝 情侶／朋友共享</button>
-      <button type="button" class="topic-btn" data-val="極簡深色／街拍選物">🖤 極簡深色／街拍</button>
-    </div>
-    <input type="text" class="beta-input" data-device="zh" placeholder="你的 iPhone 型號（選填，例：iPhone 15 Pro）">
+    <form class="beta-form" data-beta-form="zh">
+      <input type="text" name="_honey" class="beta-honey" tabindex="-1" autocomplete="off">
+      <p class="beta-step-label">STEP 1 · 點一下，你最想先拿 MoriSnap 拍什麼？（可複選）</p>
+      <div class="topic-grid" data-lang-form="zh">
+        <button type="button" class="topic-btn" data-val="毛孩／小孩成長年曆">🐱 毛孩／小孩日常</button>
+        <button type="button" class="topic-btn" data-val="跑咖／安靜生活手帳">☕ 跑咖／安靜日常</button>
+        <button type="button" class="topic-btn" data-val="情侶／閨蜜免費共享本">🤝 情侶／朋友共享</button>
+        <button type="button" class="topic-btn" data-val="極簡深色／街拍選物">🖤 極簡深色／街拍</button>
+      </div>
 
-    <p class="beta-step-label">STEP 2 · 寄給小狐狸，馬上回寄 Apple 官方測試連結</p>
-    <a class="beta-primary-btn" data-mail-btn="zh" href="mailto:mochachen1225@gmail.com">✉️ 一鍵開啟信箱寄出申請</a>
-    <div class="beta-copy-row">
-      <button type="button" class="beta-copy-btn" data-copy-btn="zh">📋 內建瀏覽器打不開信箱？點我複製信箱與文字</button>
-      <div class="beta-copy-toast" data-toast="zh">✅ 已複製！貼到你的信箱寄給 mochachen1225@gmail.com 即可</div>
-    </div>
+      <p class="beta-step-label">STEP 2 · 留下收連結的 Email（免開信箱，直接送出！）</p>
+      <input type="email" name="email" class="beta-input" required placeholder="輸入你的 Email（用來收 Apple 官方測試連結）" autocomplete="email">
+      <input type="text" name="note" class="beta-input beta-input-opt" placeholder="想說的話或 iPhone 型號（選填，例：iPhone 15 Pro）">
+      <button type="submit" class="beta-primary-btn">🦊 10 秒送出，領取測試連結</button>
+
+      <div class="beta-status-box" data-status="zh" role="status" aria-live="polite"></div>
+      <div class="beta-alt-row">
+        <span>也可以：</span>
+        <a class="beta-alt-link" data-mail-btn="zh" href="mailto:mochachen1225@gmail.com">直接用郵件 App 寄信</a>
+        <span>·</span>
+        <button type="button" class="beta-alt-link" data-copy-btn="zh">複製信箱</button>
+      </div>
+      <div class="beta-copy-toast" data-toast="zh">✅ 已複製信箱 mochachen1225@gmail.com 與申請文字！</div>
+    </form>
 
     <div class="beta-gift-note">
       <span class="beta-hl">放心解鎖 VIP · 模擬付款 0 扣款</span><br>
@@ -386,13 +428,13 @@
 </section>
 
 <!-- ==================== English ==================== -->
-<section class="lang-panel" data-lang="en" data-title="MoriSnap — Request iOS TestFlight Beta in 15s" id="en" lang="en">
+<section class="lang-panel" data-lang="en" data-title="MoriSnap — Request iOS TestFlight Beta in 10s" id="en" lang="en">
   <div class="beta-card">
     <div class="beta-top-row">
       <span class="beta-live-pill"><span class="beta-live-dot"></span>Apple Official TestFlight · Limited Seats</span>
       <img src="assets/fox_wave.png" alt="Little Fox waving" style="width:46px;height:46px;object-fit:contain">
     </div>
-    <h1 class="beta-h1">Get MoriSnap iOS Beta in 15 Seconds</h1>
+    <h1 class="beta-h1">Get MoriSnap iOS Beta in 10 Seconds</h1>
     <p class="beta-sub">A quiet instant photo diary for iPhone: <strong>zero ads, no subscription, no signup</strong> — switch freely between Warm Paper and Minimal Dark.</p>
 
     <div class="beta-dual-thumb">
@@ -406,21 +448,30 @@
       </figure>
     </div>
 
-    <p class="beta-step-label">STEP 1 · Tap what you'd love to capture first (multi-select)</p>
-    <div class="topic-grid" data-lang-form="en">
-      <button type="button" class="topic-btn" data-val="Pets &amp; Family Calendar">🐱 Pets &amp; Family</button>
-      <button type="button" class="topic-btn" data-val="Cafes &amp; Quiet Daily Notes">☕ Cafes &amp; Quiet Daily</button>
-      <button type="button" class="topic-btn" data-val="Private Shared Album">🤝 Couples &amp; Friends</button>
-      <button type="button" class="topic-btn" data-val="Minimal Dark &amp; Street">🖤 Minimal Dark / Street</button>
-    </div>
-    <input type="text" class="beta-input" data-device="en" placeholder="Your iPhone model (optional, e.g. iPhone 15 Pro)">
+    <form class="beta-form" data-beta-form="en">
+      <input type="text" name="_honey" class="beta-honey" tabindex="-1" autocomplete="off">
+      <p class="beta-step-label">STEP 1 · Tap what you'd love to capture first (multi-select)</p>
+      <div class="topic-grid" data-lang-form="en">
+        <button type="button" class="topic-btn" data-val="Pets &amp; Family Calendar">🐱 Pets &amp; Family</button>
+        <button type="button" class="topic-btn" data-val="Cafes &amp; Quiet Daily Notes">☕ Cafes &amp; Quiet Daily</button>
+        <button type="button" class="topic-btn" data-val="Private Shared Album">🤝 Couples &amp; Friends</button>
+        <button type="button" class="topic-btn" data-val="Minimal Dark &amp; Street">🖤 Minimal Dark / Street</button>
+      </div>
 
-    <p class="beta-step-label">STEP 2 · Email Little Fox for your Apple TestFlight link</p>
-    <a class="beta-primary-btn" data-mail-btn="en" href="mailto:mochachen1225@gmail.com">✉️ Open Mail &amp; Request Invite</a>
-    <div class="beta-copy-row">
-      <button type="button" class="beta-copy-btn" data-copy-btn="en">📋 In-app browser didn't open Mail? Tap to copy email &amp; text</button>
-      <div class="beta-copy-toast" data-toast="en">✅ Copied! Paste into your mail app and send to mochachen1225@gmail.com</div>
-    </div>
+      <p class="beta-step-label">STEP 2 · Drop your email — we'll reply with your TestFlight link</p>
+      <input type="email" name="email" class="beta-input" required placeholder="Your email address (for the Apple TestFlight invite)" autocomplete="email">
+      <input type="text" name="note" class="beta-input beta-input-opt" placeholder="iPhone model or quick note (optional, e.g. iPhone 15 Pro)">
+      <button type="submit" class="beta-primary-btn">🦊 Request TestFlight Invite</button>
+
+      <div class="beta-status-box" data-status="en" role="status" aria-live="polite"></div>
+      <div class="beta-alt-row">
+        <span>Or:</span>
+        <a class="beta-alt-link" data-mail-btn="en" href="mailto:mochachen1225@gmail.com">Open Mail App</a>
+        <span>·</span>
+        <button type="button" class="beta-alt-link" data-copy-btn="en">Copy email</button>
+      </div>
+      <div class="beta-copy-toast" data-toast="en">✅ Copied mochachen1225@gmail.com &amp; request text!</div>
+    </form>
 
     <div class="beta-gift-note">
       <span class="beta-hl">VIP Unlock Is Free · Apple Test Simulation</span><br>
@@ -451,13 +502,13 @@
 </section>
 
 <!-- ==================== 日本語 ==================== -->
-<section class="lang-panel" data-lang="ja" data-title="MoriSnap — 15 秒で TestFlight 先行体験を申し込む" id="ja" lang="ja">
+<section class="lang-panel" data-lang="ja" data-title="MoriSnap — 10 秒で TestFlight 先行体験を申し込む" id="ja" lang="ja">
   <div class="beta-card">
     <div class="beta-top-row">
       <span class="beta-live-pill"><span class="beta-live-dot"></span>Apple 公式 TestFlight · 先着枠</span>
       <img src="assets/fox_wave.png" alt="手を振る子ぎつね" style="width:46px;height:46px;object-fit:contain">
     </div>
-    <h1 class="beta-h1">15 秒で MoriSnap 先行体験を申し込む</h1>
+    <h1 class="beta-h1">10 秒で MoriSnap 先行体験を申し込む</h1>
     <p class="beta-sub">撮るだけで手帳になる iPhone 写真日記：<strong>広告ゼロ・サブスクなし・登録不要</strong>。温かな紙質感とミニマルダークを無料で切替できます。</p>
 
     <div class="beta-dual-thumb">
@@ -471,21 +522,30 @@
       </figure>
     </div>
 
-    <p class="beta-step-label">STEP 1 · まず何を撮ってみたいですか？（複数選択 OK）</p>
-    <div class="topic-grid" data-lang-form="ja">
-      <button type="button" class="topic-btn" data-val="ペット・推し活 1秒切り抜き">🐱 ペット・推し活合写</button>
-      <button type="button" class="topic-btn" data-val="カフェ巡り・静かな日常">☕ カフェ・静かな日常</button>
-      <button type="button" class="topic-btn" data-val="友だち・家族との無料共有手帳">🤝 友だち・恋人と共有</button>
-      <button type="button" class="topic-btn" data-val="ミニマルダーク・街スナップ">🖤 ミニマルダーク・街撮</button>
-    </div>
-    <input type="text" class="beta-input" data-device="ja" placeholder="iPhone の機種（任意・例：iPhone 15 Pro）">
+    <form class="beta-form" data-beta-form="ja">
+      <input type="text" name="_honey" class="beta-honey" tabindex="-1" autocomplete="off">
+      <p class="beta-step-label">STEP 1 · まず何を撮ってみたいですか？（複数選択 OK）</p>
+      <div class="topic-grid" data-lang-form="ja">
+        <button type="button" class="topic-btn" data-val="ペット・推し活 1秒切り抜き">🐱 ペット・推し活合写</button>
+        <button type="button" class="topic-btn" data-val="カフェ巡り・静かな日常">☕ カフェ・静かな日常</button>
+        <button type="button" class="topic-btn" data-val="友だち・家族との無料共有手帳">🤝 友だち・恋人と共有</button>
+        <button type="button" class="topic-btn" data-val="ミニマルダーク・街スナップ">🖤 ミニマルダーク・街撮</button>
+      </div>
 
-    <p class="beta-step-label">STEP 2 · メールを送ると Apple 公式招待リンクをご返信します</p>
-    <a class="beta-primary-btn" data-mail-btn="ja" href="mailto:mochachen1225@gmail.com">✉️ メールアプリを開いて申し込む</a>
-    <div class="beta-copy-row">
-      <button type="button" class="beta-copy-btn" data-copy-btn="ja">📋 メールが開かない場合はタップして宛先と本文をコピー</button>
-      <div class="beta-copy-toast" data-toast="ja">✅ コピーしました！mochachen1225@gmail.com 宛てにそのまま送信してください</div>
-    </div>
+      <p class="beta-step-label">STEP 2 · メールアドレスを入力するだけ（メール起動不要！）</p>
+      <input type="email" name="email" class="beta-input" required placeholder="メールアドレス（Apple 公式リンク送付用）" autocomplete="email">
+      <input type="text" name="note" class="beta-input beta-input-opt" placeholder="iPhone の機種やひとこと（任意・例：iPhone 15 Pro）">
+      <button type="submit" class="beta-primary-btn">🦊 10 秒で申し込む</button>
+
+      <div class="beta-status-box" data-status="ja" role="status" aria-live="polite"></div>
+      <div class="beta-alt-row">
+        <span>または：</span>
+        <a class="beta-alt-link" data-mail-btn="ja" href="mailto:mochachen1225@gmail.com">メールアプリで送る</a>
+        <span>·</span>
+        <button type="button" class="beta-alt-link" data-copy-btn="ja">宛先をコピー</button>
+      </div>
+      <div class="beta-copy-toast" data-toast="ja">✅ mochachen1225@gmail.com をコピーしました！</div>
+    </form>
 
     <div class="beta-gift-note">
       <span class="beta-hl">VIP 解放は無料 · Apple 公式テスト模擬決済</span><br>
@@ -516,13 +576,13 @@
 </section>
 
 <!-- ==================== 한국어 ==================== -->
-<section class="lang-panel" data-lang="ko" data-title="MoriSnap — 15초 만에 TestFlight 베타 신청하기" id="ko" lang="ko">
+<section class="lang-panel" data-lang="ko" data-title="MoriSnap — 10초 만에 TestFlight 베타 신청하기" id="ko" lang="ko">
   <div class="beta-card">
     <div class="beta-top-row">
       <span class="beta-live-pill"><span class="beta-live-dot"></span>Apple 공식 TestFlight · 선착순 베타</span>
       <img src="assets/fox_wave.png" alt="손 흔드는 아기 여우" style="width:46px;height:46px;object-fit:contain">
     </div>
-    <h1 class="beta-h1">15초 만에 MoriSnap 베타 신청하기</h1>
+    <h1 class="beta-h1">10초 만에 MoriSnap 베타 신청하기</h1>
     <p class="beta-sub">찍기만 하면 완성되는 iPhone 포토 다이어리: <strong>광고 0 · 구독 없음 · 가입 없음</strong>. 따뜻한 문구 감성과 미니멀 다크를 무료로 전환할 수 있어요.</p>
 
     <div class="beta-dual-thumb">
@@ -536,21 +596,30 @@
       </figure>
     </div>
 
-    <p class="beta-step-label">STEP 1 · 가장 먼저 찍어보고 싶은 주제를 골라주세요 (복수 선택 가능)</p>
-    <div class="topic-grid" data-lang-form="ko">
-      <button type="button" class="topic-btn" data-val="반려동물·최애 1초 누끼 네컷">🐱 반려동물·최애 네컷</button>
-      <button type="button" class="topic-btn" data-val="카페·조용한 일상 기록">☕ 카페·일상 기록</button>
-      <button type="button" class="topic-btn" data-val="커플·친구 무료 공유 다이어리">🤝 커플·친구 공유본</button>
-      <button type="button" class="topic-btn" data-val="미니멀 다크·스트릿 감성">🖤 미니멀 다크·스트릿</button>
-    </div>
-    <input type="text" class="beta-input" data-device="ko" placeholder="iPhone 기종 (선택 입력 · 예: iPhone 15 Pro)">
+    <form class="beta-form" data-beta-form="ko">
+      <input type="text" name="_honey" class="beta-honey" tabindex="-1" autocomplete="off">
+      <p class="beta-step-label">STEP 1 · 가장 먼저 찍어보고 싶은 주제를 골라주세요 (복수 선택 가능)</p>
+      <div class="topic-grid" data-lang-form="ko">
+        <button type="button" class="topic-btn" data-val="반려동물·최애 1초 누끼 네컷">🐱 반려동물·최애 네컷</button>
+        <button type="button" class="topic-btn" data-val="카페·조용한 일상 기록">☕ 카페·일상 기록</button>
+        <button type="button" class="topic-btn" data-val="커플·친구 무료 공유 다이어리">🤝 커플·친구 공유본</button>
+        <button type="button" class="topic-btn" data-val="미니멀 다크·스트릿 감성">🖤 미니멀 다크·스트릿</button>
+      </div>
 
-    <p class="beta-step-label">STEP 2 · 메일을 보내주시면 Apple 공식 초대 링크를 회신해 드려요</p>
-    <a class="beta-primary-btn" data-mail-btn="ko" href="mailto:mochachen1225@gmail.com">✉️ 메일 앱 열고 바로 신청하기</a>
-    <div class="beta-copy-row">
-      <button type="button" class="beta-copy-btn" data-copy-btn="ko">📋 인앱 브라우저에서 메일이 안 열리면? 주소·내용 복사하기</button>
-      <div class="beta-copy-toast" data-toast="ko">✅ 복사 완료! 메일 앱에 붙여넣어 mochachen1225@gmail.com 으로 보내주세요</div>
-    </div>
+      <p class="beta-step-label">STEP 2 · 초대 링크를 받을 이메일만 입력하면 끝!</p>
+      <input type="email" name="email" class="beta-input" required placeholder="이메일 주소 입력 (Apple 공식 링크 회신용)" autocomplete="email">
+      <input type="text" name="note" class="beta-input beta-input-opt" placeholder="iPhone 기종이나 짧은 메모 (선택 · 예: iPhone 15 Pro)">
+      <button type="submit" class="beta-primary-btn">🦊 10초 만에 신청하기</button>
+
+      <div class="beta-status-box" data-status="ko" role="status" aria-live="polite"></div>
+      <div class="beta-alt-row">
+        <span>또는:</span>
+        <a class="beta-alt-link" data-mail-btn="ko" href="mailto:mochachen1225@gmail.com">메일 앱으로 보내기</a>
+        <span>·</span>
+        <button type="button" class="beta-alt-link" data-copy-btn="ko">주소 복사</button>
+      </div>
+      <div class="beta-copy-toast" data-toast="ko">✅ mochachen1225@gmail.com 복사 완료!</div>
+    </form>
 
     <div class="beta-gift-note">
       <span class="beta-hl">VIP 무료 체험 · Apple 테스트 모의 결제</span><br>
@@ -584,44 +653,52 @@
 <script>
 (function() {
   var EMAIL = 'mochachen1225@gmail.com';
+  var ENDPOINT = 'https://formsubmit.co/ajax/' + EMAIL;
   var valid = ['zh', 'en', 'ja', 'ko'];
-  var templates = {
+  var copy = {
     zh: {
+      langName: '繁體中文',
       subject: '[MoriSnap Beta] 領取 TestFlight 測試連結',
-      intro: '嗨小狐狸！我想領取 MoriSnap iOS Beta 測試連結 🦊',
-      topicLabel: '• 最想先拍的主題：',
-      deviceLabel: '• 我的 iPhone 型號：',
-      langLine: '• 常用語言：繁體中文',
-      none: '都想試試看！'
+      sending: '傳送給小狐狸中…',
+      btnDefault: '🦊 10 秒送出，領取測試連結',
+      ok: '✅ 收到囉！小狐狸很快會把 Apple 官方 TestFlight 測試連結寄到你的信箱（記得檢查垃圾信箱喔）🦊',
+      err: '網路好像晃了一下，請再點一次送出，或點下方「直接用郵件 App 寄信」／「複製信箱」寄給我們！',
+      none: '都想試試看！',
+      intro: '嗨小狐狸！我想領取 MoriSnap iOS Beta 測試連結 🦊'
     },
     en: {
+      langName: 'English',
       subject: '[MoriSnap Beta] Request TestFlight Invite',
-      intro: 'Hi Little Fox! I would love to join the MoriSnap iOS Beta.',
-      topicLabel: '- What I want to capture first: ',
-      deviceLabel: '- iPhone model: ',
-      langLine: '- Preferred language: English',
-      none: 'Excited to try everything!'
+      sending: 'Sending to Little Fox…',
+      btnDefault: '🦊 Request TestFlight Invite',
+      ok: '✅ Got it! Little Fox will reply to your email shortly with your official Apple TestFlight link 🦊',
+      err: 'Connection hiccup — please tap submit again, or use "Open Mail App" / "Copy email" below.',
+      none: 'Excited to try everything!',
+      intro: 'Hi Little Fox! I would love to join the MoriSnap iOS Beta.'
     },
     ja: {
+      langName: '日本語',
       subject: '[MoriSnap Beta] TestFlight 招待リンク申請',
-      intro: '子ぎつねさんへ！MoriSnap iOS ベータの招待リンクを希望します。',
-      topicLabel: '・まず撮ってみたいテーマ：',
-      deviceLabel: '・iPhone 機種：',
-      langLine: '・希望言語：日本語',
-      none: 'いろいろ試してみたいです！'
+      sending: '送信中…',
+      btnDefault: '🦊 10 秒で申し込む',
+      ok: '✅ 受け付けました！まもなく Apple 公式 TestFlight 招待リンクをメールでお送りします 🦊',
+      err: '送信に失敗しました。もう一度押すか、下の「メールアプリで送る」をご利用ください。',
+      none: 'いろいろ試してみたいです！',
+      intro: '子ぎつねさんへ！MoriSnap iOS ベータの招待リンクを希望します。'
     },
     ko: {
+      langName: '한국어',
       subject: '[MoriSnap Beta] TestFlight 초대 링크 신청',
-      intro: '아기 여우님! MoriSnap iOS 베타 초대 링크를 신청합니다.',
-      topicLabel: '- 가장 먼저 찍고 싶은 주제: ',
-      deviceLabel: '- iPhone 기종: ',
-      langLine: '- 사용 언어: 한국어',
-      none: '다 써보고 싶어요!'
+      sending: '전송 중…',
+      btnDefault: '🦊 10초 만에 신청하기',
+      ok: '✅ 신청이 접수되었어요! 곧 이메일로 Apple 공식 TestFlight 초대 링크를 보내드릴게요 🦊',
+      err: '일시적인 오류가 발생했어요. 다시 눌러보시거나 아래 ‘메일 앱으로 보내기’를 이용해 주세요.',
+      none: '다 써보고 싶어요!',
+      intro: '아기 여우님! MoriSnap iOS 베타 초대 링크를 신청합니다.'
     }
   };
 
-  function buildPayload(lang) {
-    var cfg = templates[lang] || templates.zh;
+  function getSelectedTopics(lang) {
     var grid = document.querySelector('.topic-grid[data-lang-form="' + lang + '"]');
     var picks = [];
     if (grid) {
@@ -629,20 +706,20 @@
         picks.push(b.getAttribute('data-val'));
       });
     }
-    var devInput = document.querySelector('.beta-input[data-device="' + lang + '"]');
-    var dev = devInput ? devInput.value.trim() : '';
-    var body = cfg.intro + '\n\n'
-      + cfg.topicLabel + (picks.length ? picks.join(' / ') : cfg.none) + '\n'
-      + cfg.deviceLabel + (dev || 'iPhone') + '\n'
-      + cfg.langLine;
-    return { subject: cfg.subject, body: body };
+    return picks;
   }
 
-  function refreshMailto(lang) {
+  function refreshFallbackMailto(lang) {
     var btn = document.querySelector('[data-mail-btn="' + lang + '"]');
-    if (!btn) return;
-    var p = buildPayload(lang);
-    btn.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(p.subject) + '&body=' + encodeURIComponent(p.body);
+    var form = document.querySelector('form[data-beta-form="' + lang + '"]');
+    if (!btn || !form) return;
+    var c = copy[lang] || copy.zh;
+    var picks = getSelectedTopics(lang);
+    var note = (form.querySelector('input[name="note"]').value || '').trim();
+    var body = c.intro + '\n\n• Topic: ' + (picks.length ? picks.join(' / ') : c.none)
+      + (note ? '\n• Note / Device: ' + note : '')
+      + '\n• Language: ' + c.langName;
+    btn.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(c.subject) + '&body=' + encodeURIComponent(body);
   }
 
   function copyText(text, onDone) {
@@ -652,7 +729,6 @@
       fallbackCopy(text, onDone);
     }
   }
-
   function fallbackCopy(text, onDone) {
     var ta = document.createElement('textarea');
     ta.value = text;
@@ -667,32 +743,80 @@
   }
 
   valid.forEach(function(lang) {
-    var grid = document.querySelector('.topic-grid[data-lang-form="' + lang + '"]');
-    if (grid) {
-      grid.querySelectorAll('.topic-btn').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          btn.classList.toggle('selected');
-          refreshMailto(lang);
-        });
+    var form = document.querySelector('form[data-beta-form="' + lang + '"]');
+    if (!form) return;
+    var c = copy[lang] || copy.zh;
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var statusBox = form.querySelector('[data-status="' + lang + '"]');
+
+    form.querySelectorAll('.topic-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        btn.classList.toggle('selected');
+        refreshFallbackMailto(lang);
       });
-    }
-    var dev = document.querySelector('.beta-input[data-device="' + lang + '"]');
-    if (dev) {
-      dev.addEventListener('input', function() { refreshMailto(lang); });
-    }
-    var copyBtn = document.querySelector('[data-copy-btn="' + lang + '"]');
-    var toast = document.querySelector('[data-toast="' + lang + '"]');
+    });
+    var noteEl = form.querySelector('input[name="note"]');
+    if (noteEl) noteEl.addEventListener('input', function() { refreshFallbackMailto(lang); });
+
+    var copyBtn = form.querySelector('[data-copy-btn="' + lang + '"]');
+    var toast = form.querySelector('[data-toast="' + lang + '"]');
     if (copyBtn && toast) {
       copyBtn.addEventListener('click', function() {
-        var p = buildPayload(lang);
-        var full = 'To: ' + EMAIL + '\nSubject: ' + p.subject + '\n\n' + p.body;
+        var picks = getSelectedTopics(lang);
+        var full = EMAIL + '\n' + c.subject + '\n' + (picks.length ? picks.join(' / ') : c.none);
         copyText(full, function() {
           toast.classList.add('show');
           setTimeout(function() { toast.classList.remove('show'); }, 4500);
         });
       });
     }
-    refreshMailto(lang);
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var honey = (form.querySelector('input[name="_honey"]').value || '').trim();
+      if (honey) return;
+      var emailVal = (form.querySelector('input[name="email"]').value || '').trim();
+      if (!emailVal) return;
+
+      var picks = getSelectedTopics(lang);
+      var noteVal = (form.querySelector('input[name="note"]').value || '').trim();
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = c.sending;
+      statusBox.className = 'beta-status-box';
+      statusBox.textContent = '';
+
+      fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          email: emailVal,
+          topics: picks.length ? picks.join(' / ') : c.none,
+          note: noteVal || '-',
+          language: c.langName,
+          _subject: c.subject,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      }).then(function(res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      }).then(function() {
+        statusBox.className = 'beta-status-box ok';
+        statusBox.textContent = c.ok;
+        form.querySelector('input[name="email"]').value = '';
+        form.querySelector('input[name="note"]').value = '';
+        submitBtn.disabled = false;
+        submitBtn.textContent = c.btnDefault;
+      }).catch(function() {
+        statusBox.className = 'beta-status-box err';
+        statusBox.textContent = c.err;
+        submitBtn.disabled = false;
+        submitBtn.textContent = c.btnDefault;
+      });
+    });
+
+    refreshFallbackMailto(lang);
   });
 
   function detect() {
