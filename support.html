@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/icons/favicon.png">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=18">
 </head>
 <body>
 <main>
@@ -65,6 +65,26 @@
 
   <h2>❓ 常見問題 FAQ</h2>
 
+  <div class="faq-search-box" data-faq-search>
+    <div class="faq-search-row">
+      <span class="faq-search-ico">🔍</span>
+      <input type="search" class="faq-search-input" placeholder="搜尋整個 FAQ（例：手帳牆、月曆、換圖示、拍立得、四格、合拍、暗房、共享…）" aria-label="搜尋常見問題">
+      <button type="button" class="faq-search-clear" aria-label="清除搜尋">×</button>
+    </div>
+    <div class="faq-quick-tags">
+      <button type="button" class="faq-quick-tag" data-q="手帳牆">手帳牆</button>
+      <button type="button" class="faq-quick-tag" data-q="月曆">月曆頁</button>
+      <button type="button" class="faq-quick-tag" data-q="換圖示">換 App 圖示</button>
+      <button type="button" class="faq-quick-tag" data-q="拍立得">看照片卡</button>
+      <button type="button" class="faq-quick-tag" data-q="四格">四格拍貼</button>
+      <button type="button" class="faq-quick-tag" data-q="合拍">去背合拍</button>
+      <button type="button" class="faq-quick-tag" data-q="暗房">今晚顯影</button>
+      <button type="button" class="faq-quick-tag" data-q="共享">共享手帳</button>
+    </div>
+    <div class="faq-search-meta" data-tpl="找到 {n} 則相關解答"></div>
+    <div class="faq-empty"><strong>找不到完全相符的 FAQ 耶 🥺</strong><br>試試換個簡短關鍵字（例如「月曆」「圖示」「四格」「VIP」），也可以直接點最上方的「問小狐狸」或寫信給摩卡！</div>
+  </div>
+
   <h3 class="cat-title">⭐ 新手最常問（必看 5 題）</h3>
 
   <details open>
@@ -92,6 +112,58 @@
   <details>
     <summary>VIP 是每個功能都要另外付錢嗎？</summary>
     <p>不是。<strong>VIP 一次買斷就解鎖全部</strong>：所有濾鏡、貼紙、相框、影片範本、足跡地圖、今晚才顯影⋯⋯不用每項另外買，也不訂閱。價格以 App Store 顯示為準，會用你所在國家的幣別（台灣是新台幣）。</p>
+  </details>
+
+  <h3 class="cat-title">🧭 基礎操作：手帳牆、月曆頁、看照片卡與換圖示</h3>
+
+  <details data-kw="手帳牆 相簿 日記牆 進入 打開 在哪 回到相機 縮圖 左下角 journal wall gallery">
+    <summary>怎麼進入手帳牆？怎麼回到相機？</summary>
+    <p>在相機畫面的<strong>左下角</strong>，點最近一張照片縮圖（寫著「<strong>手帳牆</strong>」，還沒拍過時是疊片圖示），就能進入手帳牆；拍完照存檔時直接點「<strong>看手帳</strong>」也會立刻跳進來。</p>
+    <p>想回相機拍照時，點手帳牆<strong>左上角的 📷 相機圖示</strong>就能馬上切回去。</p>
+  </details>
+
+  <details data-kw="月曆 日曆 月曆頁 日曆頁 代表封面 依天收合 全部攤開 疊牌 長按 calendar day cover">
+    <summary>怎麼看月曆頁（日曆頁）？一天拍很多張怎麼換「代表封面」？</summary>
+    <p>進入手帳牆後，點上方左側的<strong>月份選單膠囊（📅 2026 年 11 月 ▾）</strong>→ 選「<strong>月曆頁</strong>」，就能看到整個月每天一張代表照片的月曆（左右滑或點箭頭切換月份）。</p>
+    <p>在同一個月份選單裡，也可以切換「<strong>依天收合</strong>」（一天疊成一張代表封面）或「<strong>全部攤開</strong>」。想換某一天的代表照片時，點進那一天後<strong>長按</strong>最喜歡的那張 → 選「<strong>設為這天的代表照片</strong>」即可。</p>
+  </details>
+
+  <details data-kw="拍立得 照片卡 看照片 單張 放大 詳情 左右滑 編輯 日期 城市 搬移 分享 列印 刪除">
+    <summary>怎麼看單張拍立得風照片卡？點開後可以做什麼？</summary>
+    <p>在手帳牆（或月曆裡點進某一天）<strong>點一下任何一張卡片</strong>，就會全螢幕放大檢視（3 秒微短片會自動循環播放）。若那天有多張照片且開著「依天收合」，先點疊牌展開當天全部卡片，再點單張就會打開。</p>
+    <p>打開照片詳情後支援：<strong>左右滑動</strong>切換上一張／下一張、點上方<strong>日期</strong>補改拍攝日期（卡片上的日期也會一併更新）、點「<strong>📍 城市</strong>」手動補選城市、點手帳名稱<strong>移進共享手帳</strong>，以及底部一鍵<strong>分享／發限動／4×6 列印／下載到照片／刪除</strong>。</p>
+  </details>
+
+  <details data-kw="icon 圖示 換icon 切換icon 桌面圖示 app圖示 季節圖示 自動換季 櫻花 楓葉 下雪 聖誕 新年 帥氣">
+    <summary>怎麼切換桌面 App Icon（圖示）？12 款季節圖示怎麼解鎖？</summary>
+    <p>進入手帳牆 → 點右上角 <strong>⚙️ 設定（VIP 為 👑 皇冠）</strong>→ 往下滑找到「<strong>App 圖示</strong>」區塊，即可在<strong>復古皮革相機</strong>與<strong>小狐狸</strong>兩種風格、共 12 款季節圖示之間自由點選切換！</p>
+    <p>經典 2 款免費隨時換；5 大季節款在當季免費開放（櫻花 3–4 月、楓葉 10–11 月、下雪 12–2 月、聖誕 12/1–12/31、新年 12/26–2/15），VIP 全年 12 款隨心切換。也可以開啟「<strong>跟著季節自動換</strong>」隨日期自動換裝。（換圖示時 iPhone 會跳出一則系統提示，這是 iOS 正常規定；帥氣金屬皮革系列也將在後續更新登場。）</p>
+  </details>
+
+  <details data-kw="牆面 牆面風格 背景 底紙 背景照 主題 牛皮紙 方格 深色 奶油棉紙 切換版面 版面 外觀風格 森林文青 極簡深色 簡約風格 wall theme layout style minimal dark">
+    <summary>怎麼切換版面、牆面背景與外觀風格（森林文青／極簡深色）？</summary>
+    <p>MoriSnap 提供多種版面與風格切換：</p>
+    <ul>
+      <li><strong>切換手帳牆排列版面</strong>：點手帳牆上方左側的月份選單（📅 ▾），即可在「<strong>依天收合</strong>」（每天一張代表封面）、「<strong>全部攤開</strong>」與「<strong>月曆頁</strong>」之間自由切換。</li>
+      <li><strong>切換牆面背景風格</strong>：點手帳牆右上角「<strong>⋯（更多）</strong>」→「<strong>展示牆面風格</strong>」，可在奶油棉紙、牛皮紙、方格筆記、午夜書桌之間切換（VIP 也可自訂背景照）。</li>
+      <li><strong>切換四格與限動版面</strong>：四格編輯頁可切換 <strong>1×4 長條</strong>與 <strong>2×2 拼貼</strong>；限動排版提供 <strong>9 色棉紙</strong>一鍵換版面。</li>
+      <li><strong>外觀風格（森林文青 vs 極簡深色 · 免費更新即將登場）</strong>：即將推出的 1.1 更新將在「<strong>設定 › 外觀風格</strong>」免費加入一鍵切換<strong>極簡深色（Minimal Dark）</strong>——切過去會自動換成霧黑介面與簡約線條，並連動酷感濾鏡與極簡貼紙，切回森林文青立即恢復！</li>
+    </ul>
+  </details>
+
+  <details data-kw="四格 拍貼 1x4 2x2 倒數連拍 相簿 四張 拼貼 4-cut">
+    <summary>韓系 1×4 ＆ 日系 2×2 四格拍貼怎麼拍？可以挑相簿舊照嗎？</summary>
+    <p>兩種方式都可以：① 在相機觀景窗右下角點「<strong>四格模式</strong>」，按快門即可 3-2-1 倒數連拍 4 張，拍完在編輯頁自由切換<strong>韓系 1×4 長條</strong>或<strong>日系 2×2 拼貼</strong>；② 進入手帳牆 → 點右上角「<strong>⋯（更多）</strong>」→ 選「<strong>人生四格</strong>」，就能直接從已拍好的照片挑 4 張合成四格卡片！</p>
+  </details>
+
+  <details data-kw="去背 合拍 同框 毛孩 寵物 偶像 本命 追星 立牌 本機 co-snap cutout">
+    <summary>「本機 1 秒去背合拍」怎麼用？毛孩或偶像都可以嗎？</summary>
+    <p>在相機畫面點「<strong>合拍</strong>」，從手機相簿挑一張毛孩、偶像、動漫角色或娃照，MoriSnap 會在<strong>手機本機 1 秒自動去背</strong>（絕不上傳伺服器），直接疊進即時相機取景畫面！可自由移動、縮放或水平翻轉，單張拍照和四格拍貼通通都能一起合照。</p>
+  </details>
+
+  <details data-kw="濾鏡 骰子 自訂濾鏡 相框 打孔框 活頁 車票 自動色卡 日期字體 手寫字體 相簿匯入 filter frame">
+    <summary>14 款濾鏡、隨機骰子、打孔框、自動色卡與日期字體怎麼用？</summary>
+    <p>相機下方可滑選 <strong>14 款日系透光濾鏡</strong>，點左側 <strong>🎲 骰子</strong>可隨機抽濾鏡，也能自訂專屬濾鏡配方並存檔；快門旁按鈕可匯入相簿照片。拍完進編輯頁可切換相框，VIP 並解鎖<strong>活頁打孔框、車票打孔框、自動色卡圓點</strong>以及<strong>打字機／極簡／手寫風</strong> 3 種日期字體。</p>
   </details>
 
   <h3 class="cat-title">🔐 照片存放、換手機與空間</h3>
@@ -182,7 +254,7 @@
   <details>
     <summary>15. 限動排版和小電影怎麼分享？</summary>
     <p>成品支援<strong>一鍵發限動</strong>，也內建 <strong>9 種棉紙底色</strong>（米白、淡灰免費）加上夾子與紙膠帶小裝飾的<strong>限動排版</strong>，可一鍵換個樣子並自動避開限動介面按鈕；月度拍立得牆海報的限動尺寸也能一鍵發限動。</p>
-    <p>每週／每月 <strong>1080p 小電影</strong>內建對拍 <strong>Photo Dump 範本</strong>與預設開啟的「<strong>自動挑精華</strong>」開關，同樣避開介面安全區域，除了內建原創輕音樂外，也可以選擇<strong>靜音輸出</strong>再到社群自由配樂！</p>
+    <p>每週／每月 <strong>1080p 小電影</strong>（在手帳牆右上角 🎞️ 膠捲圖示建立）內建免費 <strong>Photo Dump 範本</strong>與預設開啟的「<strong>自動挑精華</strong>」開關，同樣避開介面安全區域，除了內建原創輕音樂外，也可以選擇<strong>靜音輸出</strong>再到社群自由配樂！</p>
   </details>
 
   <details>
@@ -289,6 +361,26 @@
 
   <h2>❓ Frequently Asked Questions</h2>
 
+  <div class="faq-search-box" data-faq-search>
+    <div class="faq-search-row">
+      <span class="faq-search-ico">🔍</span>
+      <input type="search" class="faq-search-input" placeholder="Search all FAQs (journal wall, calendar, app icon, 4-cut, co-snap, darkroom…)" aria-label="Search FAQ">
+      <button type="button" class="faq-search-clear" aria-label="Clear search">×</button>
+    </div>
+    <div class="faq-quick-tags">
+      <button type="button" class="faq-quick-tag" data-q="journal wall">Journal Wall</button>
+      <button type="button" class="faq-quick-tag" data-q="calendar">Calendar</button>
+      <button type="button" class="faq-quick-tag" data-q="icon">App Icon</button>
+      <button type="button" class="faq-quick-tag" data-q="photo card">Photo Cards</button>
+      <button type="button" class="faq-quick-tag" data-q="4-cut">4-Cut Booth</button>
+      <button type="button" class="faq-quick-tag" data-q="co-snap">Co-Snap</button>
+      <button type="button" class="faq-quick-tag" data-q="darkroom">Darkroom</button>
+      <button type="button" class="faq-quick-tag" data-q="shared">Shared</button>
+    </div>
+    <div class="faq-search-meta" data-tpl="Found {n} matching answers"></div>
+    <div class="faq-empty"><strong>No exact FAQ match found 🥺</strong><br>Try a shorter keyword (like "calendar", "icon", "4-cut", or "VIP"), or ask Little Fox above / email Mocha!</div>
+  </div>
+
   <h3 class="cat-title">⭐ Top 5 Questions</h3>
 
   <details open>
@@ -316,6 +408,58 @@
   <details>
     <summary>Do I have to pay separately for each VIP feature?</summary>
     <p>No. <strong>One-time VIP unlocks everything at once</strong>: all filters, stickers, frames, movie templates, Footprint Map, Develop Tonight, and more—no per-item charges and no subscriptions. Pricing is shown in your local currency on the App Store.</p>
+  </details>
+
+  <h3 class="cat-title">🧭 Basics: Journal Wall, Calendar, Photo Cards &amp; App Icons</h3>
+
+  <details data-kw="journal wall gallery album open back to camera thumbnail bottom left">
+    <summary>How do I open the Journal Wall and return to the camera?</summary>
+    <p>On the camera screen, tap the latest photo thumbnail at the <strong>bottom-left</strong> (labeled "<strong>Journal</strong>", or the stack icon before your first shot) to open your Journal Wall; right after saving a photo, tapping "<strong>View Journal</strong>" opens it too.</p>
+    <p>To jump back to the camera anytime, tap the <strong>📷 camera icon at the top-left</strong> of the Journal Wall.</p>
+  </details>
+
+  <details data-kw="calendar month view day cover featured stack collapse expand long press">
+    <summary>How do I view the Calendar page &amp; change a day's featured cover?</summary>
+    <p>On the Journal Wall, tap the <strong>month menu pill at top-left (📅 Nov 2026 ▾)</strong> → choose "<strong>Calendar</strong>" to see your month grid with one cover photo per recorded day (swipe or tap arrows to switch months).</p>
+    <p>In the same menu, toggle between "<strong>Stack by Day</strong>" (one cover card per day) and "<strong>Show Every Photo</strong>". To change a day's cover, open that day from the wall or calendar, <strong>touch and hold</strong> your favorite shot → tap "<strong>Feature This Photo for the Day</strong>".</p>
+  </details>
+
+  <details data-kw="photo card view detail full screen swipe edit date city move share print delete">
+    <summary>How do I view an individual photo card and what can I do inside it?</summary>
+    <p>Tap any card on the Journal Wall (or inside a day on the Calendar) to open it full screen (3-second clips loop automatically). If a day has multiple shots while "Stack by Day" is on, tap the stack first to expand that day's cards, then tap any card.</p>
+    <p>Inside the full view you can: <strong>swipe left/right</strong> between photos, tap the <strong>date</strong> at top to fix the shooting date (updating the printed card date too), tap "<strong>📍 City</strong>" to pick a city, tap the journal name to <strong>move it to a Shared Journal</strong>, or share to Stories, print 4×6, save to Photos, or delete.</p>
+  </details>
+
+  <details data-kw="icon app icon change switch seasonal sakura maple snow christmas new year dark">
+    <summary>How do I change the Home Screen App Icon? How do the 12 seasonal icons work?</summary>
+    <p>Open the Journal Wall → tap <strong>⚙️ Settings</strong> at the top-right (<strong>👑 crown</strong> if you're VIP) → scroll to the "<strong>App Icon</strong>" section to switch freely between <strong>Vintage Leather Camera</strong> and <strong>Little Fox</strong> (12 icons total).</p>
+    <p>The 2 Classic icons are free anytime; the 5 seasonal themes unlock free in season (Sakura Mar–Apr, Maple Oct–Nov, Snow Dec–Feb, Christmas Dec 1–31, New Year Dec 26–Feb 15), and VIP unlocks all 12 year-round. You can also turn on "<strong>Change with the seasons</strong>". (iOS always displays a brief system alert when any app changes its icon; sleek metallic dark camera icons are also coming in an upcoming update.)</p>
+  </details>
+
+  <details data-kw="wall style background theme paper kraft grid midnight custom photo layout switch appearance forest minimal dark">
+    <summary>How do I switch layouts, wall backgrounds &amp; app appearance styles?</summary>
+    <p>You can customize MoriSnap's layout and look in several ways:</p>
+    <ul>
+      <li><strong>Switch Journal Wall Layout</strong>: Tap the top-left month pill (📅 ▾) to switch freely between <strong>Stack by Day</strong> (one featured cover per day), <strong>Show Every Photo</strong>, and the <strong>Calendar</strong> grid.</li>
+      <li><strong>Switch Wall Background Style</strong>: Tap "<strong>⋯ (More)</strong>" at top-right → "<strong>Wall Style</strong>" to pick Cream Paper, Kraft Journal, Grid Note, Midnight Desk, or a custom photo (VIP).</li>
+      <li><strong>Switch 4-Cut &amp; Story Layouts</strong>: Toggle <strong>1×4 strip</strong> vs. <strong>2×2 grid</strong> in the 4-Cut editor, or shuffle <strong>9 cotton-paper Story layouts</strong> in one tap.</li>
+      <li><strong>App Appearance Style (Warm Forest vs. Minimal Dark · Coming Free in 1.1)</strong>: In the upcoming 1.1 update, go to <strong>Settings › Appearance</strong> to switch free to <strong>Minimal Dark</strong>—turning the journal, calendar, and icons sleek dark with matching editorial filters &amp; stickers (and switch back anytime!).</li>
+    </ul>
+  </details>
+
+  <details data-kw="4-cut four cut photo booth 1x4 2x2 countdown collage library">
+    <summary>How do Korean 1×4 &amp; Japanese 2×2 4-Cut booths work? Can I pick existing photos?</summary>
+    <p>Both ways work: ① Tap the <strong>4-Cut button</strong> at the bottom-right of the camera viewfinder for a 3-2-1 countdown burst of 4 shots, then switch between <strong>Korean 1×4 strip</strong> and <strong>Japanese 2×2 grid</strong> in the editor; ② On the Journal Wall, tap "<strong>⋯ (More)</strong>" → "<strong>4-Cut Photo Booth</strong>" to pick any 4 existing shots and build a 4-Cut card.</p>
+  </details>
+
+  <details data-kw="co-snap cutout pet idol overlay lift on-device">
+    <summary>How does 1-Sec On-Device Cutout "Co-Snap" work? Pets and idols too?</summary>
+    <p>Tap "<strong>Co-Snap</strong>" in the camera and choose any photo of your pet, favorite idol, anime character, or plushie. MoriSnap lifts the subject <strong>100% on-device in 1 second</strong> (never uploaded) and overlays them live in your viewfinder—drag, resize, or flip them for both single cards and 4-Cut booths.</p>
+  </details>
+
+  <details data-kw="filter dice custom recipe punch frame palette date font handwritten import">
+    <summary>How do the 14 filters, random dice, punch frames, color palettes &amp; date fonts work?</summary>
+    <p>Swipe <strong>14 luminous film filters</strong> below the viewfinder, tap the <strong>🎲 dice</strong> to pick one at random, or save your own custom filter recipe; tap the library button next to the shutter to import existing photos. In the editor, VIP also unlocks <strong>Binder-Punch &amp; Ticket-Punch frames, Auto Color Palette dots</strong>, and <strong>Typewriter / Minimal / Handwritten</strong> date fonts.</p>
   </details>
 
   <h3 class="cat-title">🔐 Storage, Switching Phones &amp; Space</h3>
@@ -405,7 +549,7 @@
   <details>
     <summary>15. How do Story layouts and 1080p little movies work?</summary>
     <p>Share to Stories in one tap or use our built-in <strong>Story Layout</strong> with <strong>9 cotton-paper shades</strong> (cream and soft gray free) plus clip and washi-tape accents that shuffle in one tap; Story-sized Monthly Wall Posters support one-tap Story sharing too.</p>
-    <p>Weekly and monthly <strong>1080p little movies</strong> include a free beat-synced <strong>Photo Dump</strong> template and an <strong>Auto-pick highlights</strong> toggle (on by default), respect Story/Reels UI safe zones, and support <strong>muted export</strong> so you can add any track in your social app.</p>
+    <p>Weekly and monthly <strong>1080p little movies</strong> (tap the 🎞️ film icon at top-right of the Journal Wall) include a free <strong>Photo Dump</strong> template and an <strong>Auto-pick highlights</strong> toggle (on by default), respect Story UI safe zones, and support <strong>muted export</strong> so you can add any track in your social app.</p>
   </details>
 
   <details>
@@ -512,6 +656,26 @@
 
   <h2>❓ よくある質問（FAQ）</h2>
 
+  <div class="faq-search-box" data-faq-search>
+    <div class="faq-search-row">
+      <span class="faq-search-ico">🔍</span>
+      <input type="search" class="faq-search-input" placeholder="FAQ をキーワード検索（手帳ウォール・カレンダー・アイコン・4カット・合写・暗室…）" aria-label="FAQ 検索">
+      <button type="button" class="faq-search-clear" aria-label="検索をクリア">×</button>
+    </div>
+    <div class="faq-quick-tags">
+      <button type="button" class="faq-quick-tag" data-q="手帳ウォール">手帳ウォール</button>
+      <button type="button" class="faq-quick-tag" data-q="カレンダー">カレンダー</button>
+      <button type="button" class="faq-quick-tag" data-q="アイコン">アイコン変更</button>
+      <button type="button" class="faq-quick-tag" data-q="フォトカード">写真を見る</button>
+      <button type="button" class="faq-quick-tag" data-q="4カット">4 カット</button>
+      <button type="button" class="faq-quick-tag" data-q="合写">切り抜き合写</button>
+      <button type="button" class="faq-quick-tag" data-q="暗室">今夜現像</button>
+      <button type="button" class="faq-quick-tag" data-q="共有">共有手帳</button>
+    </div>
+    <div class="faq-search-meta" data-tpl="{n} 件の関連 FAQ が見つかりました"></div>
+    <div class="faq-empty"><strong>該当する FAQ が見つかりませんでした 🥺</strong><br>短めのキーワード（例：「カレンダー」「アイコン」「4カット」「VIP」）で試すか、上の「子ぎつねに聞く」・メールでお気軽にお問い合わせください！</div>
+  </div>
+
   <h3 class="cat-title">⭐ まず気になる 5 つの質問</h3>
 
   <details open>
@@ -539,6 +703,58 @@
   <details>
     <summary>VIP は機能ごとに別料金がかかりますか？</summary>
     <p>いいえ。<strong>VIP の一度きりの買い切りですべて解放</strong>されます：全フィルター・ステッカー・フレーム・動画テンプレート・足あとマップ・今夜現像まで追加購入もサブスクも不要です。価格は App Store に各国の通貨で表示されます。</p>
+  </details>
+
+  <h3 class="cat-title">🧭 基本操作：手帳ウォール・カレンダー・写真を見る・アイコン変更</h3>
+
+  <details data-kw="手帳ウォール 開き方 アルバム カメラに戻る 左下 サムネイル">
+    <summary>手帳ウォールはどうやって開くの？カメラに戻るには？</summary>
+    <p>カメラ画面の<strong>左下</strong>にある最新写真のサムネイル（「<strong>手帳</strong>」と表示／最初の 1 枚前は重ねアイコン）をタップすると手帳ウォールが開きます。撮影後の保存時に「<strong>手帳を見る</strong>」を押してもすぐ移動できます。</p>
+    <p>カメラへ戻るときは、手帳ウォール<strong>左上の 📷 カメラアイコン</strong>をタップしてください。</p>
+  </details>
+
+  <details data-kw="カレンダー 月暦 代表写真 代表表紙 日ごとにまとめる すべて広げる 長押し">
+    <summary>カレンダーページの見方と「この日の代表写真」の変え方は？</summary>
+    <p>手帳ウォール上部左側の<strong>月メニュー（📅 2026 年 11 月 ▾）</strong>→「<strong>カレンダー</strong>」を選ぶと、記録した日に代表写真が並んだ月カレンダーが表示されます（左右スワイプや矢印で月切替）。</p>
+    <p>同じメニューから「<strong>日ごとにまとめる</strong>」「<strong>すべて広げる</strong>」も切り替え可能。代表写真を変えたい日は、その日を開いて好きな写真を<strong>長押し</strong> →「<strong>この日の代表写真にする</strong>」を選んでください。</p>
+  </details>
+
+  <details data-kw="フォトカード 写真を見る 1枚 詳細 スワイプ 拡大 日付変更 都市 移動 共有 印刷 削除">
+    <summary>フォトカードを 1 枚ずつ見るには？開いたあとにできることは？</summary>
+    <p>手帳ウォール（またはカレンダーから開いた日）でカードをタップすると全画面で開きます（3 秒動画は自動ループ再生）。「日ごとにまとめる」がオンで複数枚ある日は、まず束をタップして広げてから選んでください。</p>
+    <p>詳細画面では、<strong>左右スワイプ</strong>で前後の写真へ移動、上部の<strong>日付</strong>をタップして撮影日を修正（カード印字も更新）、「<strong>📍 都市</strong>」の手動選択、<strong>共有手帳への移動</strong>、下部からストーリー共有・4×6 印刷・「写真」保存・削除が行えます。</p>
+  </details>
+
+  <details data-kw="アイコン icon アプリアイコン 変更 着せ替え 季節 自動 桜 紅葉 雪 クリスマス お正月">
+    <summary>ホーム画面のアプリアイコンはどう変えるの？12 種の季節アイコンについて</summary>
+    <p>手帳ウォール右上の <strong>⚙️ 設定（VIP は 👑 王冠アイコン）</strong>を開き、下へスクロールして「<strong>アプリアイコン</strong>」から、<strong>レトロ革カメラ</strong>と<strong>子ぎつね</strong>の 2 スタイル・計 12 種をワンタップで切り替えられます。</p>
+    <p>定番 2 種はいつでも無料。5 つの季節アイコンはその季節に無料解放（さくら 3–4 月・もみじ 10–11 月・ゆき 12–2 月・クリスマス 12/1–12/31・お正月 12/26–2/15）、VIP は年中 12 種ぜんぶ使えます。「<strong>季節にあわせて自動で変更</strong>」もオンにできます。（変更時の確認アラートは iOS の仕様です。クール金属レザー系も今後のアップデートで登場予定。）</p>
+  </details>
+
+  <details data-kw="背景 背景テーマ 壁テーマ 紙 クラフト 方眼 ダーク カスタム写真 レイアウト 切替 外観スタイル ミニマルダーク">
+    <summary>レイアウト・背景テーマ・外観スタイル（森の文青／ミニマルダーク）の切替方法は？</summary>
+    <p>好みや気分に合わせて自由に切り替えられます：</p>
+    <ul>
+      <li><strong>手帳ウォールのレイアウト切替</strong>：左上部の月メニュー（📅 ▾）から「<strong>日ごとにまとめる</strong>」「<strong>すべて広げる</strong>」「<strong>カレンダー</strong>」をいつでも切替できます。</li>
+      <li><strong>背景テーマの切替</strong>：右上「<strong>⋯（その他）</strong>」→「<strong>背景テーマ</strong>」でクリーム紙・クラフト手帳・方眼ノート・ミッドナイトデスクなどに変更可能（VIP は背景写真も設定可）。</li>
+      <li><strong>4 カット＆ストーリーの切替</strong>：4 カット編集で <strong>1×4／2×2</strong> を切替、ストーリーは <strong>9 色の棉紙レイアウト</strong>をワンタップ着せ替え。</li>
+      <li><strong>外観スタイル（森の文青 vs ミニマルダーク · 1.1 無料アップデート予定）</strong>：次期 1.1 では「<strong>設定 › 外観スタイル</strong>」から無料の<strong>ミニマルダーク</strong>へワンタップ切替でき、画面・フィルター・ミニマルステッカーまで一括でクールな質感に連動します！</li>
+    </ul>
+  </details>
+
+  <details data-kw="4カット 4コマ 1x4 2x2 タイマー 連写 アルバム 4枚">
+    <summary>韓国風 1×4 ＆ 日本風 2×2 の 4 カットはどう撮るの？既存の写真からも作れる？</summary>
+    <p>2 通りの作り方があります：① カメラのファインダー右下で「<strong>4 カット</strong>」をオンにすると 3-2-1 で 4 枚連続撮影でき、編集画面で<strong>韓国風 1×4</strong> と<strong>日本風 2×2</strong> を切り替え可能。② 手帳ウォール右上「<strong>⋯（その他）</strong>」→「<strong>4 コマフォト</strong>」から、既存の写真を 4 枚選んでまとめることもできます。</p>
+  </details>
+
+  <details data-kw="切り抜き 合写 推し ペット 合成 端末内 一緒に撮る">
+    <summary>端末内 1 秒切り抜き「合写」の使い方は？ペットや推しも使える？</summary>
+    <p>カメラ画面の「<strong>合写</strong>」からペット・推し・ぬいぐるみなどの写真を選ぶと、<strong>端末内で 1 秒自動切り抜き</strong>（サーバー送信なし）！リアルタイムのカメラ画面に重ねて移動・拡大・反転でき、1 枚撮影でも 4 カットでも一緒に撮れます。</p>
+  </details>
+
+  <details data-kw="フィルター サイコロ カスタムフィルター パンチ枠 カラーパレット 日付フォント 手書き風 アルバム取り込み">
+    <summary>14 種フィルター・ランダムサイコロ・パンチ枠・自動カラーパレット・日付フォントは？</summary>
+    <p>カメラ下で <strong>14 種の透明感フィルター</strong>を選べ、左の <strong>🎲 サイコロ</strong>でランダム切替やカスタムフィルター保存も OK。シャッター横からアルバム取り込みもできます。編集画面では VIP で<strong>ルーズリーフ＆切符パンチ枠・自動カラーパレット・タイプライター／ミニマル／手書き風の日付フォント</strong>が解放されます。</p>
   </details>
 
   <h3 class="cat-title">🔐 写真の保存先・機種変更・容量</h3>
@@ -735,6 +951,26 @@
 
   <h2>❓ 자주 묻는 질문 (FAQ)</h2>
 
+  <div class="faq-search-box" data-faq-search>
+    <div class="faq-search-row">
+      <span class="faq-search-ico">🔍</span>
+      <input type="search" class="faq-search-input" placeholder="전체 FAQ 키워드 검색 (다이어리 벽, 캘린더, 아이콘, 네컷, 누끼, 암실, 공유…)" aria-label="FAQ 검색">
+      <button type="button" class="faq-search-clear" aria-label="검색어 지우기">×</button>
+    </div>
+    <div class="faq-quick-tags">
+      <button type="button" class="faq-quick-tag" data-q="다이어리 벽">다이어리 벽</button>
+      <button type="button" class="faq-quick-tag" data-q="캘린더">캘린더</button>
+      <button type="button" class="faq-quick-tag" data-q="아이콘">아이콘 변경</button>
+      <button type="button" class="faq-quick-tag" data-q="포토카드">사진 보기</button>
+      <button type="button" class="faq-quick-tag" data-q="네컷">네컷 사진</button>
+      <button type="button" class="faq-quick-tag" data-q="누끼">누끼 합사진</button>
+      <button type="button" class="faq-quick-tag" data-q="암실">오늘 밤 현상</button>
+      <button type="button" class="faq-quick-tag" data-q="공유">공유 다이어리</button>
+    </div>
+    <div class="faq-search-meta" data-tpl="관련 FAQ {n}개를 찾았어요"></div>
+    <div class="faq-empty"><strong>일치하는 FAQ를 찾지 못했어요 🥺</strong><br>짧은 키워드(예: "캘린더", "아이콘", "네컷", "VIP")로 다시 검색하거나, 위쪽 "여우에게 묻기" 또는 메일로 문의해 주세요!</div>
+  </div>
+
   <h3 class="cat-title">⭐ 가장 많이 묻는 질문 5가지</h3>
 
   <details open>
@@ -762,6 +998,58 @@
   <details>
     <summary>VIP는 기능마다 따로 결제해야 하나요?</summary>
     <p>아니요. <strong>VIP 한 번 구매로 모든 기능이 한꺼번에 열립니다</strong>: 전체 필터·스티커·프레임·영상 템플릿·발자국 지도·오늘 밤 현상까지 개별 결제도 구독도 없어요. 가격은 App Store에서 현지 통화로 확인할 수 있습니다.</p>
+  </details>
+
+  <h3 class="cat-title">🧭 기본 사용법: 다이어리 벽·캘린더·사진 보기·아이콘 변경</h3>
+
+  <details data-kw="다이어리 벽 들어가 열기 앨범 카메라 왼쪽 아래 썸네일">
+    <summary>다이어리 벽에 어떻게 들어가나요? 카메라로 돌아가려면?</summary>
+    <p>카메라 화면 <strong>왼쪽 아래</strong> 최근 사진 썸네일('<strong>다이어리</strong>' 표시 / 첫 촬영 전엔 겹친 아이콘)을 누르면 다이어리 벽이 열립니다. 촬영 후 저장할 때 '<strong>다이어리 보기</strong>'를 눌러도 바로 이동해요.</p>
+    <p>다시 촬영하려면 다이어리 벽 <strong>왼쪽 위 📷 카메라 아이콘</strong>을 누르면 바로 카메라로 돌아갑니다.</p>
+  </details>
+
+  <details data-kw="캘린더 달력 대표 사진 커버 날짜별 모아 보기 펼쳐 보기 길게">
+    <summary>캘린더(달력) 페이지 보는 법과 하루 '대표 사진' 바꾸기</summary>
+    <p>다이어리 벽 상단 왼쪽의 <strong>월 메뉴(📅 2026년 11월 ▾)</strong> → '<strong>캘린더</strong>'를 누르면 기록한 날마다 대표 사진이 담긴 월간 달력이 열립니다(좌우 스와이프나 화살표로 월 이동).</p>
+    <p>같은 메뉴에서 '<strong>날짜별로 모아 보기</strong>'(하루 한 장으로 겹치기)와 '<strong>모두 펼쳐 보기</strong>'를 전환할 수 있어요. 대표 사진을 바꾸려면 해당 날짜를 연 뒤 마음에 드는 사진을 <strong>길게 누르기</strong> → '<strong>이 날의 대표 사진으로 설정</strong>'을 선택하세요.</p>
+  </details>
+
+  <details data-kw="포토카드 사진 보기 크게 상세 스와이프 날짜 수정 도시 이동 공유 인화 삭제">
+    <summary>포토카드를 한 장씩 크게 보려면? 연 뒤에 어떤 기능을 쓸 수 있나요?</summary>
+    <p>다이어리 벽(또는 캘린더에서 연 날짜)에서 카드를 한 번 누르면 전체 화면으로 열립니다(3초 영상은 자동 반복 재생). '날짜별로 모아 보기' 상태에서 여러 장이 겹쳐 있으면 먼저 묶음을 눌러 펼친 뒤 카드를 선택하세요.</p>
+    <p>상세 화면에서는 <strong>좌우 스와이프</strong>로 이전·다음 사진 넘기기, 위쪽 <strong>날짜</strong>를 눌러 촬영 날짜 수정(카드 인쇄 날짜도 함께 갱신), '<strong>📍 도시</strong>' 수동 선택, <strong>공유 다이어리로 이동</strong>, 하단에서 스토리 공유·4×6 인화·사진 앱 저장·삭제를 할 수 있습니다.</p>
+  </details>
+
+  <details data-kw="아이콘 icon 앱 아이콘 변경 바꾸기 계절 자동 변경 벚꽃 단풍 눈 크리스마스 새해">
+    <summary>홈 화면 앱 아이콘은 어떻게 바꾸나요? 12종 계절 아이콘 안내</summary>
+    <p>다이어리 벽 오른쪽 위 <strong>⚙️ 설정(VIP는 👑 왕관 아이콘)</strong>을 열고 아래로 내려 '<strong>앱 아이콘</strong>'에서 <strong>빈티지 가죽 카메라</strong>와 <strong>아기 여우</strong> 2가지 스타일·총 12종 중 원하는 아이콘을 탭하세요.</p>
+    <p>클래식 2종은 평생 무료, 5가지 계절 아이콘은 해당 시즌에 무료 개방(벚꽃 3–4월·단풍 10–11월·눈 12–2월·크리스마스 12/1–12/31·새해 12/26–2/15), VIP는 1년 내내 12종 모두 자유롭게 바꿀 수 있습니다. '<strong>계절에 맞춰 자동 변경</strong>'도 켤 수 있어요. (변경 시 iPhone 안내창은 iOS 규칙이며, 시크 메탈 다크 카메라 라인도 곧 업데이트로 추가될 예정입니다.)</p>
+  </details>
+
+  <details data-kw="배경 배경 테마 벽 테마 종이 크래프트 모눈 다크 커스텀 사진 레이아웃 전환 화면 스타일 미니멀 다크">
+    <summary>레이아웃·배경 테마·화면 스타일(숲 감성 / 미니멀 다크) 전환 방법</summary>
+    <p>원하는 분위기에 맞춰 여러 가지로 바꿀 수 있어요:</p>
+    <ul>
+      <li><strong>다이어리 벽 레이아웃 전환</strong>: 왼쪽 위 월 메뉴(📅 ▾)에서 '<strong>날짜별로 모아 보기</strong>', '<strong>모두 펼쳐 보기</strong>', '<strong>캘린더</strong>'를 자유롭게 전환합니다.</li>
+      <li><strong>배경 테마 바꾸기</strong>: 오른쪽 위 '<strong>⋯(더 보기)</strong>' → '<strong>배경 테마</strong>'에서 크림 종이·크래프트 노트·모눈 종이·미드나잇 데스크로 변경할 수 있어요(VIP는 내 사진 배경도 가능).</li>
+      <li><strong>네컷 &amp; 스토리 레이아웃</strong>: 네컷 편집에서 <strong>1×4 / 2×2</strong> 전환, 스토리는 <strong>9가지 코튼지 레이아웃</strong>을 원탭 교체합니다.</li>
+      <li><strong>화면 스타일(숲 감성 vs 미니멀 다크 · 1.1 무료 업데이트 예정)</strong>: 곧 출시될 1.1 업데이트에서 '<strong>설정 › 화면 스타일</strong>'을 통해 무료 <strong>미니멀 다크</strong>로 원탭 전환하면 다크 UI와 시크 필터·미니멀 스티커가 한꺼번에 연동됩니다!</li>
+    </ul>
+  </details>
+
+  <details data-kw="네컷 네컷 사진 1x4 2x2 타이머 연사 앨범 4장">
+    <summary>한국식 1×4 &amp; 일본식 2×2 네컷 사진은 어떻게 찍나요? 기존 사진으로도 만들 수 있나요?</summary>
+    <p>두 가지 방법 모두 지원합니다: ① 카메라 뷰파인더 오른쪽 아래 '<strong>네컷 모드</strong>'를 켜면 3-2-1 카운트다운으로 4장 연속 촬영되며, 편집 화면에서 <strong>한국식 1×4</strong>와 <strong>일본식 2×2</strong>를 자유롭게 전환할 수 있어요. ② 다이어리 벽 오른쪽 위 '<strong>⋯(더 보기)</strong>' → '<strong>네컷 카드</strong>'에서 기존 사진 4장을 골라 만들 수도 있습니다.</p>
+  </details>
+
+  <details data-kw="누끼 합사진 최애 반려동물 아이돌 기기 내 같이 찍기">
+    <summary>기기 내 1초 누끼 '합사진'은 어떻게 쓰나요? 반려동물이나 최애도 되나요?</summary>
+    <p>카메라 화면에서 '<strong>합사진</strong>'을 누르고 반려동물·최애·인형 사진을 고르면 <strong>기기 안에서 1초 만에 자동 누끼</strong>가 완성됩니다(서버 전송 없음). 실시간 카메라 화면에 올려 이동·크기 조절·좌우 반전할 수 있고, 단일 촬영과 네컷 모두 함께 찍을 수 있어요.</p>
+  </details>
+
+  <details data-kw="필터 주사위 커스텀 필터 펀치 프레임 팔레트 날짜 폰트 손글씨 불러오기">
+    <summary>14종 필터·랜덤 주사위·펀치 프레임·자동 컬러 팔레트·날짜 폰트는 어떻게 쓰나요?</summary>
+    <p>카메라 아래에서 <strong>14종 감성 필터</strong>를 고르거나 왼쪽 <strong>🎲 주사위</strong>로 랜덤 선택, 나만의 커스텀 필터 저장도 가능합니다(셔터 옆 버튼으로 앨범 사진 불러오기). 편집 화면에서 VIP는 <strong>바인더·티켓 펀치 프레임, 자동 컬러 팔레트, 타자기／미니멀／손글씨 날짜 폰트</strong>를 모두 사용할 수 있어요.</p>
   </details>
 
   <h3 class="cat-title">🔐 사진 저장, 기기 변경 및 용량</h3>
@@ -965,8 +1253,134 @@
   });
   window.addEventListener('hashchange', function() { setLang(detect(), false); });
   setLang(detect(), false);
+
+  // Live FAQ keyword search across every <details> in the active language panel
+  var FAQ_SYNONYMS = [
+    ['手帳牆', '相簿', '日記牆', '牆面', 'journal wall', 'gallery', 'album', '手帳ウォール', '다이어리 벽', '앨범'],
+    ['月曆', '日曆', '月曆頁', '日曆頁', 'calendar', 'month', 'カレンダー', '캘린더', '달력'],
+    ['拍立得', '照片卡', '卡片', '相片', 'photo card', 'card', 'フォトカード', '포토카드', '사진'],
+    ['icon', '圖示', '換圖示', '換icon', '桌面圖示', 'app icon', 'アイコン', '아이콘'],
+    ['四格', '拍貼', '4格', '1x4', '2x2', '4-cut', 'four cut', '4カット', '4コマ', '네컷'],
+    ['合拍', '去背', '同框', '毛孩', '偶像', 'co-snap', 'cosnap', 'cutout', '切り抜き', '合写', '누끼', '합사진'],
+    ['小電影', '影片', 'photo dump', '時光放映機', 'movie', 'projector', 'ムービー', '영화', '영상'],
+    ['暗房', '今晚', '顯影', 'darkroom', 'develop tonight', '今夜現像', '오늘 밤 현상', '암실'],
+    ['共享', '朋友', '邀請', 'shared', 'friends', '共有', '공유'],
+    ['地圖', '足跡', '郵戳', '城市', 'map', 'footprint', 'マップ', '足あと', '지도', '발자국'],
+    ['小工具', '主畫面', '冰箱貼', 'widget', 'ウィジェット', '위젯'],
+    ['浮水印', '印章', 'watermark', 'stamp', '透かし', '워터마크'],
+    ['列印', '超商', '4x6', 'print', 'プリント', '인화'],
+    ['換手機', '封存檔', '備份', '同步', 'archive', 'backup', 'sync', '機種変更', 'アーカイブ', '기기 변경', '아카이브']
+  ];
+
+  function expandFaqTerms(raw) {
+    var low = raw.toLowerCase().trim();
+    if (!low) return [];
+    var parts = low.split(/[\s,、，。？！?!・/]+/).filter(Boolean);
+    var terms = [low];
+    parts.forEach(function(p) { if (terms.indexOf(p) === -1) terms.push(p); });
+    FAQ_SYNONYMS.forEach(function(group) {
+      var hit = group.some(function(w) {
+        var wl = w.toLowerCase();
+        return low.indexOf(wl) !== -1 || parts.some(function(p) { return p.length >= 2 && wl.indexOf(p) !== -1; });
+      });
+      if (hit) {
+        group.forEach(function(w) {
+          var wl = w.toLowerCase();
+          if (terms.indexOf(wl) === -1) terms.push(wl);
+        });
+      }
+    });
+    return terms;
+  }
+
+  document.querySelectorAll('.lang-panel').forEach(function(panel) {
+    var box = panel.querySelector('[data-faq-search]');
+    if (!box) return;
+    var input = box.querySelector('.faq-search-input');
+    var clearBtn = box.querySelector('.faq-search-clear');
+    var meta = box.querySelector('.faq-search-meta');
+    var empty = box.querySelector('.faq-empty');
+    var tags = Array.prototype.slice.call(box.querySelectorAll('.faq-quick-tag'));
+    var items = Array.prototype.slice.call(panel.querySelectorAll('details'));
+    var cats = Array.prototype.slice.call(panel.querySelectorAll('h3.cat-title'));
+
+    function runFilter(query) {
+      var q = (query || '').trim();
+      clearBtn.classList.toggle('show', q.length > 0);
+      tags.forEach(function(t) {
+        t.classList.toggle('active', q && t.getAttribute('data-q').toLowerCase() === q.toLowerCase());
+      });
+
+      if (!q) {
+        items.forEach(function(d, idx) {
+          d.style.display = '';
+          if (idx > 0) d.removeAttribute('open');
+        });
+        cats.forEach(function(c) { c.style.display = ''; });
+        meta.classList.remove('show');
+        empty.classList.remove('show');
+        return;
+      }
+
+      var terms = expandFaqTerms(q);
+      var shown = 0;
+      items.forEach(function(d) {
+        var hay = (d.textContent + ' ' + (d.getAttribute('data-kw') || '')).toLowerCase();
+        var match = terms.some(function(tm) { return hay.indexOf(tm) !== -1; });
+        d.style.display = match ? '' : 'none';
+        if (match) {
+          shown++;
+          if (shown <= 6) d.setAttribute('open', '');
+        } else {
+          d.removeAttribute('open');
+        }
+      });
+
+      cats.forEach(function(c) {
+        var hasVisible = false;
+        var el = c.nextElementSibling;
+        while (el && !el.classList.contains('cat-title') && el.tagName !== 'FOOTER') {
+          if (el.tagName === 'DETAILS' && el.style.display !== 'none') {
+            hasVisible = true;
+            break;
+          }
+          el = el.nextElementSibling;
+        }
+        c.style.display = hasVisible ? '' : 'none';
+      });
+
+      meta.textContent = (meta.getAttribute('data-tpl') || '{n}').replace('{n}', String(shown));
+      meta.classList.add('show');
+      empty.classList.toggle('show', shown === 0);
+    }
+
+    input.addEventListener('input', function() { runFilter(input.value); });
+    clearBtn.addEventListener('click', function() {
+      input.value = '';
+      runFilter('');
+      input.focus();
+    });
+    tags.forEach(function(t) {
+      t.addEventListener('click', function() {
+        var val = t.getAttribute('data-q');
+        if (input.value.trim().toLowerCase() === val.toLowerCase()) {
+          input.value = '';
+          runFilter('');
+        } else {
+          input.value = val;
+          runFilter(val);
+        }
+      });
+    });
+
+    var urlQ = new URLSearchParams(location.search).get('q');
+    if (urlQ) {
+      input.value = urlQ;
+      runFilter(urlQ);
+    }
+  });
 })();
 </script>
-<script src="fox-bot.js?v=10"></script>
+<script src="fox-bot.js?v=11"></script>
 </body>
 </html>
