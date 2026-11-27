@@ -14,6 +14,27 @@
       notFound: '這題小狐狸暫時沒有內建答案耶 🥺 你可以點下面換個主題，或直接寫信給摩卡（繁中／EN／日／韓都可以），我們會親自回覆你！',
       topics: [
         {
+          id: 'top3',
+          label: '⭐ 必看 3 題（特色・浮水印・共享）',
+          items: [
+            {
+              q: '免費的相機 App 那麼多，為什麼要用 MoriSnap？',
+              kw: ['為什麼', '差別', '一般相機', '免費相機', '不同', '特色', '值得', '好用'],
+              a: 'MoriSnap 不只是相機，是懶人的生活手帳！一般相機拍完，照片就躺在相簿裡；MoriSnap 會幫你把照片變成有日期的手帳卡片，自動排進手帳牆、月曆和足跡地圖，週末再剪成一支小電影。你不用寫字、不用整理，回頭看每一天都在。而且免費就能用，喜歡再一次買斷 VIP，不訂閱 🦊'
+            },
+            {
+              q: '卡片上的浮水印怎麼關？',
+              kw: ['浮水印', '關閉浮水印', '拿掉', '右下角', '防盜', '小印章', 'watermark'],
+              a: '卡片上可能有兩種字：\n① 右下角的「MoriSnap」小字是品牌浮水印 → VIP 一次買斷後，到「設定 › 個人專屬貼紙與印章」打開「隱藏品牌小浮水印」就會拿掉。\n② 你自己的帳號或國旗是「防盜小印章」→ 免費就能關：編輯頁右上「防盜小印章」選「關閉」就好 ✨'
+            },
+            {
+              q: '怎麼和朋友共享手帳？',
+              kw: ['怎麼共享', '共享手帳', '邀請朋友', '一起寫', '共寫', '連結'],
+              a: '完全免費、不用註冊帳號，3 步驟：\n① 打開手帳牆，點上方手帳名稱 →「新增共享手帳本」取名字\n② 再點手帳名稱 →「管理共享手帳本」→「邀請朋友一起貼」，把連結傳給朋友\n③ 朋友點開連結、裝好 MoriSnap 就加入了！之後拍照存檔時把「🔒 個人私密」換成這本手帳即可，照片存在建立者的 iCloud，朋友不用多佔空間 👥'
+            }
+          ]
+        },
+        {
           id: 'vip',
           label: '💳 價錢＆VIP',
           items: [
@@ -198,6 +219,27 @@
       notFound: 'Hmm, I don\'t have a preset answer for that yet 🥺 Try another topic below, or email Mocha directly — we reply personally!',
       topics: [
         {
+          id: 'top3',
+          label: '⭐ Top 3 (Why · Watermark · Share)',
+          items: [
+            {
+              q: 'There are so many free camera apps — why use MoriSnap?',
+              kw: ['why', 'different', 'compare', 'ordinary', 'camera app', 'worth'],
+              a: 'MoriSnap isn\'t just a camera; it\'s a photo diary for lazy days! With ordinary camera apps, photos just sit in your camera roll. MoriSnap turns each shot into a dated journal card and automatically fills your journal wall, calendar, footprint map, and a weekly movie—no writing or sorting needed. Free to use, and VIP is a one-time purchase with no subscription 🦊'
+            },
+            {
+              q: 'How do I remove the watermark on my cards?',
+              kw: ['watermark', 'remove', 'hide', 'brand', 'stamp', 'bottom right'],
+              a: 'There are two kinds of text on a card:\n① Small "MoriSnap" text at bottom right (brand watermark) → With one-time VIP, go to Settings › My Stickers & Stamp and turn on "Hide Brand Watermark".\n② Your own handle or flag (anti-theft stamp) → Free to turn off: tap the stamp button at top right of the editor and choose "Off" ✨'
+            },
+            {
+              q: 'How do I share a journal with friends?',
+              kw: ['how to share', 'shared journal', 'invite', 'friends', 'together'],
+              a: 'Free and no signup needed, in 3 steps:\n① On your journal wall, tap the journal name at the top → "New shared journal" and name it\n② Tap the name again → "Manage shared journals" → "Invite friends" and send the link\n③ Your friend opens the link and installs MoriSnap! When saving a photo, switch "🔒 Private" to that journal. Photos live in the creator\'s iCloud without using friends\' storage 👥'
+            }
+          ]
+        },
+        {
           id: 'vip',
           label: '💳 Pricing & VIP',
           items: [
@@ -342,6 +384,27 @@
       notFound: 'ごめんね、その質問はまだ登録されてないみたい 🥺 別のボタンを試すか、下のボタンからモカにメールしてね！',
       topics: [
         {
+          id: 'top3',
+          label: '⭐ まず気になる 3 問（違い・透かし・共有）',
+          items: [
+            {
+              q: '無料のカメラアプリはたくさんあるのに、なぜ MoriSnap なの？',
+              kw: ['違い', 'なぜ', 'ふつうのカメラ', '無料カメラ', '特徴', 'おすすめ'],
+              a: 'MoriSnap は単なるカメラではなく、めんどくさがりのための生活手帳です！ふつうのカメラは撮ったあとアルバムに眠ったままですが、MoriSnap は写真を日付入り手帳カードに変え、手帳ウォール・カレンダー・足あとマップに自動整理し、週末はムービーまで作ってくれます。無料で使えて、VIP もサブスクなしの買い切りです 🦊'
+            },
+            {
+              q: 'カード上の透かしはどうやって消せますか？',
+              kw: ['透かし', '消す', '非表示', 'ロゴ', '右下', '個人スタンプ'],
+              a: 'カードの文字は 2 種類あります：\n① 右下の小さな「MoriSnap」（ブランド透かし）→ VIP（買い切り）なら「設定 › マイステッカー＆スタンプ」で「ブランド透かしを隠す」をオン。\n② 自分の ID や国旗（個人スタンプ）→ 無料でオフにできます：編集画面右上のスタンプボタン →「オフ」✨'
+            },
+            {
+              q: '友だちと共有手帳を使うには？',
+              kw: ['共有手帳', '友だち', '招待', '使い方', '一緒に'],
+              a: '無料・アカウント不要、3 ステップです：\n① 手帳ウォール上の手帳名をタップ →「共有手帳を作成」で名前をつける\n② もう一度手帳名をタップ →「共有手帳の管理」→「友だちを招待」でリンクを送る\n③ 友だちがリンクを開いて MoriSnap を入れれば参加完了！保存時に「🔒 プライベート」をその手帳に切り替えるだけ。写真は作成者の iCloud に入り、友だちの容量は使いません 👥'
+            }
+          ]
+        },
+        {
           id: 'vip',
           label: '💳 料金・VIP',
           items: [
@@ -420,7 +483,7 @@
             {
               q: '4×6 印刷・夜景・9色ストーリー＆フォトダンプは？',
               kw: ['印刷', 'プリント', '暗い', '夜景', 'フォトダンプ', 'ハイライト', '無音', '棉紙', 'ポスター'],
-              a: '4×6 プリント用は 5mm 安全余白＋点線つき。暗所では全フィルター自動連写（約0.5秒）、夜色オーロラは約2秒🌙 ストーリー用は 9 色の棉紙＋クリップ・マステ飾り（オフ白・薄灰無料）、ポスターもワンタップ共有、1080p ムービーは無料の対拍フォトダンプ＆自動ハイライト対応！'
+              a: '4×6 プリント用は 5mm 安全余白＋点線つき。暗所では全フィルター自動連写（約0.5秒）、夜色オーロラは約2秒🌙 ストーリー用は 9 色の棉紙＋クリップ・マステ飾り（オフ白・薄灰無料）、ポスターもワンタップ共有、1080p ムービーは無料の音ハメフォトダンプ＆自動ハイライト対応！'
             },
             {
               q: '3秒動画・26種日付ステッカー・切り抜き・子ぎつね',
@@ -480,6 +543,27 @@
       topicPrompt: '궁금한 질문을 눌러줘 👇',
       notFound: '앗, 아직 준비되지 않은 질문이야 🥺 아래에서 다른 주제를 골라보거나 모카에게 직접 메일을 보내줘!',
       topics: [
+        {
+          id: 'top3',
+          label: '⭐ 핵심 질문 3가지 (차이·워터마크·공유)',
+          items: [
+            {
+              q: '무료 카메라 앱이 많은데 왜 MoriSnap을 쓰나요?',
+              kw: ['왜', '차이', '일반 카메라', '무료 카메라', '다른 점', '장점'],
+              a: 'MoriSnap은 단순한 카메라가 아니라 귀차니스트를 위한 생활 다이어리예요! 일반 카메라는 사진이 앨범에 그대로 쌓이지만, MoriSnap은 사진을 날짜가 들어간 다이어리 카드로 바꿔 다이어리 벽·달력·발자국 지도에 알아서 정리하고 주말엔 작은 영화까지 만들어 줘요. 무료로 쓸 수 있고 VIP도 구독 없는 한 번 구매예요 🦊'
+            },
+            {
+              q: '카드 위 워터마크는 어떻게 끄나요?',
+              kw: ['워터마크', '지우기', '끄기', '숨기기', '오른쪽 아래', '스탬프'],
+              a: '카드에는 두 가지 글자가 있을 수 있어요:\n① 오른쪽 아래 작은 \'MoriSnap\' (브랜드 워터마크) → VIP(한 번 구매)라면 \'설정 › 내 스티커 & 스탬프\'에서 \'브랜드 워터마크 숨기기\'를 켜면 사라져요.\n② 내 계정이나 국기 (원본 보호 스탬프) → 무료로 끌 수 있어요: 편집 화면 오른쪽 위 스탬프 버튼 → \'끄기\' ✨'
+            },
+            {
+              q: '친구와 공유 다이어리는 어떻게 쓰나요?',
+              kw: ['공유 다이어리', '공유 방법', '친구 초대', '함께', '링크'],
+              a: '무료·가입 불필요, 3단계면 끝:\n① 다이어리 벽 위쪽 다이어리 이름을 눌러 \'공유 다이어리 만들기\'로 이름 정하기\n② 이름을 다시 눌러 \'공유 다이어리 관리\' → \'친구 초대\'에서 링크 보내기\n③ 친구가 링크를 열고 MoriSnap을 설치하면 바로 참여! 저장할 때 \'🔒 비공개\'를 그 다이어리로 바꾸면 모두의 폰에 올라가요. 사진은 만든 사람의 iCloud에 저장돼 친구 용량은 쓰지 않아요 👥'
+            }
+          ]
+        },
         {
           id: 'vip',
           label: '💳 요금 & VIP',
@@ -563,7 +647,7 @@
             },
             {
               q: '3초 영상 · 26종 날짜 스티커 · 누끼 · 아기 여우',
-              kw: ['동영상', '네컷', '인생네컷', '누끼', '회전', '흔들', '여우', '누구', '날짜 스티커'],
+              kw: ['동영상', '네컷', '네컷 사진', '누끼', '회전', '흔들', '여우', '누구', '날짜 스티커'],
               a: '짧게 누르면(볼륨 버튼 포함) 사진, 길게 누르면 3초 영상! 흔들어서 스티커 교체, 자동 날짜 스티커 26종(앞 10종 무료), 🔄 한 손가락 회전·크기 조절, 네컷과 1초 누끼 합사진까지 지원해요. 나는 공식 마스코트 \'아기 여우\'야 🦊'
             }
           ]

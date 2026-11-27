@@ -1601,3 +1601,219 @@ footer {
 
 
 
+
+/* ===== A1 Lazy Life Diary Redesign (Hero Diary Visual, 3 Steps, After-Snap Grid, Comparison Table, Privacy Strip) ===== */
+.hero-diary-pair {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.hero-diary-pair button {
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f5efe6;
+  cursor: zoom-in;
+  box-shadow: 0 10px 26px rgba(100, 78, 56, .16);
+  transition: transform .18s ease, box-shadow .18s ease;
+  width: 124px;
+}
+.hero-diary-pair button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(100, 78, 56, .22);
+}
+.hero-diary-pair img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 720px) {
+  .hero-diary-pair {
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+  }
+  .hero-diary-pair button {
+    width: 44%;
+    max-width: 155px;
+  }
+}
+
+.steps-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 18px 0 22px;
+}
+.step-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 15px 16px;
+  box-shadow: 0 4px 14px rgba(120, 92, 66, .04);
+}
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.step-card strong {
+  display: block;
+  font-size: 15.5px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.step-card p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--soft);
+  line-height: 1.5;
+}
+@media (max-width: 680px) {
+  .steps-3 { grid-template-columns: 1fr; gap: 9px; margin: 14px 0 18px; }
+  .step-card { display: flex; align-items: flex-start; gap: 12px; padding: 13px 14px; }
+  .step-badge { flex-shrink: 0; margin-bottom: 0; margin-top: 2px; }
+}
+
+.after-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 12px 0 24px;
+}
+.after-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 14px rgba(120, 92, 66, .05);
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.after-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(120, 92, 66, .10);
+}
+.after-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.after-body {
+  padding: 11px 13px 13px;
+}
+.after-body strong {
+  display: block;
+  font-size: 14.5px;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.after-body span {
+  display: block;
+  font-size: 12.8px;
+  color: var(--soft);
+  line-height: 1.45;
+}
+@media (max-width: 680px) {
+  .after-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+}
+
+.vs-wrap {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 20px 22px;
+  margin: 22px 0 26px;
+  box-shadow: 0 6px 20px rgba(120, 92, 66, .05);
+}
+.vs-wrap h2 {
+  margin: 6px 0 14px;
+  font-size: 20px;
+}
+.vs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.vs-table th, .vs-table td {
+  text-align: left;
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.vs-table tr:last-child td { border-bottom: none; }
+.vs-table th {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--soft);
+  background: #fbf7f0;
+}
+.vs-table th.vs-mori, .vs-table td.vs-mori {
+  background: #f3f7f2;
+  color: #2f4332;
+  font-weight: 700;
+}
+.vs-table td.vs-label {
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.vs-table td.vs-other {
+  color: #827366;
+}
+@media (max-width: 640px) {
+  .vs-wrap { padding: 16px 12px; }
+  .vs-table { font-size: 12.8px; }
+  .vs-table th, .vs-table td { padding: 9px 7px; }
+}
+
+.privacy-strip {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f3f7f2;
+  border: 1px solid #d5e2d3;
+  border-radius: 18px;
+  padding: 16px 20px;
+  margin: 22px 0 22px;
+}
+.privacy-strip .priv-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+.privacy-strip strong {
+  display: block;
+  font-size: 15.5px;
+  color: #2c4130;
+  margin-bottom: 3px;
+}
+.privacy-strip p {
+  margin: 0;
+  font-size: 13.5px;
+  color: #495d4c;
+  line-height: 1.5;
+}
+@media (max-width: 640px) {
+  .privacy-strip { padding: 14px 14px; gap: 12px; }
+}
+.price-note {
+  text-align: center;
+  font-size: 13px;
+  color: var(--soft);
+  margin: -14px 0 12px;
+}
