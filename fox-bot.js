@@ -15,7 +15,7 @@
       topics: [
         {
           id: 'top3',
-          label: '⭐ 必看 3 題（特色・浮水印・共享）',
+          label: '⭐ 必看 5 題（特色・浮水印・共享・VIP）',
           items: [
             {
               q: '免費的相機 App 那麼多，為什麼要用 MoriSnap？',
@@ -31,6 +31,16 @@
               q: '怎麼和朋友共享手帳？',
               kw: ['怎麼共享', '共享手帳', '邀請朋友', '一起寫', '共寫', '連結'],
               a: '完全免費、不用註冊帳號，3 步驟：\n① 打開手帳牆，點上方手帳名稱 →「新增共享手帳本」取名字\n② 再點手帳名稱 →「管理共享手帳本」→「邀請朋友一起貼」，把連結傳給朋友\n③ 朋友點開連結、裝好 MoriSnap 就加入了！之後拍照存檔時把「🔒 個人私密」換成這本手帳即可，照片存在建立者的 iCloud，朋友不用多佔空間 👥'
+            },
+            {
+              q: '加入共享手帳一定要 iCloud 嗎？要付錢嗎？',
+              kw: ['一定要icloud', 'icloud要錢', '共享付費', '佔空間', '5gb', 'apple帳號', '安全嗎', '要付錢'],
+              a: '要登入 Apple 帳號，但不用付費！共享手帳是透過 Apple 的 iCloud 安全傳送：照片不會公開在網路上，只有你邀請的人看得到，連我們也看不到。照片放在建立者的 iCloud，加入的朋友不會用到自己的空間，免費的 5GB 就夠 🔐'
+            },
+            {
+              q: 'VIP 是每個功能都要另外付錢嗎？',
+              kw: ['另外付錢', '分開買', '單買', '解鎖全部', '幣別', '新台幣', 'vip怎麼算'],
+              a: '不是！VIP 一次買斷就解鎖全部：所有濾鏡、貼紙、相框、影片範本、足跡地圖、今晚才顯影⋯⋯不用每項另外買，也不訂閱。價格以 App Store 顯示為準，會用你所在國家的幣別（台灣是新台幣）✨'
             }
           ]
         },
@@ -220,7 +230,7 @@
       topics: [
         {
           id: 'top3',
-          label: '⭐ Top 3 (Why · Watermark · Share)',
+          label: '⭐ Top 5 (Why · Watermark · Share · VIP)',
           items: [
             {
               q: 'There are so many free camera apps — why use MoriSnap?',
@@ -236,6 +246,16 @@
               q: 'How do I share a journal with friends?',
               kw: ['how to share', 'shared journal', 'invite', 'friends', 'together'],
               a: 'Free and no signup needed, in 3 steps:\n① On your journal wall, tap the journal name at the top → "New shared journal" and name it\n② Tap the name again → "Manage shared journals" → "Invite friends" and send the link\n③ Your friend opens the link and installs MoriSnap! When saving a photo, switch "🔒 Private" to that journal. Photos live in the creator\'s iCloud without using friends\' storage 👥'
+            },
+            {
+              q: 'Does joining a shared journal require iCloud? Do I have to pay?',
+              kw: ['require icloud', 'pay for icloud', '5gb', 'storage', 'safe', 'private', 'apple account'],
+              a: 'You need to be signed in to an Apple Account, and it is completely free! Shared journals sync privately through Apple iCloud—photos are never public online, only invited people can see them (even we cannot). Photos live in the creator\'s iCloud, so friends use zero personal storage and the free 5GB tier is plenty 🔐'
+            },
+            {
+              q: 'Do I have to pay separately for each VIP feature?',
+              kw: ['separately', 'per item', 'unlock all', 'each feature', 'currency', 'pay again'],
+              a: 'No! One-time VIP unlocks everything at once: all filters, stickers, frames, movie templates, Footprint Map, Develop Tonight, and more—no per-item charges and no subscriptions. Pricing is shown in your local currency on the App Store ✨'
             }
           ]
         },
@@ -385,7 +405,7 @@
       topics: [
         {
           id: 'top3',
-          label: '⭐ まず気になる 3 問（違い・透かし・共有）',
+          label: '⭐ まず気になる 5 問（違い・透かし・共有・VIP）',
           items: [
             {
               q: '無料のカメラアプリはたくさんあるのに、なぜ MoriSnap なの？',
@@ -401,6 +421,16 @@
               q: '友だちと共有手帳を使うには？',
               kw: ['共有手帳', '友だち', '招待', '使い方', '一緒に'],
               a: '無料・アカウント不要、3 ステップです：\n① 手帳ウォール上の手帳名をタップ →「共有手帳を作成」で名前をつける\n② もう一度手帳名をタップ →「共有手帳の管理」→「友だちを招待」でリンクを送る\n③ 友だちがリンクを開いて MoriSnap を入れれば参加完了！保存時に「🔒 プライベート」をその手帳に切り替えるだけ。写真は作成者の iCloud に入り、友だちの容量は使いません 👥'
+            },
+            {
+              q: '共有手帳に参加するには iCloud が必要ですか？料金はかかりますか？',
+              kw: ['icloud必要', '有料', '5gb', '容量', '安全', '無料', 'appleアカウント'],
+              a: 'Apple アカウントへのサインインは必要ですが、料金は一切かかりません！Apple の iCloud を通じて安全に同期され、ネットに公開されず招待した人だけが見られます（開発者にも見えません）。写真は作成者の iCloud に保存されるため参加する友だちの容量は消費せず、無料の 5GB で十分です 🔐'
+            },
+            {
+              q: 'VIP は機能ごとに別料金がかかりますか？',
+              kw: ['別料金', '個別', '追加購入', '全部解放', '通貨', '機能ごと'],
+              a: 'いいえ！VIP の一度きりの買い切りですべて解放されます：全フィルター・ステッカー・フレーム・動画テンプレート・足あとマップ・今夜現像まで追加購入もサブスクも不要です。価格は App Store に各国の通貨で表示されます ✨'
             }
           ]
         },
@@ -545,7 +575,7 @@
       topics: [
         {
           id: 'top3',
-          label: '⭐ 핵심 질문 3가지 (차이·워터마크·공유)',
+          label: '⭐ 핵심 질문 5가지 (차이·워터마크·공유·VIP)',
           items: [
             {
               q: '무료 카메라 앱이 많은데 왜 MoriSnap을 쓰나요?',
@@ -561,6 +591,16 @@
               q: '친구와 공유 다이어리는 어떻게 쓰나요?',
               kw: ['공유 다이어리', '공유 방법', '친구 초대', '함께', '링크'],
               a: '무료·가입 불필요, 3단계면 끝:\n① 다이어리 벽 위쪽 다이어리 이름을 눌러 \'공유 다이어리 만들기\'로 이름 정하기\n② 이름을 다시 눌러 \'공유 다이어리 관리\' → \'친구 초대\'에서 링크 보내기\n③ 친구가 링크를 열고 MoriSnap을 설치하면 바로 참여! 저장할 때 \'🔒 비공개\'를 그 다이어리로 바꾸면 모두의 폰에 올라가요. 사진은 만든 사람의 iCloud에 저장돼 친구 용량은 쓰지 않아요 👥'
+            },
+            {
+              q: '공유 다이어리에 참여하려면 iCloud가 꼭 필요한가요? 유료인가요?',
+              kw: ['icloud 필요', '유료', '돈', '5gb', '용량', '안전', 'apple 계정'],
+              a: 'Apple 계정 로그인은 필요하지만 비용은 전혀 들지 않아요! Apple iCloud로 안전하게 전송되며 인터넷에 공개되지 않고 초대한 사람만 볼 수 있어요(개발자도 볼 수 없습니다). 사진은 만든 사람의 iCloud에 저장되어 참여하는 친구의 용량을 쓰지 않으며, 무료 5GB로 충분합니다 🔐'
+            },
+            {
+              q: 'VIP는 기능마다 따로 결제해야 하나요?',
+              kw: ['따로 결제', '개별 결제', '기능마다', '전부 해제', '통화', '한 번 구매'],
+              a: '아니요! VIP 한 번 구매로 모든 기능이 한꺼번에 열립니다: 전체 필터·스티커·프레임·영상 템플릿·발자국 지도·오늘 밤 현상까지 개별 결제도 구독도 없어요. 가격은 App Store에서 현지 통화로 확인할 수 있습니다 ✨'
             }
           ]
         },
