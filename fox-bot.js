@@ -67,8 +67,23 @@
         },
         {
           id: 'top3',
-          label: '⭐ 必看 5 題（特色・浮水印・共享・VIP）',
+          label: '⭐ 必看 8 題（無陌生人・共享隱私・3 秒哲學・VIP）',
           items: [
+            {
+              q: '為什麼錄影只有 3 秒？',
+              kw: ['為什麼只有3秒', '只有3秒', '太短', '3秒', '錄影', 'vlog', '影片太短', '三秒'],
+              a: '因為拍照和錄影不該是壓力 🦊 這裡不是為了拍得很美給別人看、也不是要剪長篇 Vlog，而是要留給自己看的！把生活中每個不經意的短短 3 秒片段（咖啡熱氣、毛孩搖尾巴、窗外雨聲）毫不費力收進手帳，週末自動串成一週或一個月的真實紀錄，零剪片也不塞爆手機空間。'
+            },
+            {
+              q: '為什麼沒有「搜尋好友」或「公開廣場」？會斷打卡紀錄嗎？',
+              kw: ['陌生人', '搜尋好友', '公開廣場', '演算法', '讚數', 'i人', '連續打卡', '打卡', '壓力', '已讀', '紅點'],
+              a: 'MoriSnap 是專為不想應酬、討厭社交壓力的人設計的安靜避風港 🦊 沒有讚數、沒有演算法、沒有已讀提示，也永遠不會有「連續打卡天數」催你交作業——月曆上的空白只是留給你呼吸的空間，但是你只要隨手拍一張，就幫你記住生活裡的那一秒美好！沒有人能搜尋或追蹤你；想分享給不熟的人時，一秒匯出卡片傳給他就好！'
+            },
+            {
+              q: '共享手帳會看到我的其他私人照片或秘密嗎？受邀親友要付錢或佔空間嗎？',
+              kw: ['秘密', '私人照片', 'apple id', '本名', '偷看', '受邀', '免費', '佔空間', '純看', '安靜讀者'],
+              a: '完全不會看到你的其他照片！每本共享手帳在 Apple iCloud 都是獨立隔離的區域，你的個人手帳與手機相冊 100% 隔離。\n・費用與容量：建立者免費就能開，受邀的家人朋友永久免費加入、不吃對方的 iCloud 容量也不會存爆手機相簿，只想當安靜讀者（或放桌面 Widget 天天看）零壓力。\n・對象提醒：Apple 共享成員名單會顯示彼此的 Apple 帳號名稱，因此專為「真實熟識的家人、另一半、真好朋友」設計，絕不拉陌生人進來 🔐'
+            },
             {
               q: '免費的相機 App 那麼多，為什麼要用 MoriSnap？',
               kw: ['為什麼', '差別', '一般相機', '免費相機', '不同', '特色', '值得', '好用'],
@@ -264,8 +279,23 @@
         },
         {
           id: 'top3',
-          label: '⭐ Top 5 (Why · Watermark · Share · VIP)',
+          label: '⭐ Top 8 (No Strangers · Privacy · 3s Clips · VIP)',
           items: [
+            {
+              q: 'Why are video clips only 3 seconds long?',
+              kw: ['3 seconds', 'only 3', 'too short', 'vlog', '3s', 'why 3', 'short video'],
+              a: 'Because recording life shouldn’t feel like pressure 🦊 You aren’t filming a polished long-form vlog for an audience—you’re keeping moments for yourself! Effortlessly save casual 3-second glimpses (coffee steam, wagging tails, evening rain), and MoriSnap weaves them into a weekly or monthly reel with zero editing.'
+            },
+            {
+              q: 'Why is there no friend search, public feed, or daily streak?',
+              kw: ['stranger', 'feed', 'algorithm', 'likes', 'introvert', 'streak', 'pressure', 'search friends', 'public'],
+              a: 'MoriSnap was built as a quiet sanctuary for people tired of noisy social feeds 🦊 Zero likes, zero algorithms, zero read receipts, and zero guilt-tripping daily streaks—blank days on your calendar are simply room to breathe, and the moment you casually snap even one photo, it keeps that single beautiful second of your life for you. Nobody can search or follow you; whenever you want to share outside, just export a card in one tap!'
+            },
+            {
+              q: 'Can shared-album members see my private photos? Do invited guests pay or use iCloud space?',
+              kw: ['private photos', 'secret', 'apple id', 'real name', 'guest', 'free', 'storage', 'reader', 'quiet'],
+              a: 'Never! Every shared album lives in its own isolated Apple CloudKit zone, 100% separated from your personal journals and camera roll.\n• Free & 0 GB: Free to create, invited loved ones join free with 0 GB used on their iCloud and zero posting pressure (great for quiet readers or parents with a Home Widget).\n• Trusted circle note: Apple’s share sheet shows participants’ Apple Account names, so it’s built for trusted family, partners & close friends—for acquaintances, one-tap card export keeps clean boundaries 🔐'
+            },
             {
               q: 'There are so many free camera apps — why use MoriSnap?',
               kw: ['why', 'different', 'compare', 'ordinary', 'camera app', 'worth'],
@@ -451,8 +481,23 @@
         },
         {
           id: 'top3',
-          label: '⭐ まず気になる 5 問（違い・透かし・共有・VIP）',
+          label: '⭐ まず気になる 8 問（知らない人なし・見る専・3 秒動画・VIP）',
           items: [
+            {
+              q: 'なぜ動画撮影は 3 秒だけなのですか？',
+              kw: ['3秒だけ', 'なぜ3秒', '短い', '3秒', 'vlog', '動画'],
+              a: '撮ることをプレッシャーにしたくないからです 🦊 誰かに見せるための長尺 Vlog ではなく、自分自身の記憶のため。コーヒーの湯気やペットのしっぽなど、ふとした 3 秒の断片を力を抜いて残すだけで、編集いらずのまま一週間・一か月の記録ムービーに自然につながります。'
+            },
+            {
+              q: 'なぜ友だち検索や公開広場がないの？連続記録は途切れる？',
+              kw: ['知らない人', '検索', '公開', 'sns疲れ', '連続', 'プレッシャー', '既読', 'いいね', 'アルゴリズム'],
+              a: 'SNS の騒がしさから離れて自分のペースで息ができる場所にするためです 🦊 いいね数もアルゴリズムも既読通知も、連続投稿のプレッシャーも一切なし！カレンダーの空白もひと息つく余白ですが、ふと 1 枚撮るだけで暮らしの美しい一秒をちゃんと残してくれます。知らない人が検索・フォローすることはできず、外へ送りたい日だけワンタップでカードを書き出せます。'
+            },
+            {
+              q: '共有手帳で他の私的写真が見られることは？見る専・容量・料金は？',
+              kw: ['秘密', '見られる', 'apple id', '本名', '見る専', '容量', '無料', '親しい'],
+              a: '他の写真は 100% 見られません！共有手帳は Apple iCloud の独立ゾーンで個人手帳と完全分離されています。\n・無料＆容量ゼロ：作成も参加も無料・登録不要、相手の iCloud 容量は一切使わず「見る専」でも気まずさゼロです。\n・親しい方専用：Apple の共有メンバー画面には Apple アカウント名が表示されるため、家族・恋人・親友など本当に親しい方向けです 🔐'
+            },
             {
               q: '無料のカメラアプリはたくさんあるのに、なぜ MoriSnap なの？',
               kw: ['違い', 'なぜ', 'ふつうのカメラ', '無料カメラ', '特徴', 'おすすめ'],
@@ -638,8 +683,23 @@
         },
         {
           id: 'top3',
-          label: '⭐ 핵심 질문 5가지 (차이·워터마크·공유·VIP)',
+          label: '⭐ 핵심 질문 8가지 (낯선 사람 없음·프라이버시·3초 영상·VIP)',
           items: [
+            {
+              q: '왜 동영상 촬영이 3초뿐인가요?',
+              kw: ['왜 3초', '3초뿐', '짧아', '3초', '브이로그', 'vlog', '동영상'],
+              a: '촬영이 숙제나 부담이 되지 않길 바랐어요 🦊 남에게 보여줄 거창한 브이로그를 찍는 게 아니라 오직 나를 위한 기록이니까요. 무심코 담은 짧은 3초 조각들(커피 김, 반려동물 꼬리, 저녁 비)이 아무 힘 들이지 않고 한 주·한 달의 작은 영화로 자연스럽게 이어집니다!'
+            },
+            {
+              q: '왜 친구 검색이나 공개 피드가 없나요? 연속 출석 기록이 끊기나요?',
+              kw: ['낯선 사람', '검색', '공개 피드', '알고리즘', '좋아요', '내향', '연속', '출석', '압박', '읽음'],
+              a: 'SNS 피로 없이 내 속도로 쉬어갈 수 있게 만들었어요 🦊 좋아요·알고리즘·읽음 표시·연속 출석 압박 모두 제로! 바빠서 며칠 쉬어도 달력의 빈칸은 그저 숨 고르는 여백이지만, 문득 한 장만 툭 찍어두면 내 삶의 아름다운 그 1초를 고스란히 기억해 드려요. 낯선 사람이 나를 검색하거나 팔로우할 수 없고, 지인에게 보낼 땐 원탭으로 카드만 보내면 깔끔해요!'
+            },
+            {
+              q: '공유 다이어리에서 내 다른 비밀 사진이 보이나요? 친구 용량이나 비용은?',
+              kw: ['비밀', '다른 사진', 'apple id', '실명', '눈팅', '용량', '무료', '부담'],
+              a: '다른 사진은 100% 절대 보이지 않아요! 각 공유 다이어리는 Apple CloudKit 독립 구역으로 개인 기록과 완전히 분리됩니다.\n・무료＆용량 0: 방장도 친구도 무료·가입 불필요, 초대받은 상대의 iCloud 용량을 전혀 쓰지 않고 조용히 눈팅만 해도 부담 제로!\n・가까운 사이 전용: Apple 공유 목록에 Apple 계정 이름이 표시되므로 실제로 친한 가족·연인·친구를 위한 공간이에요 🔐'
+            },
             {
               q: '무료 카메라 앱이 많은데 왜 MoriSnap을 쓰나요?',
               kw: ['왜', '차이', '일반 카메라', '무료 카메라', '다른 점', '장점'],

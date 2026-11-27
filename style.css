@@ -2351,5 +2351,127 @@ footer {
   background: #fdf3ea;
 }
 
+/* ===== Introvert Sanctuary Trust Strip, 3-Layer Boundary Grid & Value Banner ===== */
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 12px 0 4px;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5b493c;
+}
+.hero-trust li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero-trust .t-check {
+  color: var(--sage);
+  font-weight: 800;
+}
+
+.boundary-section {
+  background: linear-gradient(180deg, #fffdf9 0%, #faf3e9 100%);
+  border: 1.5px solid var(--line);
+  border-radius: 24px;
+  padding: 24px 22px 22px;
+  margin: 26px 0 28px;
+  box-shadow: 0 8px 26px rgba(120, 92, 66, .06);
+}
+.boundary-head {
+  margin-bottom: 16px;
+}
+.boundary-head h2 {
+  margin: 8px 0 6px;
+  font-size: 22px;
+  line-height: 1.35;
+}
+.boundary-head p {
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--soft);
+  line-height: 1.65;
+}
+.boundary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.boundary-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  box-shadow: 0 3px 12px rgba(120, 92, 66, .04);
+}
+.boundary-card.is-intimate {
+  background: #fffaf3;
+  border-color: #e4c9ac;
+}
+.boundary-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--accent-deep);
+  letter-spacing: .02em;
+}
+.boundary-card h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.boundary-card p {
+  margin: 0;
+  font-size: 13.8px;
+  line-height: 1.68;
+  color: #53443a;
+}
+.boundary-foot {
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed #e6d7c5;
+  font-size: 13px;
+  color: var(--soft);
+  line-height: 1.6;
+}
+
+.value-banner {
+  background: var(--wish-bg);
+  border: 1px solid var(--wish-line);
+  border-radius: 20px;
+  padding: 18px 20px;
+  margin: 26px 0 14px;
+}
+.value-banner h2 {
+  margin: 6px 0 6px;
+  font-size: 20px;
+  line-height: 1.38;
+}
+.value-banner p {
+  margin: 0;
+  font-size: 14.2px;
+  line-height: 1.7;
+  color: #544439;
+}
+
+@media (max-width: 780px) {
+  .boundary-grid {
+    grid-template-columns: 1fr;
+  }
+  .boundary-section {
+    padding: 20px 16px 18px;
+  }
+}
+
+
 
 

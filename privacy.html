@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/icons/favicon.png">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=18">
+<link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
 <main>
@@ -54,7 +54,7 @@
     <ul>
       <li><strong>不用註冊帳號</strong>：打開就能拍照、寫手帳，不需要建立任何帳號。</li>
       <li><strong>照片存在哪裡</strong>：照片、短片和手帳紀錄只存在你自己的 iPhone／iPad 上。我們沒有伺服器，看不到也拿不到你的任何內容。</li>
-      <li><strong>iCloud 同步與共享手帳</strong>：如果你開啟 iCloud 個人同步（VIP）或使用「共享手帳」，資料只會存在<strong>你自己的 iCloud</strong>（透過 Apple 的 CloudKit 處理）。共享手帳只有你邀請的人看得到，開發者無法讀取你的 iCloud 資料。</li>
+      <li><strong>iCloud 同步與共享手帳</strong>：如果你開啟 iCloud 個人同步（VIP）或使用「共享手帳」，資料只會存在<strong>你自己的 iCloud</strong>（透過 Apple 的 CloudKit 獨立區域隔離處理）。每本共享手帳與你的個人手帳完全隔離，對方絕看不到其他照片；受邀的親友不需要註冊也不會消耗自己的 iCloud 雲端容量（加入時系統成員名單會顯示各自的 Apple 帳號名稱，建議僅與熟識親友共享），開發者無法讀取任何內容。</li>
       <li><strong>封存檔與自動備份</strong>：如果你使用「匯出封存檔」或「自動備份到資料夾」，檔案只會存到你自己選的位置（例如系統「檔案」或你自己的雲端硬碟）。</li>
       <li><strong>位置（足跡地圖，預設關閉）</strong>：「足跡地圖」為選擇性功能且預設關閉。只有在你主動開啟並同意授權後，App 才會讀取<strong>大概位置</strong>，並在你的手機本機離線換算成<strong>城市名稱</strong>，<strong>只存城市、不存精確座標</strong>，也不會傳給開發者或任何第三方。你可以隨時在設定中關閉；分享出去的照片和短片也不含 GPS 座標。</li>
       <li><strong>照片位置與時間資訊</strong>：從系統相簿匯入照片時，App 會在你的裝置上讀取照片本身附帶的拍攝時間與位置，僅用來在手機本機換算成日期與城市名稱，絕不會上傳。</li>
@@ -94,7 +94,7 @@
     <ul>
       <li><strong>No account required</strong>: open the app and start shooting right away.</li>
       <li><strong>Where your photos live</strong>: photos, clips, and diary entries stay on your own iPhone/iPad. We have no servers and can never see or access them.</li>
-      <li><strong>iCloud sync &amp; shared albums</strong>: if you turn on iCloud Sync (VIP) or Shared Albums, data is stored strictly in <strong>your own iCloud</strong> through Apple's CloudKit. Shared albums are visible only to people you invite, and the developer cannot read your iCloud data.</li>
+      <li><strong>iCloud sync &amp; shared albums</strong>: if you turn on iCloud Sync (VIP) or Shared Albums, data is stored strictly in <strong>your own iCloud</strong> via isolated Apple CloudKit zones. Every shared album is completely separated from your private journals so invited loved ones can never see any other photos; invited guests need no signup and use 0 GB of their own iCloud storage (Apple's share sheet displays participants' Apple Account names, so it is designed for trusted family &amp; close friends). The developer can never read your iCloud data.</li>
       <li><strong>Archive exports &amp; folder backup</strong>: if you export a backup archive or turn on folder auto-backup, files are saved only to the location you choose (such as Files or your own cloud drive).</li>
       <li><strong>Location (Footprint Map — off by default)</strong>: Footprint Map is optional and off by default. Only if you turn it on and grant permission will the app read your <strong>approximate location</strong>, convert it offline on your device into a <strong>city name</strong>, and <strong>store only the city — never exact coordinates</strong>. Nothing is sent to the developer or any third party. You can turn it off anytime in Settings, and shared photos contain no GPS coordinates.</li>
       <li><strong>Photo date &amp; location metadata</strong>: when you import photos from your library, MoriSnap reads the photo's embedded timestamp and location strictly on your device to match its date and city name — never uploaded.</li>
@@ -134,7 +134,7 @@
     <ul>
       <li><strong>アカウント不要</strong>：開いてすぐ撮影・手帳づくりができます。</li>
       <li><strong>写真の保存先</strong>：写真・動画・手帳の記録は、お使いの iPhone／iPad に保存されます。サーバーを持たないため、開発者が見たり取得したりすることはできません。</li>
-      <li><strong>iCloud 同期と共有手帳</strong>：iCloud 同期（VIP）や共有手帳を使う場合、データは Apple の CloudKit を通じて<strong>ご自身の iCloud</strong> にのみ保存されます。共有手帳は招待した人だけが見られ、開発者が内容を読むことはできません。</li>
+      <li><strong>iCloud 同期と共有手帳</strong>：iCloud 同期（VIP）や共有手帳を使う場合、データは Apple の CloudKit の独立ゾーンを通じて<strong>ご自身の iCloud</strong> にのみ保存されます。共有手帳は個人手帳と完全に分離されており、他の写真が見られることはありません。招待された家族・恋人・親友は登録不要で自分の iCloud 容量も消費しません（共有メンバー画面には Apple アカウント名が表示されるため、親しい方同士のご利用を想定しています）。開発者が内容を読むことは一切できません。</li>
       <li><strong>アーカイブ書き出し・フォルダバックアップ</strong>：書き出しファイルや自動バックアップは、ご自身で選んだ場所（「ファイル」や個人のクラウドストレージ）にのみ保存されます。</li>
       <li><strong>位置情報（足あとマップ・初期設定オフ）</strong>：足あとマップは任意機能で初期設定はオフです。オンにして許可した場合のみ<strong>おおよその位置情報</strong>を読み取り、端末内でオフラインのまま<strong>都市名</strong>へ変換して保存します。<strong>正確な座標は保存せず</strong>、開発者や第三者へ送信されることもありません。設定からいつでもオフにでき、共有写真に GPS 座標は含まれません。</li>
       <li><strong>写真に含まれる撮影日時・位置情報</strong>：アルバムから写真を取り込む際、写真自体に記録されている撮影日時や位置情報を端末内でのみ読み取り、日付と都市名の変換に使います。外部送信は行いません。</li>
@@ -174,7 +174,7 @@
     <ul>
       <li><strong>회원가입 없음</strong>: 앱을 열면 바로 촬영하고 다이어리를 쓸 수 있어요.</li>
       <li><strong>사진 저장 위치</strong>: 사진, 영상, 다이어리 기록은 내 iPhone/iPad에만 저장됩니다. 자체 서버가 없어 개발자는 볼 수도, 가져갈 수도 없습니다.</li>
-      <li><strong>iCloud 동기화와 공유 다이어리</strong>: iCloud 동기화(VIP)나 공유 다이어리를 켜면 데이터는 Apple의 CloudKit을 통해 <strong>내 개인 iCloud</strong>에만 저장됩니다. 공유 다이어리는 내가 초대한 사람만 볼 수 있으며, 개발자는 내용을 읽을 수 없습니다.</li>
+      <li><strong>iCloud 동기화와 공유 다이어리</strong>: iCloud 동기화(VIP)나 공유 다이어리를 켜면 데이터는 Apple CloudKit의 독립 구역을 통해 <strong>내 개인 iCloud</strong>에만 저장됩니다. 공유 다이어리는 개인 기록과 완전히 분리되어 다른 사진이 절대 노출되지 않으며, 초대받은 가족·연인·친구는 가입이 필요 없고 본인의 iCloud 용량도 소모하지 않습니다(Apple 공유 목록에 Apple 계정 이름이 표시되므로 실제로 친한 사이에서의 사용을 권장합니다). 개발자는 내용을 읽을 수 없습니다.</li>
       <li><strong>아카이브 백업 및 폴더 자동 백업</strong>: 아카이브 내보내기나 폴더 자동 백업을 쓰면 내가 고른 위치('파일' 앱이나 내 클라우드 드라이브)에만 저장됩니다.</li>
       <li><strong>위치(발자국 지도 · 기본 꺼짐)</strong>: 발자국 지도는 선택 기능이며 기본으로 꺼져 있습니다. 사용자가 직접 켜고 동의한 경우에만 <strong>대략적인 위치</strong>를 읽어 기기 안에서 오프라인으로 <strong>도시 이름</strong>으로 변환하며, <strong>도시명만 저장하고 정확한 좌표는 저장하지 않습니다</strong>. 개발자나 제3자에게 전송되지 않으며 설정에서 언제든 끌 수 있습니다. 공유하는 사진에도 GPS 좌표는 포함되지 않습니다.</li>
       <li><strong>사진의 촬영 날짜 및 위치 정보</strong>: 앨범에서 사진을 불러올 때 사진 파일에 담긴 촬영 시간과 위치 정보를 기기 안에서만 읽어 날짜와 도시명으로 변환합니다. 외부로 업로드되지 않습니다.</li>
@@ -232,6 +232,6 @@
   setLang(detect(), false);
 })();
 </script>
-<script src="fox-bot.js?v=12"></script>
+<script src="fox-bot.js?v=13"></script>
 </body>
 </html>
