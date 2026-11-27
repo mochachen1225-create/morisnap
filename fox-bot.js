@@ -33,9 +33,9 @@
               a: '完全免費、不用註冊帳號，3 步驟：\n① 打開手帳牆，點上方手帳名稱 →「新增共享手帳本」取名字\n② 再點手帳名稱 →「管理共享手帳本」→「邀請朋友一起貼」，把連結傳給朋友\n③ 朋友點開連結、裝好 MoriSnap 就加入了！之後拍照存檔時把「🔒 個人私密」換成這本手帳即可，照片存在建立者的 iCloud，朋友不用多佔空間 👥'
             },
             {
-              q: '加入共享手帳一定要 iCloud 嗎？要付錢嗎？',
-              kw: ['一定要icloud', 'icloud要錢', '共享付費', '佔空間', '5gb', 'apple帳號', '安全嗎', '要付錢'],
-              a: '要登入 Apple 帳號，但不用付費！共享手帳是透過 Apple 的 iCloud 安全傳送：照片不會公開在網路上，只有你邀請的人看得到，連我們也看不到。照片放在建立者的 iCloud，加入的朋友不會用到自己的空間，免費的 5GB 就夠 🔐'
+              q: '加入共享手帳為什麼要登入 iCloud（還要驗證）？會收錢嗎？',
+              kw: ['一定要icloud', 'icloud要錢', '雙重驗證', '驗證', '很煩', '共享付費', '佔空間', '5gb', 'apple帳號', '安全嗎', '要付錢'],
+              a: '完全不用付費，也不是叫你買雲端空間！需要登入 Apple 帳號（與雙重驗證），就像「社區門禁核對受邀名單」一樣——Apple 要確認是受邀的家人朋友本人，才不會隨便誰拿到連結就能偷看私密照片，連我們也看不到。\n只需要確認這一次，不用辦 MoriSnap 帳號；而且照片放在建立者的空間，加入的朋友不會用到自己的容量，免費 5GB 就夠 🔐'
             },
             {
               q: 'VIP 是每個功能都要另外付錢嗎？',
@@ -248,9 +248,9 @@
               a: 'Free and no signup needed, in 3 steps:\n① On your journal wall, tap the journal name at the top → "New shared journal" and name it\n② Tap the name again → "Manage shared journals" → "Invite friends" and send the link\n③ Your friend opens the link and installs MoriSnap! When saving a photo, switch "🔒 Private" to that journal. Photos live in the creator\'s iCloud without using friends\' storage 👥'
             },
             {
-              q: 'Does joining a shared journal require iCloud? Do I have to pay?',
-              kw: ['require icloud', 'pay for icloud', '5gb', 'storage', 'safe', 'private', 'apple account'],
-              a: 'You need to be signed in to an Apple Account, and it is completely free! Shared journals sync privately through Apple iCloud—photos are never public online, only invited people can see them (even we cannot). Photos live in the creator\'s iCloud, so friends use zero personal storage and the free 5GB tier is plenty 🔐'
+              q: 'Why do I need to sign in to iCloud (and verify) to join a shared journal? Will it cost money?',
+              kw: ['require icloud', 'pay for icloud', 'verify', '2fa', 'two-factor', '5gb', 'storage', 'safe', 'private', 'apple account'],
+              a: '100% free — no need to buy cloud storage! Signing in with your Apple Account (and Apple\'s verification) works like a private guest list at the door: Apple makes sure only invited friends and family can open the album so strangers with a link can\'t peek (even we can\'t see them).\nYou only verify once with no MoriSnap account needed, and photos use the creator\'s iCloud — friends use zero personal storage (free 5GB is plenty) 🔐'
             },
             {
               q: 'Do I have to pay separately for each VIP feature?',
@@ -423,9 +423,9 @@
               a: '無料・アカウント不要、3 ステップです：\n① 手帳ウォール上の手帳名をタップ →「共有手帳を作成」で名前をつける\n② もう一度手帳名をタップ →「共有手帳の管理」→「友だちを招待」でリンクを送る\n③ 友だちがリンクを開いて MoriSnap を入れれば参加完了！保存時に「🔒 プライベート」をその手帳に切り替えるだけ。写真は作成者の iCloud に入り、友だちの容量は使いません 👥'
             },
             {
-              q: '共有手帳に参加するには iCloud が必要ですか？料金はかかりますか？',
-              kw: ['icloud必要', '有料', '5gb', '容量', '安全', '無料', 'appleアカウント'],
-              a: 'Apple アカウントへのサインインは必要ですが、料金は一切かかりません！Apple の iCloud を通じて安全に同期され、ネットに公開されず招待した人だけが見られます（開発者にも見えません）。写真は作成者の iCloud に保存されるため参加する友だちの容量は消費せず、無料の 5GB で十分です 🔐'
+              q: '共有手帳に参加するとき、なぜ iCloud ログイン（認証）が必要なの？お金はかかりますか？',
+              kw: ['icloud必要', '認証', '2ファクタ', '有料', '5gb', '容量', '安全', '無料', 'appleアカウント'],
+              a: '料金は一切かからず、有料プランも不要です！Apple アカウントのログイン・認証は「招待された人だけが入れる鍵つきの扉」のようなもので、招待した家族や友だち本人かを Apple が確認し、知らない人から大切な写真を守ります（開発者にも見えません）。\n確認は最初の 1 回だけで会員登録不要。写真は作成者の iCloud に保存されるため友だちの容量は消費せず、無料 5GB で十分です 🔐'
             },
             {
               q: 'VIP は機能ごとに別料金がかかりますか？',
@@ -593,9 +593,9 @@
               a: '무료·가입 불필요, 3단계면 끝:\n① 다이어리 벽 위쪽 다이어리 이름을 눌러 \'공유 다이어리 만들기\'로 이름 정하기\n② 이름을 다시 눌러 \'공유 다이어리 관리\' → \'친구 초대\'에서 링크 보내기\n③ 친구가 링크를 열고 MoriSnap을 설치하면 바로 참여! 저장할 때 \'🔒 비공개\'를 그 다이어리로 바꾸면 모두의 폰에 올라가요. 사진은 만든 사람의 iCloud에 저장돼 친구 용량은 쓰지 않아요 👥'
             },
             {
-              q: '공유 다이어리에 참여하려면 iCloud가 꼭 필요한가요? 유료인가요?',
-              kw: ['icloud 필요', '유료', '돈', '5gb', '용량', '안전', 'apple 계정'],
-              a: 'Apple 계정 로그인은 필요하지만 비용은 전혀 들지 않아요! Apple iCloud로 안전하게 전송되며 인터넷에 공개되지 않고 초대한 사람만 볼 수 있어요(개발자도 볼 수 없습니다). 사진은 만든 사람의 iCloud에 저장되어 참여하는 친구의 용량을 쓰지 않으며, 무료 5GB로 충분합니다 🔐'
+              q: '공유 다이어리에 참여할 때 왜 iCloud 로그인(인증)을 해야 하나요? 돈이 드나요?',
+              kw: ['icloud 필요', '이중 인증', '인증', '유료', '돈', '5gb', '용량', '안전', 'apple 계정'],
+              a: '비용은 전혀 들지 않으며 유료 용량을 살 필요도 없어요! Apple 계정 로그인과 인증은 "초대받은 사람만 들어올 수 있는 현관문 출입 확인"과 같아서, 모르는 사람이 링크로 사적인 사진을 볼 수 없게 지켜줘요(개발자도 볼 수 없습니다).\n처음 한 번만 확인하면 되고 회원가입 불필요! 사진은 만든 사람의 iCloud에 저장되어 친구 용량은 쓰지 않으며 무료 5GB로 충분해요 🔐'
             },
             {
               q: 'VIP는 기능마다 따로 결제해야 하나요?',
