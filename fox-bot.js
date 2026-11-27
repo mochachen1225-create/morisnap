@@ -87,7 +87,7 @@
             {
               q: '加入共享手帳為什麼要登入 iCloud（還要驗證）？會收錢嗎？',
               kw: ['一定要icloud', 'icloud要錢', '雙重驗證', '驗證', '很煩', '共享付費', '佔空間', '5gb', 'apple帳號', '安全嗎', '要付錢'],
-              a: '完全不用付費，也不是叫你買雲端空間！需要登入 Apple 帳號（與雙重驗證），就像「社區門禁核對受邀名單」一樣——Apple 要確認是受邀的家人朋友本人，才不會隨便誰拿到連結就能偷看私密照片，連我們也看不到。\n只需要確認這一次，不用辦 MoriSnap 帳號；而且照片放在建立者的空間，加入的朋友不會用到自己的容量，免費 5GB 就夠 🔐'
+              a: '完全不用付費，也不是叫你買雲端空間！需要登入 Apple 帳號（與雙重驗證），就像「社區門禁核對受邀名單」一樣——Apple 要確認是受邀的家人朋友本人，才不會隨便誰拿到連結就能偷看私密照片，連我們也看不到。\n只需要確認這一次，不用辦 MoriSnap 帳號；而且共享手帳只同步精巧的卡片成品（不上傳佔空間的相機原檔），每張約 0.5–1 MB、1GB 就能放超過 1,000 張，建立者用免費 5GB 就非常夠用，加入的朋友更不會用到自己的容量 🔐'
             },
             {
               q: 'VIP 是每個功能都要另外付錢嗎？',
@@ -284,7 +284,7 @@
             {
               q: 'Why do I need to sign in to iCloud (and verify) to join a shared journal? Will it cost money?',
               kw: ['require icloud', 'pay for icloud', 'verify', '2fa', 'two-factor', '5gb', 'storage', 'safe', 'private', 'apple account'],
-              a: '100% free — no need to buy cloud storage! Signing in with your Apple Account (and Apple\'s verification) works like a private guest list at the door: Apple makes sure only invited friends and family can open the album so strangers with a link can\'t peek (even we can\'t see them).\nYou only verify once with no MoriSnap account needed, and photos use the creator\'s iCloud — friends use zero personal storage (free 5GB is plenty) 🔐'
+              a: '100% free — no need to buy cloud storage! Signing in with your Apple Account (and Apple\'s verification) works like a private guest list at the door: Apple makes sure only invited friends and family can open the album so strangers with a link can\'t peek (even we can\'t see them).\nYou only verify once with no MoriSnap account needed. Shared journals sync only compact finished cards (not huge camera originals)—about 0.5–1 MB each, so 1 GB fits over 1,000 photos! Free 5 GB goes a long way for the creator, and friends use zero personal storage 🔐'
             },
             {
               q: 'Do I have to pay separately for each VIP feature?',
@@ -471,7 +471,7 @@
             {
               q: '共有手帳に参加するとき、なぜ iCloud ログイン（認証）が必要なの？お金はかかりますか？',
               kw: ['icloud必要', '認証', '2ファクタ', '有料', '5gb', '容量', '安全', '無料', 'appleアカウント'],
-              a: '料金は一切かからず、有料プランも不要です！Apple アカウントのログイン・認証は「招待された人だけが入れる鍵つきの扉」のようなもので、招待した家族や友だち本人かを Apple が確認し、知らない人から大切な写真を守ります（開発者にも見えません）。\n確認は最初の 1 回だけで会員登録不要。写真は作成者の iCloud に保存されるため友だちの容量は消費せず、無料 5GB で十分です 🔐'
+              a: '料金は一切かからず、有料プランも不要です！Apple アカウントのログイン・認証は「招待された人だけが入れる鍵つきの扉」のようなもので、招待した家族や友だち本人かを Apple が確認し、知らない人から大切な写真を守ります（開発者にも見えません）。\n確認は最初の 1 回だけで会員登録不要。共有手帳は軽量のカード仕上がり版だけを同期する（大容量の元写真は上げない）ため 1 枚約 0.5〜1MB・1GB で 1,000 枚以上入り、無料 5GB でもたっぷり使えます（参加する友だちの容量は消費しません）🔐'
             },
             {
               q: 'VIP は機能ごとに別料金がかかりますか？',
@@ -658,7 +658,7 @@
             {
               q: '공유 다이어리에 참여할 때 왜 iCloud 로그인(인증)을 해야 하나요? 돈이 드나요?',
               kw: ['icloud 필요', '이중 인증', '인증', '유료', '돈', '5gb', '용량', '안전', 'apple 계정'],
-              a: '비용은 전혀 들지 않으며 유료 용량을 살 필요도 없어요! Apple 계정 로그인과 인증은 "초대받은 사람만 들어올 수 있는 현관문 출입 확인"과 같아서, 모르는 사람이 링크로 사적인 사진을 볼 수 없게 지켜줘요(개발자도 볼 수 없습니다).\n처음 한 번만 확인하면 되고 회원가입 불필요! 사진은 만든 사람의 iCloud에 저장되어 친구 용량은 쓰지 않으며 무료 5GB로 충분해요 🔐'
+              a: '비용은 전혀 들지 않으며 유료 용량을 살 필요도 없어요! Apple 계정 로그인과 인증은 "초대받은 사람만 들어올 수 있는 현관문 출입 확인"과 같아서, 모르는 사람이 링크로 사적인 사진을 볼 수 없게 지켜줘요(개발자도 볼 수 없습니다).\n처음 한 번만 확인하면 되고 회원가입 불필요! 공유 다이어리는 가벼운 완성 카드만 동기화해(무거운 원본 파일은 올리지 않음) 장당 약 0.5~1MB, 1GB에 1,000장 이상 들어가므로 무료 5GB로도 넉넉하고 참여하는 친구 용량은 쓰지 않아요 🔐'
             },
             {
               q: 'VIP는 기능마다 따로 결제해야 하나요?',
