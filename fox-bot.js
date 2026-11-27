@@ -20,7 +20,7 @@
             {
               q: '免費的相機 App 那麼多，為什麼要用 MoriSnap？',
               kw: ['為什麼', '差別', '一般相機', '免費相機', '不同', '特色', '值得', '好用'],
-              a: 'MoriSnap 不只是相機，是懶人的生活手帳！一般相機拍完，照片就躺在相簿裡；MoriSnap 會幫你把照片變成有日期的手帳卡片，自動排進手帳牆、月曆和足跡地圖，週末再剪成一支小電影。你不用寫字、不用整理，回頭看每一天都在。而且免費就能用，喜歡再一次買斷 VIP，不訂閱 🦊'
+              a: 'MoriSnap 不只是相機，是懶人的生活手帳！一般相機拍完，照片就躺在相簿裡；MoriSnap 會幫你把照片變成有日期的手帳卡片，自動排進手帳牆和月曆，週末再剪成一支小電影。你不用寫字、不用整理，回頭看每一天都在。而且免費就能用，喜歡再一次買斷 VIP，不訂閱 🦊'
             },
             {
               q: '卡片上的浮水印怎麼關？',
@@ -225,7 +225,7 @@
             {
               q: 'There are so many free camera apps — why use MoriSnap?',
               kw: ['why', 'different', 'compare', 'ordinary', 'camera app', 'worth'],
-              a: 'MoriSnap isn\'t just a camera; it\'s a photo diary for lazy days! With ordinary camera apps, photos just sit in your camera roll. MoriSnap turns each shot into a dated journal card and automatically fills your journal wall, calendar, footprint map, and a weekly movie—no writing or sorting needed. Free to use, and VIP is a one-time purchase with no subscription 🦊'
+              a: 'MoriSnap isn\'t just a camera; it\'s a photo diary for lazy days! With ordinary camera apps, photos just sit in your camera roll. MoriSnap turns each shot into a dated journal card and automatically fills your journal wall, calendar, and a weekly movie—no writing or sorting needed. Free to use, and VIP is a one-time purchase with no subscription 🦊'
             },
             {
               q: 'How do I remove the watermark on my cards?',
@@ -390,7 +390,7 @@
             {
               q: '無料のカメラアプリはたくさんあるのに、なぜ MoriSnap なの？',
               kw: ['違い', 'なぜ', 'ふつうのカメラ', '無料カメラ', '特徴', 'おすすめ'],
-              a: 'MoriSnap は単なるカメラではなく、めんどくさがりのための生活手帳です！ふつうのカメラは撮ったあとアルバムに眠ったままですが、MoriSnap は写真を日付入り手帳カードに変え、手帳ウォール・カレンダー・足あとマップに自動整理し、週末はムービーまで作ってくれます。無料で使えて、VIP もサブスクなしの買い切りです 🦊'
+              a: 'MoriSnap は単なるカメラではなく、めんどくさがりのための生活手帳です！ふつうのカメラは撮ったあとアルバムに眠ったままですが、MoriSnap は写真を日付入り手帳カードに変え、手帳ウォールやカレンダーに自動整理し、週末はムービーまで作ってくれます。無料で使えて、VIP もサブスクなしの買い切りです 🦊'
             },
             {
               q: 'カード上の透かしはどうやって消せますか？',
@@ -550,7 +550,7 @@
             {
               q: '무료 카메라 앱이 많은데 왜 MoriSnap을 쓰나요?',
               kw: ['왜', '차이', '일반 카메라', '무료 카메라', '다른 점', '장점'],
-              a: 'MoriSnap은 단순한 카메라가 아니라 귀차니스트를 위한 생활 다이어리예요! 일반 카메라는 사진이 앨범에 그대로 쌓이지만, MoriSnap은 사진을 날짜가 들어간 다이어리 카드로 바꿔 다이어리 벽·달력·발자국 지도에 알아서 정리하고 주말엔 작은 영화까지 만들어 줘요. 무료로 쓸 수 있고 VIP도 구독 없는 한 번 구매예요 🦊'
+              a: 'MoriSnap은 단순한 카메라가 아니라 귀차니스트를 위한 생활 다이어리예요! 일반 카메라는 사진이 앨범에 그대로 쌓이지만, MoriSnap은 사진을 날짜가 들어간 다이어리 카드로 바꿔 다이어리 벽과 달력에 알아서 정리하고 주말엔 작은 영화까지 만들어 줘요. 무료로 쓸 수 있고 VIP도 구독 없는 한 번 구매예요 🦊'
             },
             {
               q: '카드 위 워터마크는 어떻게 끄나요?',
